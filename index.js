@@ -116,11 +116,11 @@ function addRow(rowNum){
 
     // if the first added row, add it AFTER the labels
     if(rowNum === 0){
-        rowBox.after(document.getElementById("categoryLabels"))
+        rowBox.after(document.getElementById("preRunners"))
     }
     // otherwise, add it BEFORE the last row
     else{
-        document.body.insertBefore(rowBox, document.getElementById(`categoryResults${rowNum-1}`));
+        document.body.insertBefore(rowBox, document.getElementById(`categoryResults${rowNum-1}Box`));
     }
     // put row box into div
     // document.getElementById(`categoryResults${rowNum}`).append(rowBox);
