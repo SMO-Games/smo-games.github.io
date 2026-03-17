@@ -70,7 +70,7 @@ body{
 
 .grid-container{
     display: grid;
-    border: 1px solid red;
+    border: rgba(255, 255, 255, 0);
     grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
     justify-content: center;
 }
