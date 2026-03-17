@@ -105,7 +105,7 @@ def getRunnerData(base_url, runner_id):
         runner_location = runner_data["location"]
         if runner_location != None:
             runner_location = runner_location["country"]
-            country_code = runner_location["code"]
+            country_code = runner_location["code"][:2]
             country_name = runner_location["names"]["international"]
             # get sovereignty of runner region
             sovereignty = sovereignty_df[sovereignty_df["Country_Code"] == country_code.upper()]

@@ -20,15 +20,15 @@ function getRunners(){
 
 
 // compares two given values and outputs whether the input is higher, lower or equal to the answer
-function compareValues(input, correct, deltaBox){
+function compareValues(input, correct, labelBox){
     if(input > correct){
-        deltaBox.textContent = "⬇️"
+        labelBox.textContent = labelBox.textContent + " ⬇️"
     }
     else if(input < correct){
-        deltaBox.textContent = "⬆️"
+        labelBox.textContent = labelBox.textContent + " ⬆️"
     }
     else{
-        deltaBox.textContent = "✅"
+        labelBox.textContent = labelBox.textContent + " ✅"
     }
 }
 
@@ -100,47 +100,54 @@ function getAnswer(correct_runner){
 // adds row of user categories
 function addRow(rowNum){
     let rowDiv = document.createElement("div");
-    // list of ids for each category
+    let rowBox = document.createElement("div");
+    // list of ids and names for each category
     let boxIDs = ["runner", "nationality", "console",
         "pb", "mostRecent", "bestMB", "bestCE"
     ]
+    let categoryNames = ["Runner", "Nationality", "Console",
+        "Any% PB", "Most Recent Run", "Best MB Placement", "Best CE Placement"]
     // set class and id of the whole row
-    rowDiv.classList.add("center");
+    rowDiv.classList.add("center", "categoryRowDiv");
     rowDiv.id = `categoryResults${rowNum}`;
+    // set class and id of row box
+    rowBox.classList.add("center", "categoryRowBox", "grid-container");
+    rowBox.id = `categoryResults${rowNum}Box`;
 
     // if the first added row, add it AFTER the labels
     if(rowNum === 0){
-        rowDiv.after(document.getElementById("categoryLabels"))
+        rowBox.after(document.getElementById("categoryLabels"))
     }
     // otherwise, add it BEFORE the last row
     else{
-        document.body.insertBefore(rowDiv, document.getElementById(`categoryResults${rowNum-1}`));
+        document.body.insertBefore(rowBox, document.getElementById(`categoryResults${rowNum-1}`));
     }
+    // put row box into div
+    // document.getElementById(`categoryResults${rowNum}`).append(rowBox);
     // for every required box, create the element and set its values
     for(let boxID of boxIDs){
 
-        // create div
-        boxDiv = document.createElement("div");
-        boxDiv.classList.add("resultDiv");
-        boxDiv.id = `${boxID}Div${rowNum}`
-        document.getElementById(`categoryResults${rowNum}`).append(boxDiv);
+        // create category box
+        categoryBox = document.createElement("box");
+        categoryBox.classList.add("categoryBox");
+        categoryBox.id = `${boxID}Box${rowNum}`
+        document.getElementById(rowBox.id).append(categoryBox);
 
-        // create actual result box
-        resultBox = document.createElement("box");
-        resultBox.className = `resultBox`;
-        resultBox.id = `${boxID}ResultBox${rowNum}`
-        document.getElementById(boxDiv.id).append(resultBox);
+        // create category label box
+        categoryLabelBox = document.createElement("box");
+        categoryLabelBox.classList.add("categoryLabelBox");
+        categoryLabelBox.id = `${boxID}LabelBox${rowNum}`
+        document.getElementById(categoryBox.id).append(categoryLabelBox);
 
-        // create delta box
-        deltaBox = document.createElement("box");
-        deltaBox.className = `deltaBox`;
-        deltaBox.id = `${boxID}DeltaBox${rowNum}`
-        // change offset to match it with the result boxes
-        let topOffset = 318; // initial value
-        topOffset += (1*86); // moves down 86 pixels each time
-        topOffset = `${topOffset}px`
-        deltaBox.style.top = topOffset;
-        document.getElementById(boxDiv.id).append(deltaBox);
+        // add label
+        let index = boxIDs.indexOf(boxID);
+        categoryLabelBox.textContent = categoryNames[index];
+
+        // create category result box
+        categoryResultBox = document.createElement("box");
+        categoryResultBox.classList.add("categoryResultBox");
+        categoryResultBox.id = `${boxID}ResultBox${rowNum}`
+        document.getElementById(categoryBox.id).append(categoryResultBox);
     }
 }
 
@@ -163,53 +170,53 @@ document.getElementById("runnerSubmit").onclick = function(){
                 if(value.name.toLowerCase() === runner.toLowerCase()){ // finds inputted runner
 
                     // compare names
-                    let runnerDeltaBox = document.getElementById(`runnerDeltaBox1`)
-                    let runnerBox = document.getElementById(`runnerResultBox${row}`)
+                    let runnerLabelBox = document.getElementById(`runnerLabelBox${row}`);
+                    let runnerResultBox = document.getElementById(`runnerResultBox${row}`);
                     if(value.name === answer.name){
-                        runnerDeltaBox.textContent = "✅";
-                        runnerBox.style.backgroundColor = 'green';
+                        runnerLabelBox.textContent = runnerLabelBox.textContent + " ✅";
+                        runnerResultBox.style.backgroundColor = 'green';
                     }
                     else{
-                        runnerDeltaBox.textContent = "❌";
-                        runnerBox.style.backgroundColor = 'red';
+                        runnerLabelBox.textContent = runnerLabelBox.textContent + " ❌";
+                        runnerResultBox.style.backgroundColor = 'red';
                     }
 
                     // compare nationality
-                    let nationalityDeltaBox = document.getElementById(`nationalityDeltaBox1`)
+                    let nationalityLabelBox = document.getElementById(`nationalityLabelBox${row}`)
                     let nationalityResultBox = document.getElementById(`nationalityResultBox${row}`);
 
                     // if correct sovereignty, green
                     if(value.country[2].toUpperCase() === answer.country[2].toUpperCase()){
-                        nationalityDeltaBox.textContent = "✅";
+                        nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ✅";
                         nationalityResultBox.style.backgroundColor = 'green';
                     }
                     // if correct continent, yellow
                     else if(value.country[3] === answer.country[3]){
-                        nationalityDeltaBox.textContent = "🌍";
+                        nationalityLabelBox.textContent = nationalityLabelBox.textContent + " 🌍";
                         nationalityResultBox.style.backgroundColor = yellow_background;
                     }
                     // if wrong continent
                     else{
-                        nationalityDeltaBox.textContent = "❌";
+                        nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌";
                         nationalityResultBox.style.backgroundColor = "red";
                     }
 
 
                     // compare consoles
-                    let consoleDeltaBox = document.getElementById(`consoleDeltaBox1`)
-                    let consoleBox = document.getElementById(`consoleResultBox${row}`)
+                    let consoleLabelBox = document.getElementById(`consoleLabelBox${row}`)
+                    let consoleResultBox = document.getElementById(`consoleResultBox${row}`)
                     if(value.console === answer.console){
-                        consoleDeltaBox.textContent = "✅";
-                        consoleBox.style.backgroundColor = 'green';
+                        consoleLabelBox.textContent = consoleLabelBox.textContent + " ✅";
+                        consoleResultBox.style.backgroundColor = 'green';
                     }
                     else{
-                        consoleDeltaBox.textContent = "❌";
-                        consoleBox.style.backgroundColor = 'red';
+                        consoleLabelBox.textContent = consoleLabelBox.textContent + " ❌";
+                        consoleResultBox.style.backgroundColor = 'red';
                     }
 
                     // format pb from seconds to mm:ss and add comparison symbol
                     let formatted_pb = convertSeconds(value.pb);
-                    let pbDeltaBox = document.getElementById(`pbDeltaBox1`)
+                    let pbLabelBox = document.getElementById(`pbLabelBox${row}`)
                     let pbResultBox = document.getElementById(`pbResultBox${row}`);
 
                     // green if correct, yellow if within a minute, red if wrong by a minute or more
@@ -224,7 +231,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                         pbResultBox.style.backgroundColor = yellow_background;
                     }
 
-                    compareValues(value.pb, answer.pb, pbDeltaBox); // add comparison symbol
+                    compareValues(value.pb, answer.pb, pbLabelBox); // add comparison symbol
                     
                     // convert dates to date objects, compare dates and add comparison symbol
                     let currentDate = new Date(value.most_recent_run);
@@ -232,7 +239,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                     // use value.most_recent_run to already have date as YYYY-MM-DD
 
                     // change background colour
-                    let mostRecentDeltaBox = document.getElementById(`mostRecentDeltaBox1`);
+                    let mostRecentLabelBox = document.getElementById(`mostRecentLabelBox${row}`);
                     let mostRecentResultBox = document.getElementById(`mostRecentResultBox${row}`);
 
                     let dateDifference = Math.abs(currentDate - answerDate);
@@ -246,14 +253,14 @@ document.getElementById("runnerSubmit").onclick = function(){
                     else{
                         mostRecentResultBox.style.backgroundColor = yellow_background;
                     }
-                    compareValues(currentDate, answerDate, mostRecentDeltaBox); // update delta
+                    compareValues(currentDate, answerDate, mostRecentLabelBox); // update delta
 
                     // MB AND CE PLACEMENTS
                     // compare mb leaderboard placement and add comparison symbol
                     let currentBest = value.best_mb_placement[0];
                     let answerBest = answer.best_mb_placement;
 
-                    let bestMBDeltaBox = document.getElementById(`bestMBDeltaBox1`);
+                    let bestMBLabelBox = document.getElementById(`bestMBLabelBox${row}`);
                     let bestMBResultBox = document.getElementById(`bestMBResultBox${row}`);
 
                     // change background colour
@@ -267,13 +274,13 @@ document.getElementById("runnerSubmit").onclick = function(){
                     else{
                         bestMBResultBox.style.backgroundColor = yellow_background;
                     }
-                    compareValues(currentBest, answerBest, bestMBDeltaBox); // update delta symbol
+                    compareValues(currentBest, answerBest, bestMBLabelBox); // update delta symbol
 
                     // compare ce leaderboard placement and add comparison symbol
                     currentBest = value.best_ce_placement[0];
                     answerBest = answer.best_ce_placement;
 
-                    let bestCEDeltaBox = document.getElementById(`bestCEDeltaBox1`)
+                    let bestCELabelBox = document.getElementById(`bestCELabelBox${row}`)
                     let bestCEResultBox = document.getElementById(`bestCEResultBox${row}`);
 
                     // change background colour
@@ -288,18 +295,18 @@ document.getElementById("runnerSubmit").onclick = function(){
                         bestCEResultBox.style.backgroundColor = yellow_background;
                     }
 
-                    compareValues(currentBest, answerBest, bestCEDeltaBox); // update delta
+                    compareValues(currentBest, answerBest, bestCELabelBox); // update delta
                     // if runner has no CE pb:
                     // if answer also has no CE pb, display with check
                     // otherwise display with X
                     if(String(currentBest).startsWith("null")){
                         if(String(answerBest).startsWith("null")){
-                            bestCEDeltaBox.textContent = "✅";
+                            bestCELabelBox.textContent = bestCELabelBox.textContent + " ✅";
                             value.best_ce_placement[0] = "No CE PBs";
                             bestCEResultBox.style.backgroundColor = "green";
                         }
                         else{
-                            bestCEDeltaBox.textContent = "❌";
+                            bestCELabelBox.textContent = bestCELabelBox.textContent + " ❌";
                             value.best_ce_placement[0] = "No CE PBs";
                             bestCEResultBox.style.backgroundColor = "red";
                         }
@@ -307,7 +314,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                     // if ONLY the answer doesn't have a CE pb AND the input DOES, always display red
                     else if(String(answerBest).startsWith("null")){
                         if(!String(currentBest).startsWith("null")){
-                            bestCEDeltaBox.textContent = "❌";
+                            bestCELabelBox.textContent = bestCELabelBox.textContent + " ❌"
                             bestCEResultBox.style.backgroundColor = "red";
                         }
                     }
