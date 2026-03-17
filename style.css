@@ -3,12 +3,8 @@ body{
     font-family: Verdana;
 }
 .center{
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-.categoryRowBox{
-    border: 3px solid rgb(255, 255, 255);
 }
 #runnerInput{
     display: flex;
@@ -17,18 +13,23 @@ body{
 #runnerInputBox{
     font-size: 1.2rem;
     border-radius: 5px;
+}
+#runnerInputLabel{
+    display: block;
+    font-size: 1.2rem;
     margin-right: 10px;
+    color: white;
+    font-weight: bold;
 }
 #runnerSubmit{
     font-size: 1.2rem;
     border-radius: 5px;
+    margin-left: 10px;
 }
 #runnerList{
     color: white;
     max-width: 1900px;
 }
-
-
 
 .categoryBox{
     font-size: 1.1rem;
@@ -45,7 +46,7 @@ body{
     font-size: 1.2rem;
     color: white;
     font-weight: bold;
-    border: 3px solid rgb(255, 0, 0);
+    border: 3px solid rgba(255, 255, 255, 100);
     display: grid;
     width: 160px;
     height: 80px;
@@ -58,7 +59,7 @@ body{
     font-size: 1.1rem;
     color: white;
     font-weight: bold;
-    border: 3px solid rgb(0, 89, 255);
+    border: 3px solid rgba(255, 255, 255, 100);
     display: grid;
     width: 160px;
     height: 100px;
@@ -70,7 +71,11 @@ body{
 
 .grid-container{
     display: grid;
-    border: rgba(255, 255, 255, 0);
     grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
     justify-content: center;
+}
+
+.hrclass{
+    border: 5px solid rgb(47, 3, 77);
+    margin-bottom: 25px;
 }

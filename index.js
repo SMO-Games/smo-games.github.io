@@ -20,15 +20,30 @@ function getRunners(){
 
 
 // compares two given values and outputs whether the input is higher, lower or equal to the answer
-function compareValues(input, correct, labelBox){
-    if(input > correct){
+function compareValues(input, correct, labelBox, isPlacement){
+    // for general values
+    if(!isPlacement){
+        if(input > correct){
         labelBox.textContent = labelBox.textContent + " ⬇️"
+        }
+        else if(input < correct){
+            labelBox.textContent = labelBox.textContent + " ⬆️"
+        }
+        else{
+            labelBox.textContent = labelBox.textContent + " ✅"
+        }
     }
-    else if(input < correct){
-        labelBox.textContent = labelBox.textContent + " ⬆️"
-    }
+    // for leaderboard placements
     else{
-        labelBox.textContent = labelBox.textContent + " ✅"
+        if(input > correct){
+        labelBox.textContent = labelBox.textContent + " ⬆️"
+        }
+        else if(input < correct){
+            labelBox.textContent = labelBox.textContent + " ⬇️"
+        }
+        else{
+            labelBox.textContent = labelBox.textContent + " ✅"
+        }
     }
 }
 
@@ -100,28 +115,31 @@ function getAnswer(correct_runner){
 // adds row of user categories
 function addRow(rowNum){
     let rowDiv = document.createElement("div");
-    let rowBox = document.createElement("div");
+
     // list of ids and names for each category
     let boxIDs = ["runner", "nationality", "console",
         "pb", "mostRecent", "bestMB", "bestCE"
     ]
     let categoryNames = ["Runner", "Nationality", "Console",
         "Any% PB", "Most Recent Run", "Best MB Placement", "Best CE Placement"]
-    // set class and id of the whole row
-    rowDiv.classList.add("center", "categoryRowDiv");
-    rowDiv.id = `categoryResults${rowNum}`;
     // set class and id of row box
-    rowBox.classList.add("center", "categoryRowBox", "grid-container");
-    rowBox.id = `categoryResults${rowNum}Box`;
+    rowDiv.classList.add("center", "grid-container");
+    rowDiv.id = `categoryResults${rowNum}Box`;
 
     // if the first added row, add it AFTER the labels
     if(rowNum === 0){
-        rowBox.after(document.getElementById("preRunners"))
+        rowDiv.after(document.getElementById("preRunners"))
     }
     // otherwise, add it BEFORE the last row
     else{
-        document.body.insertBefore(rowBox, document.getElementById(`categoryResults${rowNum-1}Box`));
+        document.body.insertBefore(rowDiv, document.getElementById(`categoryResults${rowNum-1}Box`));
+        
+        hrElement = document.createElement("hr");
+        hrElement.classList.add("hrclass");
+        document.body.insertBefore(hrElement, document.getElementById(`categoryResults${rowNum-1}Box`));
+
     }
+    
     // put row box into div
     // document.getElementById(`categoryResults${rowNum}`).append(rowBox);
     // for every required box, create the element and set its values
@@ -131,7 +149,7 @@ function addRow(rowNum){
         categoryBox = document.createElement("box");
         categoryBox.classList.add("categoryBox");
         categoryBox.id = `${boxID}Box${rowNum}`
-        document.getElementById(rowBox.id).append(categoryBox);
+        document.getElementById(rowDiv.id).append(categoryBox);
 
         // create category label box
         categoryLabelBox = document.createElement("box");
@@ -160,7 +178,7 @@ document.getElementById("runnerSubmit").onclick = function(){
     row++;
     addRow(row);
 
-    let yellow_background = "rgb(208, 221, 32)"; // reusable yellow colour
+    let yellow_background = "rgb(255, 191, 0)"; // reusable yellow colour
 
     // fetches all runner data
     fetch(runnerData)
@@ -181,24 +199,47 @@ document.getElementById("runnerSubmit").onclick = function(){
                         runnerResultBox.style.backgroundColor = 'red';
                     }
 
+
                     // compare nationality
                     let nationalityLabelBox = document.getElementById(`nationalityLabelBox${row}`)
                     let nationalityResultBox = document.getElementById(`nationalityResultBox${row}`);
+                    let formatted_country = `${value.country[1]} [${value.country[2]}]`;
 
-                    // if correct sovereignty, green
-                    if(value.country[2].toUpperCase() === answer.country[2].toUpperCase()){
-                        nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ✅";
-                        nationalityResultBox.style.backgroundColor = 'green';
+                    // if inputted user has no flag on src
+                    if(value.country[0] === null){
+                        formatted_country = `No Country on SRC`;
+
+                        if(answer.country[0] === null){ // if answer also doesn't, make green
+                            nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ✅";
+                            nationalityResultBox.style.backgroundColor = 'green';
+                        }
+                        else{ // if answer does have a country, make red
+                            nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌";
+                            nationalityResultBox.style.backgroundColor = 'red';
+                        }
                     }
-                    // if correct continent, yellow
-                    else if(value.country[3] === answer.country[3]){
-                        nationalityLabelBox.textContent = nationalityLabelBox.textContent + " 🌍";
-                        nationalityResultBox.style.backgroundColor = yellow_background;
+                    // if answer has no flag on src BUT inputted user does
+                    else if(answer.country[0] === null){
+                        nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌ [Not on SRC]";
+                        nationalityResultBox.style.backgroundColor = 'red';
                     }
-                    // if wrong continent
+                    // if both have countries
                     else{
-                        nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌";
-                        nationalityResultBox.style.backgroundColor = "red";
+                            // if correct sovereignty, green
+                        if(value.country[2].toUpperCase() === answer.country[2].toUpperCase()){
+                            nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ✅";
+                            nationalityResultBox.style.backgroundColor = 'green';
+                        }
+                        // if correct continent, yellow
+                        else if(value.country[3] === answer.country[3]){
+                            nationalityLabelBox.textContent = nationalityLabelBox.textContent + " 🌍";
+                            nationalityResultBox.style.backgroundColor = yellow_background;
+                        }
+                        // if wrong continent
+                        else{
+                            nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌";
+                            nationalityResultBox.style.backgroundColor = "red";
+                        }
                     }
 
 
@@ -214,6 +255,8 @@ document.getElementById("runnerSubmit").onclick = function(){
                         consoleResultBox.style.backgroundColor = 'red';
                     }
 
+
+                    // compare pbs
                     // format pb from seconds to mm:ss and add comparison symbol
                     let formatted_pb = convertSeconds(value.pb);
                     let pbLabelBox = document.getElementById(`pbLabelBox${row}`)
@@ -231,8 +274,10 @@ document.getElementById("runnerSubmit").onclick = function(){
                         pbResultBox.style.backgroundColor = yellow_background;
                     }
 
-                    compareValues(value.pb, answer.pb, pbLabelBox); // add comparison symbol
+                    compareValues(value.pb, answer.pb, pbLabelBox, false); // add comparison symbol
                     
+
+                    // compare most recent
                     // convert dates to date objects, compare dates and add comparison symbol
                     let currentDate = new Date(value.most_recent_run);
                     let answerDate = new Date(answer.most_recent_run);
@@ -253,9 +298,10 @@ document.getElementById("runnerSubmit").onclick = function(){
                     else{
                         mostRecentResultBox.style.backgroundColor = yellow_background;
                     }
-                    compareValues(currentDate, answerDate, mostRecentLabelBox); // update delta
+                    compareValues(currentDate, answerDate, mostRecentLabelBox, false); // update delta
 
-                    // MB AND CE PLACEMENTS
+
+                    // compare MB and CE placements
                     // compare mb leaderboard placement and add comparison symbol
                     let currentBest = value.best_mb_placement[0];
                     let answerBest = answer.best_mb_placement;
@@ -274,7 +320,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                     else{
                         bestMBResultBox.style.backgroundColor = yellow_background;
                     }
-                    compareValues(currentBest, answerBest, bestMBLabelBox); // update delta symbol
+                    compareValues(currentBest, answerBest, bestMBLabelBox, true); // update delta symbol
 
                     // compare ce leaderboard placement and add comparison symbol
                     currentBest = value.best_ce_placement[0];
@@ -295,18 +341,17 @@ document.getElementById("runnerSubmit").onclick = function(){
                         bestCEResultBox.style.backgroundColor = yellow_background;
                     }
 
-                    compareValues(currentBest, answerBest, bestCELabelBox); // update delta
                     // if runner has no CE pb:
                     // if answer also has no CE pb, display with check
                     // otherwise display with X
                     if(String(currentBest).startsWith("null")){
                         if(String(answerBest).startsWith("null")){
-                            bestCELabelBox.textContent = bestCELabelBox.textContent + " ✅";
+                            bestCELabelBox.textContent = "Best CE Placement ✅";
                             value.best_ce_placement[0] = "No CE PBs";
                             bestCEResultBox.style.backgroundColor = "green";
                         }
                         else{
-                            bestCELabelBox.textContent = bestCELabelBox.textContent + " ❌";
+                            bestCELabelBox.textContent = "Best CE Placement ❌";
                             value.best_ce_placement[0] = "No CE PBs";
                             bestCEResultBox.style.backgroundColor = "red";
                         }
@@ -318,10 +363,15 @@ document.getElementById("runnerSubmit").onclick = function(){
                             bestCEResultBox.style.backgroundColor = "red";
                         }
                     }
+                    // ONLY update delta if both have a pb
+                    else{
+                        compareValues(currentBest, answerBest, bestCELabelBox, true); // update delta
+                    }
                     
+
                     // adds values to all the boxes
                     document.getElementById(`runnerResultBox${row}`).textContent = value.name;
-                    document.getElementById(`nationalityResultBox${row}`).textContent = `${value.country[1]} [${value.country[2]}]`;
+                    document.getElementById(`nationalityResultBox${row}`).textContent = formatted_country;
                     document.getElementById(`consoleResultBox${row}`).textContent = value.console;
                     document.getElementById(`pbResultBox${row}`).textContent = formatted_pb;
                     document.getElementById(`mostRecentResultBox${row}`).textContent = value.most_recent_run;
