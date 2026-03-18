@@ -24,28 +24,35 @@ function compareValues(input, correct, labelBox, isPlacement){
     // for general values
     if(!isPlacement){
         if(input > correct){
-        labelBox.textContent = labelBox.textContent + " ⬇️"
+            labelBox.textContent = labelBox.textContent + " ⬇️"
+            return "⬇️"
         }
         else if(input < correct){
             labelBox.textContent = labelBox.textContent + " ⬆️"
+            return "⬆️"
         }
         else{
             labelBox.textContent = labelBox.textContent + " ✅"
+            return "🟩"
         }
     }
     // for leaderboard placements
     else{
         if(input > correct){
-        labelBox.textContent = labelBox.textContent + " ⬆️"
+            labelBox.textContent = labelBox.textContent + " ⬆️"
+            return "⬆️"
         }
         else if(input < correct){
             labelBox.textContent = labelBox.textContent + " ⬇️"
+            return "⬇️"
         }
         else{
             labelBox.textContent = labelBox.textContent + " ✅"
+            return "🟩"
         }
     }
 }
+
 
 // shamefully stolen code from https://gomakethings.com/getting-emoji-from-country-codes-with-vanilla-javascript/#:~:text=The%20flag%20emoji%20is%20a,returns%20them%20as%20a%20string.
 function getFlagEmoji(countryCode) {
@@ -134,10 +141,11 @@ function addRow(rowNum){
     else{
         document.body.insertBefore(rowDiv, document.getElementById(`categoryResults${rowNum-1}Box`));
         
+        // add separating line between rows
         hrElement = document.createElement("hr");
         hrElement.classList.add("hrclass");
-        document.body.insertBefore(hrElement, document.getElementById(`categoryResults${rowNum-1}Box`));
 
+        document.body.insertBefore(hrElement, document.getElementById(`categoryResults${rowNum-1}Box`));
     }
     
     // put row box into div
@@ -146,13 +154,13 @@ function addRow(rowNum){
     for(let boxID of boxIDs){
 
         // create category box
-        categoryBox = document.createElement("box");
+        let categoryBox = document.createElement("box");
         categoryBox.classList.add("categoryBox");
         categoryBox.id = `${boxID}Box${rowNum}`
         document.getElementById(rowDiv.id).append(categoryBox);
 
         // create category label box
-        categoryLabelBox = document.createElement("box");
+        let categoryLabelBox = document.createElement("box");
         categoryLabelBox.classList.add("categoryLabelBox");
         categoryLabelBox.id = `${boxID}LabelBox${rowNum}`
         document.getElementById(categoryBox.id).append(categoryLabelBox);
@@ -162,21 +170,48 @@ function addRow(rowNum){
         categoryLabelBox.textContent = categoryNames[index];
 
         // create category result box
-        categoryResultBox = document.createElement("box");
+        let categoryResultBox = document.createElement("box");
         categoryResultBox.classList.add("categoryResultBox");
         categoryResultBox.id = `${boxID}ResultBox${rowNum}`
-        document.getElementById(categoryBox.id).append(categoryResultBox);
+
+        document.getElementById(categoryBox.id).append(categoryResultBox); // add result into main
     }
 }
 
 
+let row = 0; // current row
+let inputs = []; // all previous inputs
+let guesses = 0; // current number of guesses already submitted
+let allowedGuesses = 6;
+// for validating runner input
+let isValidRunner = false;
+let totalRunners = 0;
+// for handling pop up
+let dialogue = document.getElementById("gameOverDialogue");
+let dialogueWrapper = document.querySelector(".wrapper");
+// for handling copying results
+let copyBtn = document.getElementById("copyResultsBtn");
+let gameResults = "";
+
+
 // fills rows per submitted user
-let row = 0;
 document.getElementById("runnerSubmit").onclick = function(){
     let runner = document.getElementById("runnerInputBox").value; // gets value from input
     document.getElementById("runnerInputBox").value = ""; // empty input box
-    row++;
-    addRow(row);
+
+    // ignore input if already guessed
+    let errorMessage = document.getElementById("errorMessage");
+    if(inputs.includes(runner)){
+        errorMessage.textContent = "Runner already guessed";
+        return
+    }
+    else{
+        errorMessage.textContent = "";
+    }
+    inputs.push(runner);
+
+    // increase guesses, end if max guesses
+
 
     let yellow_background = "rgb(255, 191, 0)"; // reusable yellow colour
 
@@ -185,7 +220,32 @@ document.getElementById("runnerSubmit").onclick = function(){
         .then(response => response.json())
         .then(values => {
             for(let value of values){
+
+                totalRunners++; // for checking if valid guess
+
                 if(value.name.toLowerCase() === runner.toLowerCase()){ // finds inputted runner
+
+                    guesses++;
+
+                    let guessCounter = document.getElementById("guessCounter");
+                    if(guesses === allowedGuesses){
+                        guessCounter.textContent = `Guesses: ${guesses}/${allowedGuesses}`;
+                        errorMessage.textContent = "Max guesses";
+
+                        document.getElementById("runnerInputBox").disabled = true;
+                        dialogue = document.getElementById("gameOverDialogue");
+                        dialogue.showModal();
+
+                        //return
+                    }
+                    else{
+                        guessCounter.textContent = `Guesses: ${guesses}/${allowedGuesses}`;
+                    }
+
+                    // increase row count and add the row
+                    row++;
+                    addRow(row);
+                    isValidRunner = true;
 
                     // compare names
                     let runnerLabelBox = document.getElementById(`runnerLabelBox${row}`);
@@ -193,6 +253,9 @@ document.getElementById("runnerSubmit").onclick = function(){
                     if(value.name === answer.name){
                         runnerLabelBox.textContent = runnerLabelBox.textContent + " ✅";
                         runnerResultBox.style.backgroundColor = 'green';
+                        document.getElementById("runnerInputBox").disabled = true;
+                        dialogue = document.getElementById("gameOverDialogue");
+                        dialogue.showModal();
                     }
                     else{
                         runnerLabelBox.textContent = runnerLabelBox.textContent + " ❌";
@@ -211,16 +274,19 @@ document.getElementById("runnerSubmit").onclick = function(){
 
                         if(answer.country[0] === null){ // if answer also doesn't, make green
                             nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ✅";
+                            gameResults += "🟩"
                             nationalityResultBox.style.backgroundColor = 'green';
                         }
                         else{ // if answer does have a country, make red
                             nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌";
+                            gameResults += "🟥"
                             nationalityResultBox.style.backgroundColor = 'red';
                         }
                     }
                     // if answer has no flag on src BUT inputted user does
                     else if(answer.country[0] === null){
                         nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌ [Not on SRC]";
+                        gameResults += "🟥"
                         nationalityResultBox.style.backgroundColor = 'red';
                     }
                     // if both have countries
@@ -228,16 +294,19 @@ document.getElementById("runnerSubmit").onclick = function(){
                             // if correct sovereignty, green
                         if(value.country[2].toUpperCase() === answer.country[2].toUpperCase()){
                             nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ✅";
+                            gameResults += "🟩"
                             nationalityResultBox.style.backgroundColor = 'green';
                         }
                         // if correct continent, yellow
                         else if(value.country[3] === answer.country[3]){
                             nationalityLabelBox.textContent = nationalityLabelBox.textContent + " 🌍";
+                            gameResults += "🟨"
                             nationalityResultBox.style.backgroundColor = yellow_background;
                         }
                         // if wrong continent
                         else{
                             nationalityLabelBox.textContent = nationalityLabelBox.textContent + " ❌";
+                            gameResults += "🟥"
                             nationalityResultBox.style.backgroundColor = "red";
                         }
                     }
@@ -248,10 +317,12 @@ document.getElementById("runnerSubmit").onclick = function(){
                     let consoleResultBox = document.getElementById(`consoleResultBox${row}`)
                     if(value.console === answer.console){
                         consoleLabelBox.textContent = consoleLabelBox.textContent + " ✅";
+                        gameResults += "🟩"
                         consoleResultBox.style.backgroundColor = 'green';
                     }
                     else{
                         consoleLabelBox.textContent = consoleLabelBox.textContent + " ❌";
+                        gameResults += "🟥"
                         consoleResultBox.style.backgroundColor = 'red';
                     }
 
@@ -274,7 +345,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                         pbResultBox.style.backgroundColor = yellow_background;
                     }
 
-                    compareValues(value.pb, answer.pb, pbLabelBox, false); // add comparison symbol
+                    gameResults += compareValues(value.pb, answer.pb, pbLabelBox, false); // add comparison symbol
                     
 
                     // compare most recent
@@ -298,7 +369,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                     else{
                         mostRecentResultBox.style.backgroundColor = yellow_background;
                     }
-                    compareValues(currentDate, answerDate, mostRecentLabelBox, false); // update delta
+                    gameResults += compareValues(currentDate, answerDate, mostRecentLabelBox, false); // update delta
 
 
                     // compare MB and CE placements
@@ -320,7 +391,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                     else{
                         bestMBResultBox.style.backgroundColor = yellow_background;
                     }
-                    compareValues(currentBest, answerBest, bestMBLabelBox, true); // update delta symbol
+                    gameResults += compareValues(currentBest, answerBest, bestMBLabelBox, true); // update delta symbol
 
                     // compare ce leaderboard placement and add comparison symbol
                     currentBest = value.best_ce_placement[0];
@@ -347,11 +418,13 @@ document.getElementById("runnerSubmit").onclick = function(){
                     if(String(currentBest).startsWith("null")){
                         if(String(answerBest).startsWith("null")){
                             bestCELabelBox.textContent = "Best CE Placement ✅";
+                            gameResults += "🟩"
                             value.best_ce_placement[0] = "No CE PBs";
                             bestCEResultBox.style.backgroundColor = "green";
                         }
                         else{
                             bestCELabelBox.textContent = "Best CE Placement ❌";
+                            gameResults += "🟥"
                             value.best_ce_placement[0] = "No CE PBs";
                             bestCEResultBox.style.backgroundColor = "red";
                         }
@@ -360,24 +433,39 @@ document.getElementById("runnerSubmit").onclick = function(){
                     else if(String(answerBest).startsWith("null")){
                         if(!String(currentBest).startsWith("null")){
                             bestCELabelBox.textContent = bestCELabelBox.textContent + " ❌"
+                            gameResults += "🟥"
                             bestCEResultBox.style.backgroundColor = "red";
                         }
                     }
                     // ONLY update delta if both have a pb
                     else{
-                        compareValues(currentBest, answerBest, bestCELabelBox, true); // update delta
+                        gameResults += compareValues(currentBest, answerBest, bestCELabelBox, true); // update delta
                     }
                     
 
                     // adds values to all the boxes
-                    document.getElementById(`runnerResultBox${row}`).textContent = value.name;
+                    runnerResultBox.textContent = value.name;
                     document.getElementById(`nationalityResultBox${row}`).textContent = formatted_country;
                     document.getElementById(`consoleResultBox${row}`).textContent = value.console;
                     document.getElementById(`pbResultBox${row}`).textContent = formatted_pb;
                     document.getElementById(`mostRecentResultBox${row}`).textContent = value.most_recent_run;
                     document.getElementById(`bestMBResultBox${row}`).textContent = value.best_mb_placement[0];
                     document.getElementById(`bestCEResultBox${row}`).textContent = value.best_ce_placement[0];
+
+
+                    gameResults += "\n"
+
+                    break
                 }
+
+                // prevent guess if not a valid runner
+                else if(totalRunners === values.length){
+                    console.log(isValidRunner);
+                    if(!isValidRunner){
+                        errorMessage.textContent = "Not a valid runner";
+                        guesses--; // discount guess
+                    }  
+                }       
             }
         })
         .catch(error => console.error(error));
@@ -403,3 +491,21 @@ getRunners().then(runners => {
     let answer = runners[Math.floor(Math.random()*runners.length)];
     getAnswer(answer);
 });
+
+
+function exitGameOverDialogue(){
+    dialogue.close();
+};
+
+dialogue.addEventListener("click", (e) => {
+    if(!dialogueWrapper.contains(e.target)){
+        dialogue.close();
+    }
+});
+
+function copyResults(){
+    let formattedResults = `Guess the SMO Runner [${guesses}/${allowedGuesses}]\n${gameResults}TESTING ONLY - Answer: ${answer.name}`;
+    navigator.clipboard.writeText(formattedResults).then(() => {
+        console.log("Text copied")
+    })
+};

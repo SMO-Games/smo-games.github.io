@@ -1,34 +1,18 @@
 body{
     background-color: rgb(56, 64, 71);
-    font-family: Verdana;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
 .center{
     justify-content: center;
     align-items: center;
 }
-#runnerInput{
-    display: flex;
-    margin-top: 150px;
+
+dialog{
+    padding: 0;
 }
-#runnerInputBox{
-    font-size: 1.2rem;
-    border-radius: 5px;
-}
-#runnerInputLabel{
-    display: block;
-    font-size: 1.2rem;
-    margin-right: 10px;
-    color: white;
-    font-weight: bold;
-}
-#runnerSubmit{
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-#runnerList{
-    color: white;
-    max-width: 1900px;
+dialog .wrapper{
+    padding: 16px;
 }
 
 .categoryBox{
@@ -57,7 +41,7 @@ body{
 }
 .categoryResultBox{
     font-size: 1.1rem;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     border: 3px solid rgba(255, 255, 255, 100);
     display: grid;
@@ -68,14 +52,44 @@ body{
     align-items: center;
     box-sizing: border-box;
 }
-
+.infoParagraphs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
     justify-content: center;
 }
-
 .hrclass{
     border: 5px solid rgb(47, 3, 77);
+    min-width: 99.9%;
     margin-bottom: 25px;
+}
+
+#runnerInput{
+    display: flex;
+    margin-top: 40px;
+}
+#runnerInputBox{
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+#infoBreak{
+    display: block;
+}
+#runnerSubmit{
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#runnerList{
+    color: white;
+    max-width: 100%;
+    margin-bottom: 50px;
 }
