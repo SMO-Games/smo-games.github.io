@@ -192,7 +192,6 @@ let guesses = 0; // current number of guesses already submitted
 let allowedGuesses = 6;
 // for validating runner input
 let isValidRunner = false;
-let totalRunners = 0;
 // for handling pop up
 let dialogue = document.getElementById("gameOverDialogue");
 let dialogueWrapper = document.querySelector(".wrapper");
@@ -232,7 +231,13 @@ document.getElementById("runnerSubmit").onclick = function(){
         .then(values => {
             for(let value of values){
 
-                totalRunners++; // for checking if valid guess
+                // checks if entered runner exists
+                isValidRunner = values.some((obj) => obj.name === runner);
+                if(!isValidRunner){
+                    errorMessage.textContent = "Not a valid runner";
+                    break
+                }  
+
 
                 if(value.name.toLowerCase() === runner.toLowerCase()){ // finds inputted runner
 
@@ -466,16 +471,7 @@ document.getElementById("runnerSubmit").onclick = function(){
                     gameResults += "\n"
 
                     break
-                }
-
-                // prevent guess if not a valid runner
-                else if(totalRunners === values.length){
-                    console.log(isValidRunner);
-                    if(!isValidRunner){
-                        errorMessage.textContent = "Not a valid runner";
-                        guesses--; // discount guess
-                    }  
-                }       
+                }                
             }
         })
         .catch(error => console.error(error));
@@ -519,9 +515,7 @@ dialogue.addEventListener("click", (e) => {
 // copy results to clipboard when button clicked
 function copyResults(){
     let formattedResults = `Guess the SMO Runner [${guesses}/${allowedGuesses}]\n${gameResults}TESTING ONLY - Answer: ${answer.name}`;
-    navigator.clipboard.writeText(formattedResults).then(() => {
-        console.log("Text copied")
-    })
+    navigator.clipboard.writeText(formattedResults)
 };
 
 

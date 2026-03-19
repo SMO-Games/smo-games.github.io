@@ -2,7 +2,6 @@ body{
     background-color: rgb(56, 64, 71);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: anywhere;
-    background-image: url(thebaldler.png);
     background-position: center;
     background-attachment: fixed;
 }
