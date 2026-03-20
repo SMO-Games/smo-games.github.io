@@ -20,6 +20,12 @@ mincapsany_id = "xd1gxz7d"
 # opens dataframe for sovereignty of nation
 sovereignty_df = pd.read_csv("countries.csv")
 
+# runners not to be included
+runner_exclusions = [{
+    "name": "MisterVAMOS_",
+    "id": "8w3rvgvj"
+}]
+
 
 # convert dates from format provided by src (YYYY-MM-DD)
 def convertDate(date_string):
@@ -203,6 +209,15 @@ def getCategoryRunners(base_url, game_id, category_id, runners_limit, variables)
             run = run["run"] # get into the dictionary of the run
 
             runner_id = run["players"][0]["id"]
+
+            # skip runner if excluded
+            isExcluded = False
+            for excluded_runner in runner_exclusions:
+                if runner_id == excluded_runner["id"]:
+                    isExcluded = True
+            if isExcluded:
+                continue
+
             pb = run["times"]["primary_t"]
             pb = math.floor(pb)
 
@@ -350,4 +365,4 @@ def writeToJSON(runners_limit):
         json.dump(runners, final, indent=2, default=lambda x: list(x) if isinstance(x, tuple) else str(x))
 
 
-writeToJSON(200)
+writeToJSON(150)
