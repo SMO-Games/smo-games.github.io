@@ -1,5 +1,5 @@
 # You can name this whatever you want
-name: update
+name: Update Runner Data
 
 # You will get an error on the automatic updates committing
 # if you do not have this line
@@ -27,7 +27,7 @@ jobs:
         python-version: '3.10'
     - name: Install all necessary packages
       run: pip install datetime requests pandas
-    - name: Scraping today's data
+    - name: Fetching current runner data
       run: python3 fetch-src-data.py
     - name: Commit and push any changes
       run: |-
@@ -37,4 +37,3 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
-
