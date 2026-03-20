@@ -579,14 +579,14 @@ function copyResults(resultsType){
                             \nTESTING ONLY - Answer: ${answer.name}`;
     navigator.clipboard.writeText(formattedResults);
     confirmCopied.textContent = "Results copied!";
-    setTimeout(() => {confirmCopied.textContent = ""}, 2000)
+    setTimeout(() => {confirmCopied.textContent = ""}, 2000) // remove results copied text after 2 seconds
 };
 // twitch chat results
 function copyResultsTwitch(){
     formattedResults = `Guess the SMO Runner [${guesses}/${allowedGuesses}] --- ${gameResults.replace(/[\r\n]+/gm, " | ")}${gameURL.replace(".", " ").replace(".", " ")}`// replace new lines with |, avoid link detection 
     navigator.clipboard.writeText(formattedResults);
     confirmCopied.textContent = "Twitch results copied!";
-    setTimeout(() => {confirmCopied.textContent = ""}, 2000)
+    setTimeout(() => {confirmCopied.textContent = ""}, 2000) // remove results copied text after 2 seconds
 }
 
 

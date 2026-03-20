@@ -130,7 +130,8 @@ button {
     border-radius: 20px;
     background-color: rgb(69, 163, 69);
     color: rgb(255, 255, 255);
-    width: 15%;
+    overflow-wrap: normal;
+    width: fit-content;
     cursor: pointer;
 }
 #showResultsBtn:hover{
@@ -149,20 +150,6 @@ button {
 #exitDialogue:hover{
     color: rgb(206, 206, 206);
 }
-
-.categoryTooltip{
-    font-weight: bold;
-    font-size: 1.2rem;
-    position: absolute;
-
-    bottom: 170px;
-    left: 120px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.534);
-    border-radius: 50%;
-    border-style: none;
-}
-
 #copyResultsBtn{
     font-weight: bold;
     font-size: 2rem;
@@ -193,6 +180,19 @@ button {
     font-style: italic;
 }
 
+
+.categoryTooltip{
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+
+    bottom: 170px;
+    left: 120px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 50%;
+    border-style: none;
+}
 [data-tooltip]::after{
     position: absolute;
     width: 200px;
