@@ -8,7 +8,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("background1.png");
-    animation: changeBg 480s infinite forwards;
+    animation: changeBg 600s infinite forwards;
 }
 
 .loadImages{
