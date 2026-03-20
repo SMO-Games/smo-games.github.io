@@ -1,9 +1,10 @@
 body{
     background-color: rgb(56, 64, 71);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: anywhere;
     background-position: center;
     background-attachment: fixed;
+    margin: 0px;
 }
 .center{
     justify-content: center;
@@ -11,6 +12,12 @@ body{
 }
 
 dialog .wrapper{
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+dialog .howToPlayWrapper{
     padding: 16px;
     justify-content: center;
     align-items: center;
@@ -78,16 +85,49 @@ button {
 
 .hrclass{
     border: 5px solid rgb(47, 3, 77);
-    min-width: 99.9%;
+    min-width: 99%;
     margin-bottom: 50px;
     margin-top: 25px;
 }
 .gameResultsLogo{
     width: 16rem;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 42.9%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.navbar button{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 0, 158);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-right: 5px;
+    padding: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar button:hover{
+    background-color: rgb(158, 0, 134);
+}
+.navbar button:active{
+    background-color: rgb(122, 0, 104);
+}
+
 
 .animatedBoxes{
     animation: showBoxes 150ms ease;
@@ -114,11 +154,16 @@ button {
     font-size: 1.5rem;
     width: min(290px, 50%);
     border-radius: 10px;
+    border: 3px solid black;
+}
+#runnerInputBox:disabled{
+    cursor: not-allowed;
 }
 
 #runnerSubmit{
     font-size: 1.5rem;
     border-radius: 10px;
+    border: 3px solid black;
     margin-left: 10px;
     color: black;
     overflow-wrap: normal;
@@ -131,7 +176,8 @@ button {
     background-color: rgb(184, 184, 184);
 }
 #runnerSubmit:disabled{
-    background-color: grey
+    background-color: grey;
+    cursor: not-allowed;
 }
 
 #resultText{
@@ -147,9 +193,35 @@ button {
 }
 
 
+
+#howToPlayDialogue{
+    padding: 0;
+    background-color: rgb(47, 3, 77);
+    color: white;
+}
+#howToPlayDialogue[open]{
+    animation: slide-up 300ms forwards;
+}
+#howToPlayDialogue[open]::backdrop{
+    animation: fade-in 300ms forwards;
+}
+#howToPlayDialogue h1{
+    font-size: 2.5rem;
+}
+#howToPlayDialogue h2{
+    color: rgb(255, 255, 0);
+}
+#howToPlayDialogue h3{
+    color: rgb(218, 218, 0);
+}
+#howToPlayDialogue p{
+    font-size: 1.1rem;
+}
+
+
 #gameOverDialogue{
     padding: 0;
-    background-color: rgb(82, 6, 153);
+    background-color: rgb(47, 3, 77);
     color: white;
 }
 #gameOverDialogue[open]{
@@ -181,9 +253,10 @@ button {
 #showResultsBtn{
     display: none;
     margin-top: 50px;
+    padding: 8px;
     font-size: 2rem;
     border-style: none;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: rgb(69, 163, 69);
     color: rgb(255, 255, 255);
     overflow-wrap: normal;

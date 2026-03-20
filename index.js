@@ -8,10 +8,13 @@ const runnerInputBox = document.getElementById("runnerInputBox");
 const runnerSubmitBtn = document.getElementById("runnerSubmit");
 // for validating runner input
 let isValidRunner = false;
-// for handling pop up
-const dialogue = document.getElementById("gameOverDialogue");
-const dialogueWrapper = document.querySelector(".wrapper");
+// for handling game over popup
+const gameOverDialogue = document.getElementById("gameOverDialogue");
+const gameOverWrapper = document.querySelector(".wrapper");
 const showResultsBtn = document.getElementById("showResultsBtn")
+// for handling how to play dialogue
+const howToPlayDialogue = document.getElementById("howToPlayDialogue");
+const howToPlayWrapper = document.querySelector(".howToPlayWrapper");
 // for changing pop up text
 const resultText = document.getElementById("resultText");
 const runnerNameText = document.getElementById("runnerNameText");
@@ -255,7 +258,7 @@ function endGame(){
     runnerInputBox.disabled = true;
     runnerSubmitBtn.disabled = true;
     // open dialogue
-    dialogue.showModal();
+    gameOverDialogue.showModal();
     showResultsBtn.style.display = "inline-block"; // reveal show results button
 }
 
@@ -593,18 +596,34 @@ getRunners().then(runners => {
 });
 
 
-function exitGameOverDialogue(){
-    dialogue.close();
-};
+// open / close game over dialogue
 function openGameOverDialogue(){
-    dialogue.showModal();
+    gameOverDialogue.showModal();
+}
+function exitGameOverDialogue(){
+    gameOverDialogue.close();
+};
+
+
+// open / close how to play dialogue
+function openHowToPlayDialogue(){
+    howToPlayDialogue.showModal();
+}
+function exitHowToPlayDialogue(){
+    howToPlayDialogue.close();
 }
 
 
+
 // lets you close the dialogue by clicking anywhere outside of it
-dialogue.addEventListener("click", (e) => {
-    if(!dialogueWrapper.contains(e.target)){
-        dialogue.close();
+gameOverDialogue.addEventListener("click", (e) => {
+    if(!gameOverWrapper.contains(e.target)){
+        gameOverDialogue.close();
+    }
+});
+howToPlayDialogue.addEventListener("click", (e) => {
+    if(!howToPlayWrapper.contains(e.target)){
+        howToPlayDialogue.close();
     }
 });
 
@@ -636,7 +655,7 @@ function copyResultsTwitch(){
 }
 
 
-// add all runners to datalist
+// add all runners to datalist for dropdown
 getRunners().then(runners => {
     let list = document.getElementById("runners");
 

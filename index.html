@@ -10,10 +10,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <div class="center">
         <img src="guessthesmorunner.png" alt="Guess the SMO Runner Logo" class="gameResultsLogo">
     </div>
-    
+
+    <nav class="navbar">
+        <ul class="center">
+            <button id="howToPlayBtn" onclick=openHowToPlayDialogue()>How to Play</button>
+            <button id="aboutBtn">About</button>
+        </ul>
+    </nav>
+
+    <dialog id="howToPlayDialogue">
+        <div class="howToPlayWrapper">
+            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitHowToPlayDialogue()><i class="fa-solid fa-x"></i></button>
+            <h1>How to Play</h1>
+            <h2>Guessing</h2>
+            <p>Guess any runner name to begin.</p>
+            <p>You will be shown a set of <b>6 statistics</b> for the runner you guessed,<br> and how they compare to the correct runner.</p>
+            <p>You have <b>6 total guesses</b> to use the information provided<br>to figure out who the correct runner is.<br></p>
+            <p><b>Good luck!</b></p>
+            <br>
+            <h2>Extra Info</h2>
+            <h3>Who is included?</h3>
+            <p>Currently, the Top 100 Runners in Any% 1P are all included.</p>
+            <h3>How often is the data updated?</h3>
+            <p>Every six hours.</p>
+            <h3>How often does the game reset?</h3>
+            <p>Once per day.</p>
+        </div>
+    </dialog>
 
     <dialog id="gameOverDialogue">
         <div class="wrapper">
