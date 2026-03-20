@@ -32,7 +32,7 @@ const runnerData = "runnerData.json";
 const gameURL = "smo-games.github.io";
 // range to be within to turn yellow
 const mostRecentRange = 60;
-const bestPlacementRange = 15;
+const bestPlacementRange = 10;
 const pbRange = 60;
 // for handling animation of results
 const animationDelay = 150;
