@@ -207,7 +207,7 @@ function addRow(rowNum){
                             "The runner's Any% 1P PB.\n\nTurns yellow if within 1 minute.\n⬆️ = Slower\n⬇️ = Faster",
                             `The date of the runner's most recently submitted run on either official SMO leaderboard.\n\nTurns yellow if within ${mostRecentRange} days.\n⬆️ = More recent\n⬇️ = Less recent`,
                             `The runner's current best Main Leaderboard placement in any category.\n\nTurns yellow if within ${bestPlacementRange}.\n⬆️ = Better placement\n⬇️ = Worse placement`,
-                            `The runner's current best CE Leaderboard placement in any category.\n\nTurns yellow if within ${bestPlacementRange}.\n⬆️ = Better placement\n⬇️ = Worse placement`
+                            `The runner's current best CE Leaderboard placement in any category.\n\nTurns yellow if within ${bestPlacementRange}.\n⬆️ = Better placement\n⬇️ = Worse placement\n❌ = No CE PBs`
     ]
     // set class and id of row box
     rowDiv.classList.add("center", "grid-container");
