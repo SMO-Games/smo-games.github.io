@@ -40,7 +40,7 @@ const pbRange = 60;
 const animationDelay = 150;
 // for date shenanigans
 const date = new Date();
-dateString = `${date.getDate()} ${date.getMonth()} ${date.getFullYear()} | UTC: ${date.getUTCDate()} ${date.getUTCMonth()} ${date.getUTCFullYear()}`
+dateString = `Local: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} | UTC: ${date.getUTCDate()}/${date.getUTCMonth()}/${date.getUTCFullYear()} ||| Local: ${date.getTime()} | UTC: ${date.getTimezoneOffset()}`
 document.getElementById("timeTest").textContent = dateString;
 
 
