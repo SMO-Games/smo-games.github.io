@@ -37,7 +37,3 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
-    - name: Deploy to page
-      uses: smo-games.github.io/github-pages-deploy-action@v4
-      with:
-        folder: build
