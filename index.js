@@ -12,13 +12,16 @@ let isValidRunner = false;
 const gameOverDialogue = document.getElementById("gameOverDialogue");
 const gameOverWrapper = document.querySelector(".wrapper");
 const showResultsBtn = document.getElementById("showResultsBtn")
-// for handling how to play dialogue
-const howToPlayDialogue = document.getElementById("howToPlayDialogue");
-const howToPlayWrapper = document.querySelector(".howToPlayWrapper");
-// for changing pop up text
+// for changing game over dialogue text
 const resultText = document.getElementById("resultText");
 const runnerNameText = document.getElementById("runnerNameText");
 const runnerInfoText = document.getElementById("runnerInfoText");
+// for handling how to play dialogue
+const howToPlayDialogue = document.getElementById("howToPlayDialogue");
+const howToPlayWrapper = document.querySelector(".howToPlayWrapper");
+// for handling about dialogue
+const aboutDialogue = document.getElementById("aboutDialogue");
+const aboutWrapper = document.querySelector(".aboutWrapper");
 // for handling copying results
 const copyBtn = document.getElementById("copyResultsBtn");
 const confirmCopied = document.getElementById("confirmCopied");
@@ -604,13 +607,20 @@ function exitGameOverDialogue(){
     gameOverDialogue.close();
 };
 
-
 // open / close how to play dialogue
 function openHowToPlayDialogue(){
     howToPlayDialogue.showModal();
 }
 function exitHowToPlayDialogue(){
     howToPlayDialogue.close();
+}
+
+// open / close about dialogue
+function openAboutDialogue(){
+    aboutDialogue.showModal();
+}
+function exitAboutDialogue(){
+    aboutDialogue.close();
 }
 
 
@@ -624,6 +634,11 @@ gameOverDialogue.addEventListener("click", (e) => {
 howToPlayDialogue.addEventListener("click", (e) => {
     if(!howToPlayWrapper.contains(e.target)){
         howToPlayDialogue.close();
+    }
+});
+aboutDialogue.addEventListener("click", (e) => {
+    if(!aboutWrapper.contains(e.target)){
+        aboutDialogue.close();
     }
 });
 

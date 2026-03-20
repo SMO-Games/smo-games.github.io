@@ -18,7 +18,7 @@
     <nav class="navbar">
         <ul class="center">
             <button id="howToPlayBtn" onclick=openHowToPlayDialogue()>How to Play</button>
-            <button id="aboutBtn">About</button>
+            <button id="aboutBtn" onclick=openAboutDialogue()>About</button>
         </ul>
     </nav>
 
@@ -40,6 +40,22 @@
             <p>Every six hours.</p>
             <h3>How often does the game reset?</h3>
             <p>Once per day.</p>
+        </div>
+    </dialog>
+
+    <dialog id="aboutDialogue">
+        <div class="aboutWrapper">
+            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitAboutDialogue()><i class="fa-solid fa-x"></i></button>
+            <h1>About</h1>
+            <h2>Credits</h2>
+            <p>Made by <a href="https://twitch.tv/tryxdc">tryxdc</a></p>
+            <p>Heavily inspired by <a href="https://mcsr-game.com/">Guess the MCSR Runner</a></p>
+            <br>
+            <h2>Releases</h2>
+            <h3>First Released</h3>
+            <p><b>?? March 2026</b></p>
+            <h3>Last Updated</h3>
+            <p><b>20 March 2026</b></p>
         </div>
     </dialog>
 
