@@ -112,6 +112,7 @@ button {
 }
 #runnerInputBox{
     font-size: 1.5rem;
+    width: min(290px, 50%);
     border-radius: 10px;
 }
 
