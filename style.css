@@ -85,6 +85,7 @@ button {
 }
 .grid-container{
     display: grid;
+    margin-left: 10px;
     grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
     justify-content: center;
 }

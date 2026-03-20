@@ -2,7 +2,7 @@
 let row = 0; // current row
 let inputs = []; // all previous inputs
 let guesses = 0; // current number of guesses already submitted
-const allowedGuesses = 6;
+const allowedGuesses = 7;
 // handles input
 const runnerInputBox = document.getElementById("runnerInputBox");
 const runnerSubmitBtn = document.getElementById("runnerSubmit");
