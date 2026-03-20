@@ -10,11 +10,6 @@ body{
     align-items: center;
 }
 
-dialog{
-    padding: 0;
-    background-color: rgb(82, 6, 153);
-    color: white;
-}
 dialog .wrapper{
     padding: 16px;
     justify-content: center;
@@ -39,24 +34,6 @@ button {
     height: 200px;
     opacity: 0;
 }
-
-.animated{
-    animation: show 150ms ease;
-}
-
-@keyframes show {
-  0% {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 160px;
-    height: 200px;
-  }
-}
-
 .categoryLabelBox{
     font-size: 1.2rem;
     color: white;
@@ -112,6 +89,23 @@ button {
     display: block;
 }
 
+.animatedBoxes{
+    animation: showBoxes 150ms ease;
+}
+@keyframes showBoxes{
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 160px;
+    height: 200px;
+  }
+}
+
+
 #runnerInput{
     display: flex;
     margin-top: 40px;
@@ -137,6 +131,43 @@ button {
 #runnerInfoText{
     font-size: 1.2rem;
     white-space: pre-line;
+}
+
+
+#gameOverDialogue{
+    padding: 0;
+    background-color: rgb(82, 6, 153);
+    color: white;
+}
+#gameOverDialogue[open]{
+    animation: slide-up 500ms forwards;
+}
+#gameOverDialogue[open]::backdrop{
+    animation: fade-in 500ms forwards;
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-out{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes slide-up{
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 #showResults{

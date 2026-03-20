@@ -174,7 +174,7 @@ function addRow(rowNum){
                             "The runner's nationality set on Speedrun.com. Turns yellow if in the correct continent.",
                             "The console used in the runner's Any% PB.",
                             "The runner's Any% 1P PB. Turns yellow if within 1 minute.",
-                            `The runner's most recently submitted run on either official SMO leaderboard. Turns yellow if within ${mostRecentRange} days.`,
+                            `The date of the runner's most recently submitted run on either official SMO leaderboard. Turns yellow if within ${mostRecentRange} days.`,
                             `The runner's current best Main Leaderboard placement in any category. Turns yellow if within ${bestPlacementRange}.`,
                             `The runner's current best CE Leaderboard placement in any category. Turns yellow if within ${bestPlacementRange}.`
     ]
@@ -221,7 +221,7 @@ function addRow(rowNum){
         categoryTooltip.classList.add("categoryTooltip");
         categoryTooltip.id = `${boxID}Tooltip${rowNum}`;
         categoryTooltip.innerHTML = '<i class="fa-solid fa-question"></i>'; // add icon
-        categoryTooltip.setAttribute("data-tooltip", categoryTooltips[index]);
+        categoryTooltip.setAttribute("data-tooltip", categoryTooltips[index]); // set tooltip to corresponding string in array
 
         document.getElementById(categoryBox.id).append(categoryTooltip);
 
@@ -241,20 +241,21 @@ function addRow(rowNum){
 // prevents guessing and shows dialogue
 function endGame(){
     document.getElementById("runnerInputBox").disabled = true; // prevent further guesses
+    // open dialogue
     dialogue.showModal();
-    showResultsBtn.style.display = "inline-block";
+    showResultsBtn.style.display = "inline-block"; // reveal show results button
 }
 
 
 // handles animating the result boxes in sequence
 function animateBoxes(box){
     return new Promise((resolve, reject) => {
-        box.classList.add("animated");
+        box.classList.add("animatedBoxes"); // begins animation
         setTimeout(() => {
-            box.style.opacity = 1;
+            box.style.opacity = 1; // makes box visible at the end
             animatedSuccessfully = true;
             if(animatedSuccessfully){
-            resolve(true)
+                resolve(true)
             }
             else{
                 reject(false)
@@ -306,7 +307,9 @@ document.getElementById("runnerSubmit").onclick = function(){
                     guessCounter.textContent = `Guesses: ${guesses}/${allowedGuesses}`;
                     // end game
                     if(guesses === allowedGuesses){
-                        endGame();
+                        setTimeout(() => {
+                            endGame();
+                        }, (animationDelay*7)+300);
                     }
 
                     // increase row count and add the row
@@ -321,7 +324,9 @@ document.getElementById("runnerSubmit").onclick = function(){
                         runnerLabelBox.textContent = runnerLabelBox.textContent + " ✅";
                         runnerResultBox.style.backgroundColor = 'green';
                         // end game
-                        endGame();
+                        setTimeout(() => {
+                            endGame();
+                        }, (animationDelay*7)+300); // wait for all the boxes, then an extra 300ms, then display
 
                         // makes "guess" plural only if more than 1 guess
                         let isPlural;
