@@ -845,7 +845,7 @@ let countdownInterval = setInterval(() => {
     let hours = String(Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
     let minutes = String(Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)));
     let seconds = String(Math.floor((timeLeft % (1000 * 60)) / 1000));
-    formattedTimeLeft = `${hours}:${minutes.padStart(2, "0")}:${seconds.padStart(2, "0")}`;
+    formattedTimeLeft = `${hours.padStart(2, "0")}:${minutes.padStart(2, "0")}:${seconds.padStart(2, "0")}`;
     // update countdown text
     if(timeLeft < 0){ // if finished
         countdown.innerHTML = `<b>Refresh!</b>`;
