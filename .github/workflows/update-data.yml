@@ -27,7 +27,7 @@ jobs:
         python-version: '3.10'
     - name: Install all necessary packages
       run: pip install datetime requests pandas
-    - name: Fetching current runner data
+    - name: Fetch current runner data
       run: python3 fetch-src-data.py
     - name: Commit and push any changes
       run: |-
