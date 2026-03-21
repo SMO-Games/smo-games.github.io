@@ -210,7 +210,8 @@ button {
     background-color: rgb(122, 0, 104);
 }
 #runnerSubmit:disabled{
-    background-color: grey;
+    background-color: rgba(239, 239, 239, 0.3);
+    color: rgb(84, 84, 84);
     cursor: not-allowed;
 }
 
