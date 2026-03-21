@@ -672,21 +672,20 @@ function submitRunner(runner, isCookie){
                                 .then(() => {return animateBoxes(document.getElementById(`bestCEBox${row}`))})
 
                                 // make new cookie
-                                setCookie(`guess${row}`, runner)
-                                console.log(document.cookie);
+                                setCookie(`guess${row}`, runner);
 
                             }
-                            else{ // if restored from cookie, just make them all visible
-                                document.getElementById(`runnerBox${row}`).style.opacity = 1;
-                                document.getElementById(`nationalityBox${row}`).style.opacity = 1;
-                                document.getElementById(`consoleBox${row}`).style.opacity = 1;
-                                document.getElementById(`pbBox${row}`).style.opacity = 1;
-                                document.getElementById(`mostRecentBox${row}`).style.opacity = 1;
-                                document.getElementById(`bestMBBox${row}`).style.opacity = 1;
-                                document.getElementById(`bestCEBox${row}`).style.opacity = 1;
+                            else{ // if restored from cookie, animate all with slide up
+                                document.getElementById(`runnerBox${row}`).classList.add("animatedCookieBoxes");
+                                document.getElementById(`nationalityBox${row}`).classList.add("animatedCookieBoxes");
+                                document.getElementById(`consoleBox${row}`).classList.add("animatedCookieBoxes");
+                                document.getElementById(`pbBox${row}`).classList.add("animatedCookieBoxes");
+                                document.getElementById(`mostRecentBox${row}`).classList.add("animatedCookieBoxes");
+                                document.getElementById(`bestMBBox${row}`).classList.add("animatedCookieBoxes");
+                                document.getElementById(`bestCEBox${row}`).classList.add("animatedCookieBoxes");
                             } 
 
-                            gameResults += "\n" // new line to game results for copying at the end
+                            gameResults += "\n"; // new line to game results for copying at the end
                         })
                         break
                     }                
