@@ -49,11 +49,11 @@ const confirmDeletedCookies = document.getElementById("confirmDeletedCookies");
 // for date shenanigans
 const date = new Date();
 let tomorrow = new Date();
+tomorrow.setHours(24, 0, 0, 0); // sets new date to tomorrow midnight
 const day = String(date.getDate());
 const month = String(date.getMonth() + 1); // month is 0 indexed, so +1
 const year = String(date.getFullYear());
 fullDate = Number(`${day.padStart(2, "0")}${month.padStart(2, "0")}${year}`); // format date as DDMMYYYY to use as seed
-tomorrow = tomorrow.setHours(24, 0, 0, 0); // sets new date to tomorrow midnight
 // find number of days since the game began to find game number
 const start = new Date("2026-03-20"); // actually started on the 21st, but that would 0 index it
 const end = new Date(`${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`); // put in current date as YYYY-MM-DD
@@ -80,7 +80,7 @@ document.body.style.backgroundImage = `url(${dailyBGImg})`
 
 // create a cookie
 function setCookie(name, value){
-    document.cookie = `${name}=${value}; ${tomorrow}; path=/`
+    document.cookie = `${name}=${value}; expires=${tomorrow.toUTCString()}; path=/`
 }
 // delete a cookie
 function deleteCookie(name){
