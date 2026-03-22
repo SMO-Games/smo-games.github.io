@@ -501,6 +501,8 @@ button {
         left: 130px;
         width: 12px;
         text-align: center;
-        padding: 5px;
+        padding: 0;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 }
