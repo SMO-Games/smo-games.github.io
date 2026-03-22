@@ -493,3 +493,8 @@ button {
     visibility: visible;
     transform: translateY(0);
 }
+@media only screen and (max-width: 600px){
+    .categoryTooltip{
+        left: 120px;
+    }
+}
