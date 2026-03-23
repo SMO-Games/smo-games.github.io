@@ -803,7 +803,7 @@ runnerInputBox.addEventListener("keypress", function(event) {
 
 // copy results to clipboard when button clicked
 // normal results
-function copyResults(resultsType){
+function copyResults(){
     formattedResults = `Guess the SMO Runner ${daysSinceStart} [${guesses}/${allowedGuesses}]\n${gameResults}${gameURL}`;
     navigator.clipboard.writeText(formattedResults);
     confirmCopied.textContent = "Results copied!";
