@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(16, 16, 19);
+}
+
+
+.generator{
+    margin-top: 20%;
+}
+
+
+#trickjumpName{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#generateBtn{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border: 5px solid rgb(44, 44, 44);
+    font-size: 2.25rem;
+    border-radius: 15px;
+}
+#generateBtn:hover{
+    background-color: rgb(10, 10, 10);;
+    border: 5px solid rgb(32, 32, 32);
+    cursor: pointer;
+    animation: hoverAnim 300ms forwards;
+}
+#generateBtn:active{
+    border: 5px solid rgb(24, 24, 24);
+    animation: activeAnim 200ms forwards;
+}
+
+@keyframes hoverAnim{
+    0% {
+        font-size: 2.25rem;
+    }
+    100% {
+        font-size: 2.5rem;
+    }
+}
+@keyframes activeAnim{
+    0% {
+        font-size: 2.5rem;
+    }
+    100% {
+        font-size: 2.25rem;
+    }
+}
