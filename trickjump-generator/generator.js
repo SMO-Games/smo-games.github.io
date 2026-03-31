@@ -41,9 +41,7 @@ const adjectives = [
 
 const nouns = [
     // i swear they've used these it's not just me being weird...
-    "Cancer",
     "Misogyny", "Homophobia", "Transphobia",
-    "Church",
     "Garden", "Fountain", "Well", "Forest", "Castle", "Catastrophe", "Valley", "Treetops",
     "Block", "Rail", "Ship", "Odyssey",
     "Trampoline", "Fall", "Passageway",
@@ -137,7 +135,7 @@ function generateTrickjump(){
     trickjumpName += `${type} `; // always has a jump type
 
     // 1 in 10 chance of being full landing
-    if (Math.floor(Math.random()*6 + 1) === 1){
+    if (Math.floor(Math.random()*10 + 1) === 1){
         trickjumpName += `Full Landing `;
     }
 

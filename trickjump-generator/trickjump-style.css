@@ -11,48 +11,55 @@ body{
     background-size: cover;
 }
 
-
 .generator{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
-
-#trickjumpName{
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
+mark{
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    color: white;
+    border-radius: 10px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
 }
-#trickjumpDifficulty{
-    color: rgb(218, 218, 218);
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding: 5px;
-}
-#generateBtn{
+button{
     background-color: rgb(17, 17, 17);
     color: white;
-    border: 5px solid rgb(44, 44, 44);
+    border: 5px solid rgb(65, 65, 65);
     font-size: 2.25rem;
     border-radius: 15px;
+    animation: activeAnim 100ms forwards;
 }
-#generateBtn:hover{
+button:hover{
     background-color: rgb(10, 10, 10);;
-    border: 5px solid rgb(32, 32, 32);
+    border: 5px solid rgb(41, 41, 41);
     cursor: pointer;
     animation: hoverAnim 300ms forwards;
 }
-#generateBtn:active{
-    border: 5px solid rgb(24, 24, 24);
-    animation: activeAnim 200ms forwards;
+button:active{
+    border: 5px solid rgb(29, 29, 29);
+    animation: activeAnim 250ms forwards;
 }
+
+.title{
+    margin-top: 30px;
+}
+
+#trickjumpName{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#trickjumpDifficulty{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#backBtn{
+    margin-top: 200px;
+}
+
 
 @keyframes hoverAnim{
     0% {

@@ -17,8 +17,10 @@
     <nav class="navbar">
         <ul class="center">
             <button id="howToPlayBtn" onclick=openHowToPlayDialogue()>How to Play</button>
+            <br>
             <button id="statsBtn" onclick=openStatsDialogue()>Stats</button>
             <button id="aboutBtn" onclick=openAboutDialogue()>About</button>
+            <button id="moreBtn" onclick=openMoreDialogue()>More</button>
         </ul>
     </nav>
 
@@ -84,6 +86,18 @@
         </div>
     </dialog>
 
+    <dialog id="moreDialogue">
+        <div class="moreWrapper">
+            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitMoreDialogue()><i class="fa-solid fa-x"></i></button>
+            <h1>More</h1>
+            <p>More games or silly little SMO related things I've made:</p>
+            <br>
+            <button id="trickjumpBtn" onclick="location.href='trickjump-generator/trickjump.html'">Trickjump Generator</button>
+        </div>
+    </dialog>
+
+
+
     <dialog id="gameOverDialogue">
         <div class="wrapper">
             <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitGameOverDialogue()><i class="fa-solid fa-x"></i></button>
@@ -117,7 +131,7 @@
     <br><br>
 
     <br id="preRunners">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
     <script src="https://kit.fontawesome.com/eb7f00f391.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>

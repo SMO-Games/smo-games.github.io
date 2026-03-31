@@ -30,6 +30,9 @@ const guessChart = document.getElementById('guessChart');
 // for handling about dialogue
 const aboutDialogue = document.getElementById("aboutDialogue");
 const aboutWrapper = document.querySelector(".aboutWrapper");
+// for handling more dialogue
+const moreDialogue = document.getElementById("moreDialogue");
+const moreWrapper = document.querySelector(".moreWrapper");
 // for handling copying results
 const copyBtn = document.getElementById("copyResultsBtn");
 const confirmCopied = document.getElementById("confirmCopied");
@@ -91,6 +94,10 @@ const randomFloat = runnerSeed();
 // set daily background image
 const dailyBGImg = bgImgs[Math.floor(randomFloat*bgImgs.length)]
 document.body.style.backgroundImage = `url("backgrounds/${dailyBGImg}")`
+
+if(fullDate === 1042026){
+    document.body.style.backgroundImage = `url("backgrounds/aprilfools.jpg")`
+}
 
 
 // create a cookie
@@ -771,6 +778,13 @@ function openAboutDialogue(){
 function exitAboutDialogue(){
     aboutDialogue.close();
 }
+// open / close more dialogue
+function openMoreDialogue(){
+    moreDialogue.showModal();
+}
+function exitMoreDialogue(){
+    moreDialogue.close();
+}
 
 
 // lets you close the dialogue by clicking anywhere outside of it
@@ -792,6 +806,11 @@ statsDialogue.addEventListener("click", (e) => {
 aboutDialogue.addEventListener("click", (e) => {
     if(!aboutWrapper.contains(e.target)){
         aboutDialogue.close();
+    }
+});
+moreDialogue.addEventListener("click", (e) => {
+    if(!moreWrapper.contains(e.target)){
+        moreDialogue.close();
     }
 });
 
@@ -879,6 +898,7 @@ function sumArray(array){
 }
 
 
+// create stats graph
 function generateStats(){
     const xValues = ["1", "2", "3", "4", "5", "6", "7", "X"]; // labels
     // get all the guess totals
