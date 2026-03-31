@@ -1,4 +1,5 @@
 const trickjumpText = document.getElementById("trickjumpName");
+const trickjumpDifficultyText = document.getElementById("trickjumpDifficulty");
 
 const jumpVariant = [
     "", "", "", "",
@@ -71,6 +72,11 @@ const entities = [
     "Mummy", "Dragon", "Pokio", "Ogre", "Lakitu", "Jizo", "Bullet", "Glydon", "Taxi"
 ]
 
+const difficulties = [
+    "Beginner", "Intermediate", "Advanced", "Expert", "Master",
+    "Low Elite", "Mid Elite", "High Elite", "Insanity", "God", "Hell"
+]
+
 let variant;
 let type;
 let kingdom;
@@ -78,6 +84,7 @@ let noun1;
 let noun2;
 let adjective;
 let entity;
+let difficulty;
 
 let trickjumpName = "";
 
@@ -92,6 +99,8 @@ function generateTrickjump(){
     noun2 = nouns[Math.floor(Math.random() * nouns.length)];
     adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
     entity = entities[Math.floor(Math.random() * entities.length)];
+
+    difficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
 
 
     trickjumpName += `${variant} `;
@@ -117,4 +126,5 @@ function generateTrickjump(){
 
 
     trickjumpText.textContent = trickjumpName;
+    trickjumpDifficultyText.textContent = `Difficulty: ${difficulty}`;
 }
