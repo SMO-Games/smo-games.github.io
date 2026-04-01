@@ -132,8 +132,11 @@ function generateTrickjump(){
         trickjumpName += `${entity} `;
     }
 
-    trickjumpName += `${type} `; // always has a jump type
-
+    // 1 in 2 chance of having a jump type
+    if (Math.floor(Math.random()*2 + 1) === 1){
+        trickjumpName += `${type} `;
+    }
+    
     // 1 in 20 chance of being full landing
     if (Math.floor(Math.random()*20 + 1) === 1){
         trickjumpName += `Full Landing `;
