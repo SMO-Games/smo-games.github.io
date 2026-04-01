@@ -23,7 +23,7 @@ const kingdoms = [
 ];
 
 const adjectives = [
-    "Fruity", "Misogynistic", "Homophobic", "Transphobic",
+    "Fruity",
     "Captureless",
     "Prehistoric", "Grassy", "Broken", "Ancient", "Archaic", "Rocky", "Final", "Triassic",
     "Riveting", "Rampageous",
@@ -41,7 +41,6 @@ const adjectives = [
 
 const nouns = [
     // i swear they've used these it's not just me being weird...
-    "Misogyny", "Homophobia", "Transphobia",
     "Garden", "Fountain", "Well", "Forest", "Castle", "Catastrophe", "Valley", "Treetops",
     "Block", "Rail", "Ship", "Odyssey",
     "Trampoline", "Fall", "Passageway",
@@ -106,6 +105,15 @@ function generateTrickjump(){
     entity = entities[Math.floor(Math.random() * entities.length)];
 
     difficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
+
+
+    if(noun1 === "Great Wall of" || noun1 === "Great Canal of"){
+        noun1 += nouns[Math.floor(Math.random() * nouns.length)];
+    }
+    if(noun2 === "Great Wall of" || noun2 === "Great Canal of"){
+        noun2 += nouns[Math.floor(Math.random() * nouns.length)];
+    }
+
 
     // 1 in 15 chance of having a restriction
     if(Math.floor(Math.random()*15 + 1) === 1){
