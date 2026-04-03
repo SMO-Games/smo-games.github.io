@@ -825,6 +825,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "GoodGoomba",
+    "id": "kj99w37j",
+    "country": [
+      "au",
+      "Australia",
+      "AU",
+      "OC"
+    ],
+    "name_colour": "#F0C03E",
+    "best_mb_placement": [
+      19,
+      "vdooqjod"
+    ],
+    "best_ce_placement": [
+      12,
+      "zd37rjy2"
+    ],
+    "most_recent_run": "2026-03-09",
+    "twitch_handle": null,
+    "twitter_handle": "thegoodgoomba",
+    "profile_picture": "https://www.speedrun.com/static/user/kj99w37j/image?v=7b2944a",
+    "pb": 3487,
+    "console": "Switch 2"
+  },
+  {
     "name": "userodyssey",
     "id": "jo10r67x",
     "country": [
@@ -860,7 +885,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      35,
+      36,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -885,7 +910,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      36,
+      37,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -948,31 +973,6 @@
     "profile_picture": "https://www.speedrun.com/static/user/dx3yw6e8/image?v=52624d7",
     "pb": 3501,
     "console": "Switch 1"
-  },
-  {
-    "name": "GoodGoomba",
-    "id": "kj99w37j",
-    "country": [
-      "au",
-      "Australia",
-      "AU",
-      "OC"
-    ],
-    "name_colour": "#F0C03E",
-    "best_mb_placement": [
-      19,
-      "vdooqjod"
-    ],
-    "best_ce_placement": [
-      12,
-      "zd37rjy2"
-    ],
-    "most_recent_run": "2025-12-24",
-    "twitch_handle": null,
-    "twitter_handle": "thegoodgoomba",
-    "profile_picture": "https://www.speedrun.com/static/user/kj99w37j/image?v=7b2944a",
-    "pb": 3502,
-    "console": "Switch 2"
   },
   {
     "name": "ZackInTheBox",
