@@ -735,7 +735,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      13,
+      15,
       "vdooqjod"
     ],
     "best_ce_placement": [
@@ -775,6 +775,31 @@
     "console": "Switch 2"
   },
   {
+    "name": "GoodGoomba",
+    "id": "kj99w37j",
+    "country": [
+      "au",
+      "Australia",
+      "AU",
+      "OC"
+    ],
+    "name_colour": "#F0C03E",
+    "best_mb_placement": [
+      13,
+      "vdooqjod"
+    ],
+    "best_ce_placement": [
+      12,
+      "zd37rjy2"
+    ],
+    "most_recent_run": "2026-03-17",
+    "twitch_handle": null,
+    "twitter_handle": "thegoodgoomba",
+    "profile_picture": "https://www.speedrun.com/static/user/kj99w37j/image?v=7b2944a",
+    "pb": 3479,
+    "console": "Switch 2"
+  },
+  {
     "name": "HeyItsGMan",
     "id": "v8l19zrj",
     "country": [
@@ -785,7 +810,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      21,
+      22,
       "vdooqjod"
     ],
     "best_ce_placement": [
@@ -823,31 +848,6 @@
     "profile_picture": "https://www.speedrun.com/static/user/o86lm908/image?v=e4f6fa7",
     "pb": 3487,
     "console": "Switch 1"
-  },
-  {
-    "name": "GoodGoomba",
-    "id": "kj99w37j",
-    "country": [
-      "au",
-      "Australia",
-      "AU",
-      "OC"
-    ],
-    "name_colour": "#F0C03E",
-    "best_mb_placement": [
-      19,
-      "vdooqjod"
-    ],
-    "best_ce_placement": [
-      12,
-      "zd37rjy2"
-    ],
-    "most_recent_run": "2026-03-09",
-    "twitch_handle": null,
-    "twitter_handle": "thegoodgoomba",
-    "profile_picture": "https://www.speedrun.com/static/user/kj99w37j/image?v=7b2944a",
-    "pb": 3487,
-    "console": "Switch 2"
   },
   {
     "name": "userodyssey",
@@ -1067,7 +1067,7 @@
       3,
       "rklr3lrk"
     ],
-    "most_recent_run": "2026-02-13",
+    "most_recent_run": "2026-03-15",
     "twitch_handle": "LapisSR_",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/86vvv75j/image?v=8ebfec4",
@@ -1464,7 +1464,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      20,
+      21,
       "5dw747ek"
     ],
     "most_recent_run": "2021-12-25",
@@ -1939,7 +1939,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      22,
+      23,
       "5dw747ek"
     ],
     "most_recent_run": "2024-08-14",
@@ -2339,7 +2339,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      16,
+      17,
       "vdomwx62"
     ],
     "most_recent_run": "2022-02-15",
