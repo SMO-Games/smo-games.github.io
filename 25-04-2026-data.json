@@ -42,7 +42,7 @@
       1,
       "wdmvl7ed"
     ],
-    "most_recent_run": "2026-01-26",
+    "most_recent_run": "2026-02-17",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/8w91nzqj/image?v=d82e5f2",
@@ -75,7 +75,7 @@
     "console": "Switch 2"
   },
   {
-    "name": "Wiener1",
+    "name": "Wiener",
     "id": "j2wmqyoj",
     "country": [
       "us",
@@ -214,7 +214,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      69,
+      70,
       "w20w3rjd"
     ],
     "most_recent_run": "2026-01-24",
@@ -342,7 +342,7 @@
       4,
       "7kj3wl42"
     ],
-    "most_recent_run": "2026-02-02",
+    "most_recent_run": "2026-03-25",
     "twitch_handle": null,
     "twitter_handle": "rirure_rta",
     "profile_picture": null,
@@ -389,7 +389,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      11,
+      12,
       "7kjp3wzk"
     ],
     "most_recent_run": "2025-12-23",
@@ -517,7 +517,7 @@
       1,
       "z2746542"
     ],
-    "most_recent_run": "2026-02-01",
+    "most_recent_run": "2026-03-19",
     "twitch_handle": "proprofk",
     "twitter_handle": null,
     "profile_picture": null,
@@ -617,7 +617,7 @@
       2,
       "7kj3wl42"
     ],
-    "most_recent_run": "2026-02-19",
+    "most_recent_run": "2026-03-10",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/o86lymp8/image?v=f72e246",
@@ -650,6 +650,31 @@
     "console": "Switch 2"
   },
   {
+    "name": "AdriienSR_",
+    "id": "j5gvown8",
+    "country": [
+      "bl",
+      "Saint Barth\u00e9lemy",
+      "FR",
+      "EU"
+    ],
+    "name_colour": "#EF8241",
+    "best_mb_placement": [
+      26,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      7,
+      "7kjp3wzk"
+    ],
+    "most_recent_run": "2026-03-18",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/j5gvown8/image?v=a2350c6",
+    "pb": 3464,
+    "console": "Switch 2"
+  },
+  {
     "name": "SMOdavidTM",
     "id": "o8697558",
     "country": [
@@ -660,7 +685,7 @@
     ],
     "name_colour": "#B8B8B8",
     "best_mb_placement": [
-      27,
+      28,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -700,31 +725,6 @@
     "console": "Switch 1"
   },
   {
-    "name": "AdriienSR_",
-    "id": "j5gvown8",
-    "country": [
-      "bl",
-      "Saint Barth\u00e9lemy",
-      "FR",
-      "EU"
-    ],
-    "name_colour": "#EF8241",
-    "best_mb_placement": [
-      28,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      7,
-      "7kjp3wzk"
-    ],
-    "most_recent_run": "2026-03-05",
-    "twitch_handle": null,
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/j5gvown8/image?v=a2350c6",
-    "pb": 3471,
-    "console": "Switch 2"
-  },
-  {
     "name": "LightRon",
     "id": "v81dp138",
     "country": [
@@ -735,7 +735,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      13,
+      15,
       "vdooqjod"
     ],
     "best_ce_placement": [
@@ -764,13 +764,38 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      4,
+      5,
       "z2746542"
     ],
     "most_recent_run": "2025-07-27",
     "twitch_handle": "the_h_pandin",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/xk3md7m8/image?v=1b92e25",
+    "pb": 3479,
+    "console": "Switch 2"
+  },
+  {
+    "name": "GoodGoomba",
+    "id": "kj99w37j",
+    "country": [
+      "au",
+      "Australia",
+      "AU",
+      "OC"
+    ],
+    "name_colour": "#F0C03E",
+    "best_mb_placement": [
+      13,
+      "vdooqjod"
+    ],
+    "best_ce_placement": [
+      13,
+      "zd37rjy2"
+    ],
+    "most_recent_run": "2026-03-17",
+    "twitch_handle": null,
+    "twitter_handle": "thegoodgoomba",
+    "profile_picture": "https://www.speedrun.com/static/user/kj99w37j/image?v=7b2944a",
     "pb": 3479,
     "console": "Switch 2"
   },
@@ -785,7 +810,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      21,
+      22,
       "vdooqjod"
     ],
     "best_ce_placement": [
@@ -810,7 +835,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      13,
+      14,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -823,6 +848,31 @@
     "profile_picture": "https://www.speedrun.com/static/user/o86lm908/image?v=e4f6fa7",
     "pb": 3487,
     "console": "Switch 1"
+  },
+  {
+    "name": "The-G",
+    "id": "xz79lgnj",
+    "country": [
+      "gb",
+      "England",
+      "GB",
+      "EU"
+    ],
+    "name_colour": "#EE4444",
+    "best_mb_placement": [
+      20,
+      "vdooo3yd"
+    ],
+    "best_ce_placement": [
+      3,
+      "jdz8olgd"
+    ],
+    "most_recent_run": "2026-03-13",
+    "twitch_handle": "The_G5%3Fsra",
+    "twitter_handle": "The_G1234%3Fs09",
+    "profile_picture": "https://www.speedrun.com/static/user/xz79lgnj/image?v=194bb0f",
+    "pb": 3487,
+    "console": "Switch 2"
   },
   {
     "name": "userodyssey",
@@ -860,7 +910,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      35,
+      37,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -885,11 +935,11 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      36,
+      38,
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      15,
+      16,
       "02qmrqzd"
     ],
     "most_recent_run": "2024-08-12",
@@ -910,7 +960,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      29,
+      30,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -935,7 +985,7 @@
     ],
     "name_colour": "#E77471",
     "best_mb_placement": [
-      32,
+      33,
       "vdooo3yd"
     ],
     "best_ce_placement": [
@@ -948,31 +998,6 @@
     "profile_picture": "https://www.speedrun.com/static/user/dx3yw6e8/image?v=52624d7",
     "pb": 3501,
     "console": "Switch 1"
-  },
-  {
-    "name": "GoodGoomba",
-    "id": "kj99w37j",
-    "country": [
-      "au",
-      "Australia",
-      "AU",
-      "OC"
-    ],
-    "name_colour": "#F0C03E",
-    "best_mb_placement": [
-      19,
-      "vdooqjod"
-    ],
-    "best_ce_placement": [
-      12,
-      "zd37rjy2"
-    ],
-    "most_recent_run": "2025-12-24",
-    "twitch_handle": null,
-    "twitter_handle": "thegoodgoomba",
-    "profile_picture": "https://www.speedrun.com/static/user/kj99w37j/image?v=7b2944a",
-    "pb": 3502,
-    "console": "Switch 2"
   },
   {
     "name": "ZackInTheBox",
@@ -1014,10 +1039,10 @@
       "n2y5jwek"
     ],
     "best_ce_placement": [
-      16,
-      "7kjp3wzk"
+      10,
+      "7kj3wl42"
     ],
-    "most_recent_run": "2025-10-02",
+    "most_recent_run": "2026-02-27",
     "twitch_handle": "salmonburt",
     "twitter_handle": "SalmonBurt",
     "profile_picture": "https://www.speedrun.com/static/user/48g7r328/image?v=c2c993f",
@@ -1035,7 +1060,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      41,
+      42,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1067,7 +1092,7 @@
       3,
       "rklr3lrk"
     ],
-    "most_recent_run": "2026-02-13",
+    "most_recent_run": "2026-03-15",
     "twitch_handle": "LapisSR_",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/86vvv75j/image?v=8ebfec4",
@@ -1160,7 +1185,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      47,
+      48,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1185,14 +1210,14 @@
     ],
     "name_colour": "#EE4444",
     "best_mb_placement": [
-      5,
+      4,
       "wdmw4e42"
     ],
     "best_ce_placement": [
       13,
       "7kjp3wzk"
     ],
-    "most_recent_run": "2026-02-16",
+    "most_recent_run": "2026-03-16",
     "twitch_handle": "sa1102smo",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/j2qy71pj/image?v=d48799d",
@@ -1235,7 +1260,7 @@
     ],
     "name_colour": "#F772C5",
     "best_mb_placement": [
-      50,
+      51,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1264,7 +1289,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      11,
+      12,
       "7kj3wl42"
     ],
     "most_recent_run": "2024-12-31",
@@ -1339,7 +1364,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      42,
+      43,
       "jdz8olgd"
     ],
     "most_recent_run": "2026-01-08",
@@ -1360,7 +1385,7 @@
     ],
     "name_colour": "#FFB3F3",
     "best_mb_placement": [
-      33,
+      34,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1410,7 +1435,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      56,
+      57,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1435,7 +1460,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      58,
+      59,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1460,11 +1485,11 @@
     ],
     "name_colour": "#FFB3F3",
     "best_mb_placement": [
-      48,
+      49,
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      20,
+      21,
       "5dw747ek"
     ],
     "most_recent_run": "2021-12-25",
@@ -1475,7 +1500,7 @@
     "console": "Switch 1"
   },
   {
-    "name": "idawirdgedrueckt",
+    "name": "connewitz",
     "id": "8637pdq8",
     "country": [
       "de",
@@ -1485,7 +1510,7 @@
     ],
     "name_colour": "#EE4444",
     "best_mb_placement": [
-      59,
+      60,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1500,31 +1525,6 @@
     "console": "Switch 2"
   },
   {
-    "name": "The-G",
-    "id": "xz79lgnj",
-    "country": [
-      "gb",
-      "England",
-      "GB",
-      "EU"
-    ],
-    "name_colour": "#EE4444",
-    "best_mb_placement": [
-      19,
-      "vdooo3yd"
-    ],
-    "best_ce_placement": [
-      3,
-      "jdz8olgd"
-    ],
-    "most_recent_run": "2026-02-01",
-    "twitch_handle": "The_G5%3Fsra",
-    "twitter_handle": "The_G1234%3Fs09",
-    "profile_picture": "https://www.speedrun.com/static/user/xz79lgnj/image?v=194bb0f",
-    "pb": 3538,
-    "console": "Switch 2"
-  },
-  {
     "name": "RileyHemmi",
     "id": "qj2r1qpx",
     "country": [
@@ -1535,7 +1535,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      61,
+      62,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1567,7 +1567,7 @@
       10,
       "zd37rjy2"
     ],
-    "most_recent_run": "2026-02-19",
+    "most_recent_run": "2026-03-15",
     "twitch_handle": "samdwidge",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/qjor033j/image?v=344902d",
@@ -1589,7 +1589,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      76,
+      78,
       "w20w3rjd"
     ],
     "most_recent_run": "2026-02-08",
@@ -1610,7 +1610,7 @@
     ],
     "name_colour": "#F0C03E",
     "best_mb_placement": [
-      37,
+      38,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -1689,7 +1689,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      34,
+      35,
       "w20w3rjd"
     ],
     "most_recent_run": "2025-06-09",
@@ -1700,7 +1700,7 @@
     "console": "Switch 2"
   },
   {
-    "name": "ganon",
+    "name": "twilightskies",
     "id": "v8lzw24x",
     "country": [
       "us",
@@ -1708,7 +1708,7 @@
       "US",
       "aN"
     ],
-    "name_colour": "#C279E5",
+    "name_colour": "#44BBEE",
     "best_mb_placement": [
       12,
       "vdooqjod"
@@ -1718,8 +1718,8 @@
       "jdz8olgd"
     ],
     "most_recent_run": "2026-01-02",
-    "twitch_handle": "ganon",
-    "twitter_handle": "ganonTV",
+    "twitch_handle": "twilightskies",
+    "twitter_handle": "twilightskiez",
     "profile_picture": "https://www.speedrun.com/static/user/v8lzw24x/image?v=9e530e2",
     "pb": 3557,
     "console": "Switch 1"
@@ -1785,7 +1785,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      39,
+      40,
       "vdooqjod"
     ],
     "best_ce_placement": [
@@ -1817,7 +1817,7 @@
       4,
       "02q3xryk"
     ],
-    "most_recent_run": "2025-11-16",
+    "most_recent_run": "2026-03-23",
     "twitch_handle": "bp3142",
     "twitter_handle": "BluePi31415",
     "profile_picture": "https://www.speedrun.com/static/user/pj04924x/image?v=f9a96d2",
@@ -1835,7 +1835,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      36,
+      37,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1864,7 +1864,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      16,
+      17,
       "xd1g8zrd"
     ],
     "most_recent_run": "2025-04-25",
@@ -1935,11 +1935,11 @@
     ],
     "name_colour": "#09B876",
     "best_mb_placement": [
-      60,
+      61,
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      22,
+      23,
       "5dw747ek"
     ],
     "most_recent_run": "2024-08-14",
@@ -1960,7 +1960,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      11,
+      12,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1985,7 +1985,7 @@
     ],
     "name_colour": "#09B876",
     "best_mb_placement": [
-      65,
+      66,
       "vdooo3yd"
     ],
     "best_ce_placement": [
@@ -2135,7 +2135,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      53,
+      54,
       "vdooo3yd"
     ],
     "best_ce_placement": [
@@ -2160,7 +2160,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      38,
+      39,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2189,7 +2189,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      19,
+      20,
       "vdomwx62"
     ],
     "most_recent_run": "2025-07-13",
@@ -2210,7 +2210,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      34,
+      35,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -2289,10 +2289,10 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      7,
-      "7kj3wl42"
+      4,
+      "w20w3rjd"
     ],
-    "most_recent_run": "2026-02-17",
+    "most_recent_run": "2026-02-23",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/xkpwm17j/image?v=e8b8fcd",
@@ -2339,7 +2339,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      16,
+      17,
       "vdomwx62"
     ],
     "most_recent_run": "2022-02-15",
@@ -2410,11 +2410,11 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      53,
+      54,
       "vdooqjod"
     ],
     "best_ce_placement": [
-      33,
+      34,
       "w20w3rjd"
     ],
     "most_recent_run": "2022-07-21",
@@ -2510,7 +2510,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      16,
+      17,
       "vdooo3yd"
     ],
     "best_ce_placement": [
@@ -2539,7 +2539,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      6,
+      7,
       "02qmrqzd"
     ],
     "most_recent_run": "2025-02-24",
@@ -2564,10 +2564,10 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      11,
-      "7dgrvqpk"
+      3,
+      "02qmrqzd"
     ],
-    "most_recent_run": "2025-02-26",
+    "most_recent_run": "2026-03-08",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": null,
@@ -2664,8 +2664,8 @@
       "wk6719ed"
     ],
     "best_ce_placement": [
-      77,
-      "7kjp3wzk"
+      78,
+      "zd37rjy2"
     ],
     "most_recent_run": "2023-10-07",
     "twitch_handle": "Odme_",
@@ -2717,7 +2717,7 @@
       3,
       "zdn5xwxd"
     ],
-    "most_recent_run": "2026-03-05",
+    "most_recent_run": "2026-03-16",
     "twitch_handle": "Smudey_",
     "twitter_handle": "Smudey_",
     "profile_picture": "https://www.speedrun.com/static/user/jo3v643j/image?v=b14e099",
@@ -2764,7 +2764,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      3,
+      4,
       "z2746542"
     ],
     "most_recent_run": "2023-04-16",
@@ -2785,7 +2785,7 @@
     ],
     "name_colour": "#F0C03E",
     "best_mb_placement": [
-      29,
+      30,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2810,7 +2810,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      63,
+      64,
       "vdooo3yd"
     ],
     "best_ce_placement": [
@@ -2835,7 +2835,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      51,
+      52,
       "vdooo3yd"
     ],
     "best_ce_placement": [
@@ -2960,7 +2960,7 @@
     ],
     "name_colour": "#09B876",
     "best_mb_placement": [
-      33,
+      34,
       "wk6719ed"
     ],
     "best_ce_placement": [
@@ -3035,7 +3035,7 @@
     ],
     "name_colour": "#EE4444",
     "best_mb_placement": [
-      47,
+      48,
       "vdooqjod"
     ],
     "best_ce_placement": [
@@ -3110,11 +3110,11 @@
     ],
     "name_colour": "#FFB3F3",
     "best_mb_placement": [
-      30,
+      31,
       "vdooqjod"
     ],
     "best_ce_placement": [
-      5,
+      6,
       "wk6oz5rk"
     ],
     "most_recent_run": "2024-08-19",
@@ -3164,7 +3164,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      31,
+      32,
       "w20w3rjd"
     ],
     "most_recent_run": "2024-12-17",
@@ -3235,7 +3235,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      44,
+      45,
       "vdooo3yd"
     ],
     "best_ce_placement": [
@@ -3289,7 +3289,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      25,
+      26,
       "7dg9loxk"
     ],
     "most_recent_run": "2022-06-29",
@@ -3339,7 +3339,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      20,
+      21,
       "wk6oz5rk"
     ],
     "most_recent_run": "2024-07-11",
@@ -3385,7 +3385,7 @@
     ],
     "name_colour": "#8AC951",
     "best_mb_placement": [
-      16,
+      17,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3489,10 +3489,10 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      17,
+      13,
       "7kj3wl42"
     ],
-    "most_recent_run": "2026-02-01",
+    "most_recent_run": "2026-02-21",
     "twitch_handle": null,
     "twitter_handle": "qinginiao214530",
     "profile_picture": "https://www.speedrun.com/static/user/jm0kydo8/image?v=11825fe",
@@ -3514,7 +3514,7 @@
       "n2y5jwek"
     ],
     "best_ce_placement": [
-      20,
+      21,
       "zd37rjy2"
     ],
     "most_recent_run": "2023-08-25",
@@ -3535,7 +3535,7 @@
     ],
     "name_colour": "#F0C03E",
     "best_mb_placement": [
-      78,
+      79,
       "wk6719ed"
     ],
     "best_ce_placement": [
@@ -3610,7 +3610,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      69,
+      70,
       "vdooqjod"
     ],
     "best_ce_placement": [
@@ -3625,6 +3625,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "blankSR_",
+    "id": "xyyd71vx",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#44BBEE",
+    "best_mb_placement": [
+      86,
+      "vdooo3yd"
+    ],
+    "best_ce_placement": [
+      null,
+      null
+    ],
+    "most_recent_run": "2026-03-19",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/xyyd71vx/image?v=054b200",
+    "pb": 3626,
+    "console": "Switch 2"
+  },
+  {
     "name": "HaloXV",
     "id": "zx7yrnyx",
     "country": [
@@ -3635,7 +3660,7 @@
     ],
     "name_colour": "#F0C03E",
     "best_mb_placement": [
-      146,
+      147,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3685,7 +3710,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      148,
+      149,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3710,7 +3735,7 @@
     ],
     "name_colour": "#F772C5",
     "best_mb_placement": [
-      149,
+      150,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3735,14 +3760,14 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      5,
+      4,
       "wdmw4e42"
     ],
     "best_ce_placement": [
       10,
       "jdz8olgd"
     ],
-    "most_recent_run": "2026-02-26",
+    "most_recent_run": "2026-03-16",
     "twitch_handle": "Dax+Grant",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/8eneddp8/image?v=2caa1bf",
