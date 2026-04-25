@@ -255,7 +255,7 @@ let index;
 let tempButtons;
 let tempMoonStats;
 // for rounds
-const roundTimeDelay = 4000;
+const roundTimeDelay = 3000;
 // for cookies
 const statsExpiryDate = new Date(2145916800 * 1000)
 // for game over
@@ -493,7 +493,7 @@ function runCountdown(textbox, start, end){
 function playAgain(){
     exitGameOverDialogue();
     // prepare scores
-    console.log("test");
+    currentScoreText.innerHTML = "Score: 0";
     currentScore = 0;
     displayHighScore();
     // start new game

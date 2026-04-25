@@ -1,0 +1,541 @@
+body{
+    background-color: rgb(56, 64, 71);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-wrap: anywhere;
+    margin: 0px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+dialog .wrapper{
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+dialog{
+    /* remove scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    border: 5px solid rgb(20, 3, 45);
+    background-color: rgb(47, 3, 77);
+}
+/* remove scrollbar */
+dialog::-webkit-scrollbar {
+    display: none;
+}
+dialog .howToPlayWrapper{
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+dialog .aboutWrapper{
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+dialog .statsWrapper{
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+dialog .moreWrapper{
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.categoryBox{
+    position: relative;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    border: 3px solid rgb(255, 255, 255);
+    text-align: center;
+    width: 160px;
+    height: 200px;
+    opacity: 0;
+}
+.categoryLabelBox{
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    border: 3px solid rgba(255, 255, 255, 100);
+    display: grid;
+    width: 160px;
+    height: 100px;
+    justify-content: center;;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.categoryResultBox{
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid rgba(255, 255, 255, 100);
+    display: grid;
+    width: 160px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.categoryResultBox mark{
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.infoParagraphs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.infoParagraphs mark{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.grid-container{
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+    justify-content: center;
+}
+
+.hrclass{
+    border: 5px solid rgba(47, 3, 77, 0.75);
+    min-width: 99%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.gameResultsLogo{
+    width: 16rem;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.navbar{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    overflow: hidden;
+    overflow-wrap: normal;
+}
+.navbar button{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 0, 158);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar button:hover{
+    background-color: rgb(158, 0, 134);
+}
+.navbar button:active{
+    background-color: rgb(122, 0, 104);
+}
+
+
+.animatedBoxes{
+    animation: showBoxes 150ms ease;
+}
+@keyframes showBoxes{
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 160px;
+    height: 200px;
+  }
+}
+.animatedCookieBoxes{
+    animation: slide-up 400ms forwards;
+}
+
+
+#runnerInput{
+    display: flex;
+    margin-top: 15px;
+}
+#runnerInputBox{
+    font-size: 1.5rem;
+    width: min(290px, 50%);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#runnerInputBox:disabled{
+    cursor: not-allowed;
+}
+
+#runnerSubmit{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    padding: 8px;
+    overflow-wrap: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 0, 158);
+    border: 3px solid black;
+    border-radius: 20px;
+}
+#runnerSubmit:hover{
+    background-color: rgb(158, 0, 134);
+}
+#runnerSubmit:active{
+    background-color: rgb(122, 0, 104);
+}
+#runnerSubmit:disabled{
+    background-color: rgba(239, 239, 239, 0.3);
+    color: rgb(84, 84, 84);
+    font-weight: normal;
+    cursor: not-allowed;
+}
+
+#resultText{
+    font-size: 1.3rem;
+}
+#runnerNameText{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#runnerInfoText{
+    font-size: 1.2rem;
+    white-space: pre-line;
+}
+
+
+#howToPlayDialogue{
+    padding: 0;
+    color: white;
+}
+#howToPlayDialogue[open]{
+    animation: slide-up 300ms forwards;
+}
+#howToPlayDialogue[open]::backdrop{
+    animation: fade-in 300ms forwards;
+}
+#howToPlayDialogue h1{
+    margin-top: 5px;
+    font-size: 2.5rem;
+}
+#howToPlayDialogue h2{
+    color: rgb(255, 255, 0);
+}
+#howToPlayDialogue h3{
+    color: rgb(218, 218, 0);
+}
+#howToPlayDialogue p{
+    font-size: 1.1rem;
+}
+
+#statsDialogue{
+    padding: 0;
+    color: white;
+}
+#statsDialogue[open]{
+    animation: slide-up 300ms forwards;
+}
+#statsDialogue[open]::backdrop{
+    animation: fade-in 300ms forwards;
+}
+#statsDialogue p{
+    font-size: 1.2rem;
+}
+#widenGuessChart{
+    visibility: hidden;
+}
+#guessChartContainer{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+#aboutDialogue{
+    padding: 0;
+    color: white;
+}
+#aboutDialogue[open]{
+    animation: slide-up 300ms forwards;
+}
+#aboutDialogue[open]::backdrop{
+    animation: fade-in 300ms forwards;
+}
+.cookiesBtns{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 0, 158);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-right: 5px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.cookiesBtns:hover{
+    background-color: rgb(158, 0, 134);
+}
+.cookiesBtns:active{
+    background-color: rgb(122, 0, 104);
+}
+#aboutDialogue h1{
+    margin-top: 5px;
+    font-size: 2.5rem;
+}
+#aboutDialogue h2{
+    color: rgb(255, 255, 0);
+}
+#aboutDialogue h3{
+    color: rgb(218, 218, 0);
+}
+#aboutDialogue p{
+    font-size: 1.1rem;
+}
+#aboutDialogue a{
+    color: rgb(255, 0, 216);
+    font-weight: bold;
+}
+#aboutDialogue a:hover{
+    color: rgb(182, 0, 155);
+}
+#aboutDialogue a:active{
+    color: rgb(150, 0, 127);
+}
+
+
+#moreDialogue{
+    padding: 0;
+    color: white;
+}
+#moreDialogue[open]{
+    animation: slide-up 300ms forwards;
+}
+#moreDialogue[open]::backdrop{
+    animation: fade-in 300ms forwards;
+}
+#moreDialogue h1{
+    margin-top: 5px;
+    font-size: 2.5rem;
+}
+#moreDialogue p{
+    font-size: 1.1rem;
+}
+#trickjumpBtn{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 0, 158);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-right: 5px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+#trickjumpBtn:hover{
+    background-color: rgb(158, 0, 134);
+}
+#trickjumpBtn:active{
+    background-color: rgb(122, 0, 104);
+}
+
+
+#gameOverDialogue{
+    padding: 0;
+    color: white;
+}
+#gameOverDialogue h3{
+    margin-bottom: 0px;
+}
+#gameOverDialogue[open]{
+    animation: slide-up 500ms forwards;
+}
+#gameOverDialogue[open]::backdrop{
+    animation: fade-in 500ms forwards;
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slide-up{
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#showResults{
+    text-align: center;
+}
+#showResultsBtn{
+    display: none;
+    margin-top: 50px;
+    padding: 8px;
+    font-size: 2rem;
+    border-style: none;
+    border-radius: 25px;
+    background-color: rgb(69, 163, 69);
+    color: rgb(255, 255, 255);
+    overflow-wrap: normal;
+    width: fit-content;
+    cursor: pointer;
+}
+#showResultsBtn:hover{
+    background-color: rgb(55, 129, 55);
+}
+#showResultsBtn:active{
+    background-color: rgb(55, 109, 55);
+}
+#countdown{
+    font-size: 1.5rem;
+}
+
+
+#exitDialogue{
+    font-weight: bold;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 5px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+}
+#exitDialogue:hover{
+    color: rgb(204, 204, 204);
+}
+#exitDialogue:active{
+    color: rgb(184, 184, 184);
+}
+
+#copyResultsBtn{
+    font-weight: bold;
+    font-size: 2rem;
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(82, 197, 82);
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    margin-top: 10px;
+}
+#copyResultsBtn:hover{
+    background-color: rgb(63, 146, 63);
+}
+#copyResultsBtn:active{
+    background-color: rgb(63, 130, 63);
+}
+
+#copyResultsTwitchBtn{
+    font-size: 1.2rem;
+    margin-top: 15px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(79, 175, 79);
+    color: rgb(255, 255, 255);
+    width: fit-content;
+}
+#copyResultsTwitchBtn:hover{
+    background-color: rgb(55, 129, 55);
+}
+#copyResultsTwitchBtn:active{
+    background-color: rgb(55, 113, 55);
+}
+#confirmCopied{
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+
+.categoryTooltip{
+    font-weight: bold;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 170px;
+    left: 131px;
+    color: white;
+    background-color: rgba(26, 120, 228, 0.7);
+    border-radius: 50%;
+    border-style: none;
+}
+/* tooltip styling */
+[data-tooltip]::after{
+    position: absolute;
+    width: 200px;
+    left: calc(50% - 100px);
+    bottom: 125%;
+    text-align: center;
+    box-sizing: border-box;
+    
+    content: attr(data-tooltip);
+    color: white;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: pre-line;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.2s;
+}
+/* add tooltip on hover */
+[data-tooltip]:hover::after{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

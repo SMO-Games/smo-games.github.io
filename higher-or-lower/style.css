@@ -67,8 +67,7 @@ button:active{
     animation: fade-in 400ms forwards;
 }
 
-.holBtns{
-    animation: fade-in 400ms forwards;
+.holBtns button{
 }
 #leftBtns{
 
@@ -220,6 +219,12 @@ button:active{
 #gameOverDialogue[open]::backdrop{
     animation: fade-in 500ms forwards;
 }
+#gameOverDialogue h1{
+    color: rgb(6, 219, 219);
+}
+#gameOverDialogue p{
+    color: yellow;
+}
 
 /* info dialogue styling */
 #infoDialogue{
@@ -227,10 +232,16 @@ button:active{
     color: white;
 }
 #infoDialogue[open]{
-    animation: slide-up 500ms forwards;
+    animation: slide-up 250ms forwards;
 }
 #infoDialogue[open]::backdrop{
-    animation: fade-in 500ms forwards;
+    animation: fade-in 250ms forwards;
+}
+#infoDialogue h1{
+    color: rgb(6, 219, 219);
+}
+#infoDialogue h2{
+    color: yellow;
 }
 
 
@@ -274,6 +285,12 @@ dialog::-webkit-scrollbar {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+#backBtn{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
 a{

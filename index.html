@@ -4,136 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Guess the SMO Runner</title>
+    <title>SMO Games</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="center">
-        <img src="guessthesmorunner.png" alt="Guess the SMO Runner Logo" class="gameResultsLogo">
+    <img src="smo_games_logo.png" alt="SMO Games" class="mainLogo">
+    <div id="title" class="center">
+        <h1><mark>SMO Games</mark></h1>
+        <h3><mark>Made by <a href="https://twitch.tv/tryxdc">tryxdc</a></mark></h3>
     </div>
 
-    <nav class="navbar">
-        <ul class="center">
-            <button id="howToPlayBtn" onclick=openHowToPlayDialogue()>How to Play</button>
-            <br>
-            <button id="statsBtn" onclick=openStatsDialogue()>Stats</button>
-            <button id="aboutBtn" onclick=openAboutDialogue()>About</button>
-            <button id="moreBtn" onclick=openMoreDialogue()>More</button>
-        </ul>
-    </nav>
+    <br>
 
-    <dialog id="howToPlayDialogue">
-        <div class="howToPlayWrapper">
-            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitHowToPlayDialogue()><i class="fa-solid fa-x"></i></button>
-            <h1>How to Play</h1>
-            <h2>Guessing</h2>
-            <p>Guess any runner to begin.</p>
-            <p>You will be shown a set of <b>6 statistics</b> for the runner you guessed,<br>and how they compare to the correct runner.</p>
-            <p>You can hover over the <b>?</b> symbols to read what each one means.</p>
-            <p>You have <b>7 total guesses</b> to use the information provided<br>to figure out who the correct runner is.<br></p>
-            <p><b>Good luck!</b></p>
-            <br>
-            <h2>Extra Info</h2>
-            <h3>Who is included?</h3>
-            <p>The <b>Top 150 Runners</b> in Any% 1P are all included.</p>
-            <h3>How often is the data updated?</h3>
-            <p>Once per day.<br><br>Data is typically about a day out of date:<br>this keeps consistency among time zones.</p>
-            <h3>When does the game reset?</h3>
-            <p>Midnight in <b>your</b> local time!</p>
+    <div id="gameList" class="center">
+        <div id="guessTheRunnerBox">
+            <a href="/guess-the-runner/"><img src="/guess-the-runner/guessthesmorunner.png" alt="Guess the SMO Runner" id="guessTheRunnerLogo"></a>
+            <h2 onclick="location.href='/guess-the-runner/'"><mark>Guess the SMO Runner </mark></h2>
         </div>
-    </dialog>
 
-    <dialog id="statsDialogue">
-        <div class="statsWrapper">
-            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitStatsDialogue()><i class="fa-solid fa-x"></i></button>
-            <h1>Stats</h1>
-            <h2>Your guess distribution</h2>
-            <h4>Refresh to update</h4>
-            <div id="guessChartContainer">
-                <canvas id="guessChart"></canvas>
-            </div>
-            <p id="widenGuessChart">WWWWWWWWWWWWWWWWWWWWWWWWWWWW</p> <!-- this is so stupid but it makes the chart bigger lol, nothing else was working well -->
-            <p id="totalGames"></p>
-            <p id="lastPlayed"></p>
+        <div id="higherOrLowerBox">
+            <a href="/higher-or-lower/"><img src="higher_or_lower_logo.png" alt="Higher or Lower" id="higherOrLowerLogo" class="gameLogo"></a>
+            <h2 onclick="location.href='/higher-or-lower/'"><mark>Higher or Lower</mark></h2>
         </div>
-    </dialog>
 
-    <dialog id="aboutDialogue">
-        <div class="aboutWrapper">
-            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitAboutDialogue()><i class="fa-solid fa-x"></i></button>
-            <h1>About</h1>
-            <h2>Credits</h2>
-            <p>Made by <a href="https://twitch.tv/tryxdc" target="_blank">tryxdc</a></p>
-            <p>Sponsored by <a href="https://www.twitch.tv/breakingbedwars" target="_blank">Breaking Bed</a></p>
-            <p>Heavily inspired by <a href="https://mcsr-game.com/" target="_blank">Guess the MCSR Runner</a></p>
-            <p>Made possible by the <a href="https://speedrun.com" target="_blank">Speedrun.com</a> API</p>
-            <p>Background images (mostly) sourced from the <a href="https://smo.wiki/" target="_blank">SMO Wiki</a></p>
-            <br>
-            <h2>Releases</h2>
-            <h3>First Released</h3>
-            <p><b>21 March 2026</b></p>
-            <h3>Last Updated</h3>
-            <p><b>1 April 2026</b></p>
-            <br>
-            <p><b>NO</b> data is collected.<br>The <b>ONLY</b> cookies stored are for your guess history.</p>
-            <p id="confirmDeletedCookies"></p>
-            <button id="deleteCookiesBtn" onclick=deleteAllDailyCookies() class="cookiesBtns">Delete Daily Cookies</button>
-            <button id="deleteStatsCookiesBtn" onclick=deleteAllStatsCookies() class="cookiesBtns">Delete Stats Cookies</button>
-            <br>
-            <h4>Have an issue or request?<br>Message me on Discord @tryxdc</h4>
+        <div id="trickjumpGeneratorBox">
+            <a href="/trickjump-generator/"><img src="trickjump_generator_logo.png" alt="Trickjump Generator" id="trickjumpGeneratorLogo" class="gameLogo"></a>
+            <h2 onclick="location.href='/trickjump-generator/'"><mark>Trickjump Generator</mark></h2>
         </div>
-    </dialog>
-
-    <dialog id="moreDialogue">
-        <div class="moreWrapper">
-            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitMoreDialogue()><i class="fa-solid fa-x"></i></button>
-            <h1>More</h1>
-            <p>More games or silly little SMO related things I've made:</p>
-            <br>
-            <button id="trickjumpBtn" onclick="location.href='trickjump-generator'">Trickjump Generator</button>
-        </div>
-    </dialog>
-
-
-
-    <dialog id="gameOverDialogue">
-        <div class="wrapper">
-            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitGameOverDialogue()><i class="fa-solid fa-x"></i></button>
-            <img src="guessthesmorunner.png" alt="Guess the SMO Runner Logo" class="gameResultsLogo">
-            <h1>Thanks for playing!</h1>
-            <p id="resultText"></p>
-            <p id="runnerNameText"></p>
-            <p id="confirmCopied"></p>
-            <button id="copyResultsBtn" class="copyResults" onclick=copyResults()>Copy Results <i class="fa-regular fa-copy"></i></button>
-            <br>
-            <button id="copyResultsTwitchBtn" class="copyResults" onclick=copyResultsTwitch()>Copy Results (Twitch Friendly) <i class="fa-brands fa-twitch"></i></button>
-            <p id="countdown"></p>
-            <p id="runnerInfoText"></p>
-        </div>
-    </dialog>
-
-    <p id="guessCounter" class="center infoParagraphs"><mark>Make a guess!</mark></p>
-    <p id="errorMessage" class="center infoParagraphs"></p>
-    
-    <div class="center" id="runnerInput">
-        <input id="runnerInputBox" autocomplete="off" list="runners" type="text" placeholder="Enter runner">
-        <datalist id="runners" class="list"></datalist>
-        <br>
-    </div>
-    <button type="submit" id="runnerSubmit" class="center">Submit</button>
-
-    <div class="center" id="showResults">
-        <button id="showResultsBtn" onclick=openGameOverDialogue()>Show Results</button>
+        
     </div>
 
-    <br><br>
 
-    <br id="preRunners">
+    <dialog id="xDialogue">
+        <div class="xWrapper wrapper">
+        </div>
+    </dialog>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
-    <script src="https://kit.fontawesome.com/eb7f00f391.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+
+    <script src="homepage.js"></script>
 </body>
 </html>
