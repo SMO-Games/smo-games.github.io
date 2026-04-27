@@ -22,7 +22,7 @@ any_2p_var = "var-68km3w4l=013vz03l"
 mincapsany_id = "xd1gxz7d"
 
 # opens dataframe for sovereignty of nation
-sovereignty_df = pd.read_csv("countries.csv")
+sovereignty_df = pd.read_csv("guess-the-runner/countries.csv")
 
 # runners not to be included
 runner_exclusions = [{
@@ -385,8 +385,8 @@ def getAllData(runners_limit):
 
     # change oldest file to newest and update data
     try:
-        os.rename(f"{formatted_two_days_ago}-data.json", f"{formatted_tomorrow}-data.json")
-        writeToJSON(runners, f"{formatted_tomorrow}-data.json")
+        os.rename(f"guess-the-runner/{formatted_two_days_ago}-data.json", f"guess-the-runner/{formatted_tomorrow}-data.json")
+        writeToJSON(runners, f"guess-the-runner/{formatted_tomorrow}-data.json")
     except:
         print("Failed to rename or write to old data")
 
