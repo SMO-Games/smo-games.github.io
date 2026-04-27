@@ -242,6 +242,9 @@ button:active{
 #infoDialogue[open]::backdrop{
     animation: fade-in 250ms forwards;
 }
+#infoDialogue p{
+    font-size: 1.05rem;
+}
 #infoDialogue h1{
     color: rgb(6, 219, 219);
 }
