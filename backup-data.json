@@ -725,6 +725,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "The-G",
+    "id": "xz79lgnj",
+    "country": [
+      "gb",
+      "England",
+      "GB",
+      "EU"
+    ],
+    "name_colour": "#EE4444",
+    "best_mb_placement": [
+      21,
+      "vdooo3yd"
+    ],
+    "best_ce_placement": [
+      3,
+      "jdz8olgd"
+    ],
+    "most_recent_run": "2026-04-27",
+    "twitch_handle": "The_G5%3Fsra",
+    "twitter_handle": "The_G1234%3Fs09",
+    "profile_picture": "https://www.speedrun.com/static/user/xz79lgnj/image?v=194bb0f",
+    "pb": 3472,
+    "console": "Switch 2"
+  },
+  {
     "name": "LightRon",
     "id": "v81dp138",
     "country": [
@@ -848,31 +873,6 @@
     "profile_picture": "https://www.speedrun.com/static/user/o86lm908/image?v=e4f6fa7",
     "pb": 3487,
     "console": "Switch 1"
-  },
-  {
-    "name": "The-G",
-    "id": "xz79lgnj",
-    "country": [
-      "gb",
-      "England",
-      "GB",
-      "EU"
-    ],
-    "name_colour": "#EE4444",
-    "best_mb_placement": [
-      21,
-      "vdooo3yd"
-    ],
-    "best_ce_placement": [
-      3,
-      "jdz8olgd"
-    ],
-    "most_recent_run": "2026-03-13",
-    "twitch_handle": "The_G5%3Fsra",
-    "twitter_handle": "The_G1234%3Fs09",
-    "profile_picture": "https://www.speedrun.com/static/user/xz79lgnj/image?v=194bb0f",
-    "pb": 3487,
-    "console": "Switch 2"
   },
   {
     "name": "userodyssey",
@@ -1017,7 +1017,7 @@
       109,
       "zd37rjy2"
     ],
-    "most_recent_run": "2026-02-19",
+    "most_recent_run": "2026-03-09",
     "twitch_handle": "ZackInTheBoxx",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/j4rnrzm8/image?v=65f543e",
