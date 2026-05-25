@@ -564,7 +564,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      36,
+      37,
       "7kjp3wzk"
     ],
     "most_recent_run": "2024-05-29",
@@ -1014,7 +1014,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      109,
+      110,
       "zd37rjy2"
     ],
     "most_recent_run": "2026-03-09",
@@ -1639,7 +1639,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      60,
+      61,
       "7kjp3wzk"
     ],
     "most_recent_run": "2021-05-21",
@@ -1739,7 +1739,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      34,
+      35,
       "7kjp3wzk"
     ],
     "most_recent_run": "2022-09-06",
@@ -2150,6 +2150,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "Lazyr11",
+    "id": "j2pq3e68",
+    "country": [
+      "fr",
+      "France",
+      "FR",
+      "EU"
+    ],
+    "name_colour": "#44BBEE",
+    "best_mb_placement": [
+      87,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      null,
+      null
+    ],
+    "most_recent_run": "2026-04-23",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/j2pq3e68/image?v=cd595b5",
+    "pb": 3574,
+    "console": "Switch 2"
+  },
+  {
     "name": "Vytox",
     "id": "j9pdvonx",
     "country": [
@@ -2185,7 +2210,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      88,
+      89,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2235,7 +2260,7 @@
     ],
     "name_colour": "#DAA520",
     "best_mb_placement": [
-      90,
+      91,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2260,7 +2285,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      91,
+      92,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2285,7 +2310,7 @@
     ],
     "name_colour": "#FFB3F3",
     "best_mb_placement": [
-      91,
+      92,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2335,7 +2360,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      94,
+      95,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2385,7 +2410,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      96,
+      97,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2473,31 +2498,6 @@
     "profile_picture": "https://www.speedrun.com/static/user/y8d0grgx/image?v=31d2773",
     "pb": 3588,
     "console": "Switch 1"
-  },
-  {
-    "name": "Lazyr11",
-    "id": "j2pq3e68",
-    "country": [
-      "fr",
-      "France",
-      "FR",
-      "EU"
-    ],
-    "name_colour": "#44BBEE",
-    "best_mb_placement": [
-      99,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      null,
-      null
-    ],
-    "most_recent_run": "2025-12-16",
-    "twitch_handle": null,
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/j2pq3e68/image?v=cd595b5",
-    "pb": 3588,
-    "console": "Switch 2"
   },
   {
     "name": "Shemcat",
@@ -2939,7 +2939,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      44,
+      45,
       "7kjp3wzk"
     ],
     "most_recent_run": "2025-07-04",
@@ -2989,7 +2989,7 @@
       "wk6719ed"
     ],
     "best_ce_placement": [
-      56,
+      57,
       "7kjp3wzk"
     ],
     "most_recent_run": "2024-06-24",
@@ -3164,7 +3164,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      36,
+      37,
       "7kjp3wzk"
     ],
     "most_recent_run": "2023-01-01",
@@ -3239,7 +3239,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      132,
+      133,
       "7kjp3wzk"
     ],
     "most_recent_run": "2025-11-14",
@@ -3539,10 +3539,10 @@
       "wk6719ed"
     ],
     "best_ce_placement": [
-      null,
-      null
+      23,
+      "7kjp3wzk"
     ],
-    "most_recent_run": "2025-12-24",
+    "most_recent_run": "2026-04-13",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": null,
@@ -3664,7 +3664,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      291,
+      292,
       "7kjp3wzk"
     ],
     "most_recent_run": "2026-02-05",
@@ -3714,7 +3714,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      112,
+      113,
       "zd37rjy2"
     ],
     "most_recent_run": "2026-01-18",
