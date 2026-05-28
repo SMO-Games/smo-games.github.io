@@ -67,7 +67,7 @@
       1,
       "vdomwx62"
     ],
-    "most_recent_run": "2025-08-24",
+    "most_recent_run": "2026-05-24",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/8ge2d27j/image?v=69cc78d",
@@ -92,7 +92,7 @@
       2,
       "wdmvl7ed"
     ],
-    "most_recent_run": "2026-04-07",
+    "most_recent_run": "2026-04-13",
     "twitch_handle": "WienerSpeedruns",
     "twitter_handle": "HawtBoiSR",
     "profile_picture": "https://www.speedrun.com/static/user/j2wmqyoj/image?v=b2ce744",
@@ -239,7 +239,7 @@
       "vdooqjod"
     ],
     "best_ce_placement": [
-      2,
+      4,
       "zd37rjy2"
     ],
     "most_recent_run": "2025-02-02",
@@ -564,7 +564,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      37,
+      38,
       "7kjp3wzk"
     ],
     "most_recent_run": "2024-05-29",
@@ -617,7 +617,7 @@
       2,
       "7kj3wl42"
     ],
-    "most_recent_run": "2026-04-03",
+    "most_recent_run": "2026-04-08",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/o86lymp8/image?v=f72e246",
@@ -814,7 +814,7 @@
       "vdooqjod"
     ],
     "best_ce_placement": [
-      8,
+      10,
       "zd37rjy2"
     ],
     "most_recent_run": "2026-04-01",
@@ -967,7 +967,7 @@
       3,
       "02q3xryk"
     ],
-    "most_recent_run": "2024-12-07",
+    "most_recent_run": "2026-04-12",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/j0n2ew98/image?v=f57f011",
@@ -1014,7 +1014,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      110,
+      112,
       "zd37rjy2"
     ],
     "most_recent_run": "2026-03-09",
@@ -1117,7 +1117,7 @@
       1,
       "7dg9loxk"
     ],
-    "most_recent_run": "2026-02-27",
+    "most_recent_run": "2026-04-11",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/qj299opx/image?v=a405e1a",
@@ -1589,10 +1589,10 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      12,
+      3,
       "zd37rjy2"
     ],
-    "most_recent_run": "2026-04-10",
+    "most_recent_run": "2026-04-13",
     "twitch_handle": "samdwidge",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/qjor033j/image?v=344902d",
@@ -1739,7 +1739,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      35,
+      36,
       "7kjp3wzk"
     ],
     "most_recent_run": "2022-09-06",
@@ -1839,7 +1839,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      46,
+      47,
       "zd37rjy2"
     ],
     "most_recent_run": "2021-10-26",
@@ -2514,7 +2514,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      65,
+      66,
       "zd37rjy2"
     ],
     "most_recent_run": "2023-03-05",
@@ -2675,6 +2675,31 @@
     "console": "Switch 2"
   },
   {
+    "name": "aoitori",
+    "id": "jm0kydo8",
+    "country": [
+      "jp",
+      "Japan",
+      "JP",
+      "AS"
+    ],
+    "name_colour": "#249BCE",
+    "best_mb_placement": [
+      106,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      13,
+      "7kj3wl42"
+    ],
+    "most_recent_run": "2026-04-23",
+    "twitch_handle": null,
+    "twitter_handle": "qinginiao214530",
+    "profile_picture": "https://www.speedrun.com/static/user/jm0kydo8/image?v=11825fe",
+    "pb": 3592,
+    "console": "Switch 2"
+  },
+  {
     "name": "Odme_",
     "id": "qjor2nj6",
     "country": [
@@ -2710,7 +2735,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      108,
+      109,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2760,7 +2785,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      108,
+      109,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2785,7 +2810,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      112,
+      113,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2939,7 +2964,7 @@
       "wdmw4e42"
     ],
     "best_ce_placement": [
-      45,
+      46,
       "7kjp3wzk"
     ],
     "most_recent_run": "2025-07-04",
@@ -3010,7 +3035,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      121,
+      122,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3085,7 +3110,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      123,
+      124,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3164,7 +3189,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      37,
+      38,
       "7kjp3wzk"
     ],
     "most_recent_run": "2023-01-01",
@@ -3235,7 +3260,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      130,
+      131,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3285,7 +3310,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      132,
+      133,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3410,7 +3435,7 @@
     ],
     "name_colour": "#EE4444",
     "best_mb_placement": [
-      137,
+      138,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3435,7 +3460,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      138,
+      139,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3460,7 +3485,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      139,
+      140,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3471,31 +3496,6 @@
     "twitch_handle": "octo_nook",
     "twitter_handle": null,
     "profile_picture": null,
-    "pb": 3622,
-    "console": "Switch 2"
-  },
-  {
-    "name": "aoitori",
-    "id": "jm0kydo8",
-    "country": [
-      "jp",
-      "Japan",
-      "JP",
-      "AS"
-    ],
-    "name_colour": "#249BCE",
-    "best_mb_placement": [
-      139,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      13,
-      "7kj3wl42"
-    ],
-    "most_recent_run": "2026-02-21",
-    "twitch_handle": null,
-    "twitter_handle": "qinginiao214530",
-    "profile_picture": "https://www.speedrun.com/static/user/jm0kydo8/image?v=11825fe",
     "pb": 3622,
     "console": "Switch 2"
   },
@@ -3514,7 +3514,7 @@
       "n2y5jwek"
     ],
     "best_ce_placement": [
-      26,
+      27,
       "zd37rjy2"
     ],
     "most_recent_run": "2023-08-25",
@@ -3614,7 +3614,7 @@
       "vdooqjod"
     ],
     "best_ce_placement": [
-      41,
+      42,
       "zd37rjy2"
     ],
     "most_recent_run": "2025-11-13",
@@ -3714,7 +3714,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      113,
+      115,
       "zd37rjy2"
     ],
     "most_recent_run": "2026-01-18",
