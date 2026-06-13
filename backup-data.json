@@ -425,6 +425,31 @@
     "console": "Switch 2"
   },
   {
+    "name": "AdriienSR_",
+    "id": "j5gvown8",
+    "country": [
+      "bl",
+      "Saint Barth\u00e9lemy",
+      "FR",
+      "EU"
+    ],
+    "name_colour": "#EF8241",
+    "best_mb_placement": [
+      18,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      7,
+      "7kjp3wzk"
+    ],
+    "most_recent_run": "2026-06-01",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/j5gvown8/image?v=a2350c6",
+    "pb": 3443,
+    "console": "Switch 2"
+  },
+  {
     "name": "MesaSMO",
     "id": "x3wgo6ej",
     "country": [
@@ -460,7 +485,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      19,
+      20,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -635,7 +660,7 @@
     ],
     "name_colour": "#8AC951",
     "best_mb_placement": [
-      26,
+      27,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -646,31 +671,6 @@
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": null,
-    "pb": 3464,
-    "console": "Switch 2"
-  },
-  {
-    "name": "AdriienSR_",
-    "id": "j5gvown8",
-    "country": [
-      "bl",
-      "Saint Barth\u00e9lemy",
-      "FR",
-      "EU"
-    ],
-    "name_colour": "#EF8241",
-    "best_mb_placement": [
-      26,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      7,
-      "7kjp3wzk"
-    ],
-    "most_recent_run": "2026-04-19",
-    "twitch_handle": null,
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/j5gvown8/image?v=a2350c6",
     "pb": 3464,
     "console": "Switch 2"
   },
@@ -2514,7 +2514,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      67,
+      68,
       "zd37rjy2"
     ],
     "most_recent_run": "2023-03-05",
