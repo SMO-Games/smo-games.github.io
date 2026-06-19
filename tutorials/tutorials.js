@@ -4,7 +4,11 @@ const fullGuideTutorials = [
     ["Intermediate Darker Run Example", "https://www.youtube.com/watch?v=jAU2PCvYE44", "Misc", [], ""],
     ["Commentated All Moons Run", "https://www.youtube.com/watch?v=tehY5D4gO3E", "Misc", [], ""],
     ["Any% 59:58 Splice", "https://www.youtube.com/watch?v=fUSLxIbWWvg", "Misc", [], ""],
-    ["Any% 56:28 w/ Input Display", "https://www.youtube.com/watch?v=ec6YG1AVcT8", "Misc", [], ""]
+    ["Any% 56:28 w/ Input Display", "https://www.youtube.com/watch?v=ec6YG1AVcT8", "Misc", [], ""],
+    ["Any% 1P BTTv9 53:09", "https://www.youtube.com/watch?v=GF8JfxV8Cys", "Misc", [], ""],
+    ["Any% 2P BTTv5 51:58", "https://www.youtube.com/watch?v=WOKns8hEbNk", "Misc", [], ""],
+    ["Darker BTTv2 2:47:28", "https://www.youtube.com/watch?v=Ax1WE_sWdds", "Misc", [], ""],
+    ["All Moons BTTv1 6:25:29", "https://www.youtube.com/watch?v=ctZ2VUzZkOQ", "Misc", [], ""],
 ];
 
 const trickTutorials = [
