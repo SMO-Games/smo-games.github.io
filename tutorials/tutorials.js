@@ -162,7 +162,7 @@ const movementTutorials = [
     ["Uproot Tech", "https://www.youtube.com/watch?v=de54EZ0Xo-Y", "Wooded", [], ""],
     ["Reverse Bonk", "https://www.youtube.com/watch?v=HozQA7zZy-g", "Misc", [], ""],
     ["Homing Throw Jump", "https://www.youtube.com/watch?v=CnA2y--tmnY", "Misc", [], ""],
-    ["Cappy Roll Jump", "https://www.youtube.com/watch?v=uUmGXl21YYk", "Misc", [], ""]
+    ["Vault (Cappy Roll Jump)", "https://www.youtube.com/watch?v=uUmGXl21YYk", "Misc", [], ""]
 ];
 
 const miscTutorials = [
