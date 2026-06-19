@@ -172,6 +172,13 @@ const movementTutorials = [
     ["Uproot Tech", "https://www.youtube.com/watch?v=de54EZ0Xo-Y", "Wooded", [], ""],
     ["Homing Throws", "https://www.youtube.com/watch?v=c0sXKJOEXRU", "Misc", [], ""],
     ["Vault (Cappy Roll Jump)", "https://www.youtube.com/watch?v=uUmGXl21YYk", "Misc", [], ""],
+    ["Yellow Dram", "https://www.youtube.com/watch?v=HWl51Ze8IHU", "Misc", [], ""],
+    ["Relax Tech", "https://www.youtube.com/watch?v=5Rq-w7-7eD4", "Misc", [], ""],
+    ["Moonwalk", "https://www.youtube.com/watch?v=n_YngwlVMNs", "Misc", [], ""],
+    ["Snapshot Buffering (Trickjumping)", "https://www.youtube.com/watch?v=DxS3EIn1RQc", "Misc", [], ""],
+    ["Triple Jump Setups (Trickjumping)", "https://www.youtube.com/watch?v=LnEQb4CzqNw", "Misc", [], ""],
+    ["Cap Throw Analysis / Info", "https://www.youtube.com/watch?v=3P4zvHq0Ldw", "Misc", [], ""],
+    ["Trickjumping Glossary", "https://www.youtube.com/watch?v=7Grrh8_B4Ug", "Misc", [], ""],
     ["Reverse Bonk", "https://www.youtube.com/watch?v=HozQA7zZy-g", "Misc", [], ""]
 ];
 
