@@ -88,6 +88,13 @@ h4{
 }
 
 
+#routesContainer h2{
+    color: white;
+}
+#routesContainer div{
+    margin-bottom: 75px;
+}
+
 #category-guides-videos{
     display: grid;
 }
@@ -98,6 +105,9 @@ h4{
     display: none;
 }
 #misc-videos{
+    display: none;
+}
+#routesList{
     display: none;
 }
 

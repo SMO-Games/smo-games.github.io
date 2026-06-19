@@ -1,6 +1,7 @@
 const fullGuideTutorials = [
     // tomshi and smallant guides are written in html (for thumbnail)
     ["Commentated Darker Run", "https://www.youtube.com/watch?v=GM5e78hA13A", "Misc", [], ""],
+    ["Intermediate Darker Run Example", "https://www.youtube.com/watch?v=jAU2PCvYE44", "Misc", [], ""],
     ["Commentated All Moons Run", "https://www.youtube.com/watch?v=tehY5D4gO3E", "Misc", [], ""],
     ["Any% 59:58 Splice", "https://www.youtube.com/watch?v=fUSLxIbWWvg", "Misc", [], ""],
     ["Any% 56:28 w/ Input Display", "https://www.youtube.com/watch?v=ec6YG1AVcT8", "Misc", [], ""]
@@ -96,7 +97,9 @@ const trickTutorials = [
     ["Knucklotec", "https://www.youtube.com/watch?v=JuGVnZRWoOA", "Sand", [], ""],
     ["Fast Pipes", "https://www.youtube.com/watch?v=EhUraDlq4pE", "Wooded", [], ""],
     ["Nut Clip (Tomshi)", "https://www.youtube.com/watch?v=xzsjfZMZBXE", "Wooded", [], ""],
-    ["Nut Clip Rhythm", "https://www.youtube.com/watch?v=Kig1JG7vP-U", "Wooded", [], ""],
+    ["Nut Clip Rhythm (Tischel)", "https://www.youtube.com/watch?v=Kig1JG7vP-U", "Wooded", [], ""],
+    ["Nut Clip Rhythm (PotatoGodOverlord)", "https://www.youtube.com/watch?v=NLI0FMYU-9Q", "Wooded", [], ""],
+    ["Nut Clip OOB", "https://www.youtube.com/watch?v=P96ceTgsnPo", "Wooded", [], ""],
     ["Torkdrift", "https://www.youtube.com/watch?v=R5JyrGr8SZI", "Wooded", [], ""],
     ["Fast Hats", "https://www.youtube.com/watch?v=S7_ixtYcQdg", "Cloud", [], ""],
     ["Cage Triple", "https://www.youtube.com/watch?v=Guzq0h8gDYM", "Lost", [], ""],
@@ -159,10 +162,11 @@ const movementTutorials = [
     ["Smallant Movement Guide", "https://www.youtube.com/watch?v=F7HZT2lmL04", "Misc", [], ""],
     ["Roll Cancel (PotatoGodOverlord)", "https://www.youtube.com/watch?v=rfsfuJLsq-o", "Misc", [], ""],
     ["Roll Cancel (Tomshi)", "https://www.youtube.com/watch?v=jxBLciZ2EQM", "Misc", [], ""],
+    ["Vectoring", "https://www.youtube.com/watch?v=LnCwU7pYkso", "Misc", [], ""],
     ["Uproot Tech", "https://www.youtube.com/watch?v=de54EZ0Xo-Y", "Wooded", [], ""],
-    ["Reverse Bonk", "https://www.youtube.com/watch?v=HozQA7zZy-g", "Misc", [], ""],
-    ["Homing Throw Jump", "https://www.youtube.com/watch?v=CnA2y--tmnY", "Misc", [], ""],
-    ["Vault (Cappy Roll Jump)", "https://www.youtube.com/watch?v=uUmGXl21YYk", "Misc", [], ""]
+    ["Homing Throws", "https://www.youtube.com/watch?v=c0sXKJOEXRU", "Misc", [], ""],
+    ["Vault (Cappy Roll Jump)", "https://www.youtube.com/watch?v=uUmGXl21YYk", "Misc", [], ""],
+    ["Reverse Bonk", "https://www.youtube.com/watch?v=HozQA7zZy-g", "Misc", [], ""]
 ];
 
 const miscTutorials = [
@@ -184,6 +188,7 @@ const fullGuideDiv = document.getElementById("category-guides-videos");
 const trickDiv = document.getElementById("tricks-videos");
 const movementDiv = document.getElementById("movement-videos");
 const miscDiv = document.getElementById("misc-videos");
+const routesDiv = document.getElementById("routesList")
 
 // excludes tricks to handle those separately
 const allSections = [fullGuideDiv, movementDiv, miscDiv];
@@ -236,16 +241,19 @@ const fullGuideTitle = document.getElementById("category-guides-dropdown");
 const trickTitle = document.getElementById("tricks-dropdown");
 const movementTitle = document.getElementById("movement-dropdown");
 const miscTitle = document.getElementById("misc-dropdown");
+const routesTitle = document.getElementById("routes-dropdown");
 
 const fullGuideArrow = document.getElementById("category-guides-arrow");
 const trickArrow = document.getElementById("tricks-arrow");
 const movementArrow = document.getElementById("movement-arrow");
 const miscArrow = document.getElementById("misc-arrow");
+const routesArrow = document.getElementById("routes-arrow");
 
 let fullGuideIsOpen = true;
 let trickIsOpen = false;
 let movementIsOpen = false;
 let miscIsOpen = false;
+let routesIsOpen = false;
 
 fullGuideTitle.addEventListener("click", () => {
     if(fullGuideIsOpen){
@@ -320,5 +328,24 @@ miscTitle.addEventListener("click", () => {
         miscArrow.classList.add("fa-angle-up");
 
         miscIsOpen = true;
+    }
+})
+
+routesTitle.addEventListener("click", () => {
+    if(routesIsOpen){
+        routesDiv.style.display = "none";
+
+        routesArrow.classList.remove("fa-angle-up");
+        routesArrow.classList.add("fa-angle-down");
+        
+        routesIsOpen = false;
+    }
+    else if(!routesIsOpen){
+        routesDiv.style.display = "grid";
+
+        routesArrow.classList.remove("fa-angle-down");
+        routesArrow.classList.add("fa-angle-up");
+
+        routesIsOpen = true;
     }
 })
