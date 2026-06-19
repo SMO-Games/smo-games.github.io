@@ -1,0 +1,324 @@
+const fullGuideTutorials = [
+    ["Tomshi Any% Beginner Guide", "https://www.youtube.com/watch?v=AXq7BXmnLws", "Misc", [], ""],
+    ["Smallant Any% Beginner Guide", "https://www.youtube.com/watch?v=tIr3hPpGjm4", "Misc", [], ""],
+    ["Commentated Darker Run", "https://www.youtube.com/watch?v=GM5e78hA13A", "Misc", [], ""],
+    ["Commentated All Moons Run", "https://www.youtube.com/watch?v=tehY5D4gO3E", "Misc", [], ""],
+    ["Any% 59:58 Splice", "https://www.youtube.com/watch?v=fUSLxIbWWvg", "Misc", [], ""],
+    ["Any% 56:28 w/ Input Display", "https://www.youtube.com/watch?v=ec6YG1AVcT8", "Misc", [], ""]
+];
+
+const trickTutorials = [
+    ["Tomshi Beginner Cap", "https://www.youtube.com/watch?v=AXq7BXmnLws", "Cap", [], ""],
+    ["Tomshi Beginner Cascade", "https://www.youtube.com/watch?v=9-cVpHXyjAg", "Cascade", [], ""],
+    ["Tomshi Beginner Sand", "https://www.youtube.com/watch?v=pfDHqqc_SWE", "Sand", [], ""],
+    ["Tomshi Beginner Lake", "https://www.youtube.com/watch?v=yIfpmQe7RBs", "Lake", [], ""],
+    ["Tomshi Beginner Wooded", "https://www.youtube.com/watch?v=v8I3scAYF-U", "Wooded", [], ""],
+    ["Tomshi Beginner Cloud", "https://www.youtube.com/watch?v=8DlzhnSDNWM", "Cloud", [], ""],
+    ["Tomshi Beginner Lost", "https://www.youtube.com/watch?v=KycscvFamNs", "Lost", [], ""],
+    ["Tomshi Beginner Night Metro", "https://www.youtube.com/watch?v=er4H_a1E1fY", "Metro", [], ""],
+    ["Tomshi Beginner Day Metro", "https://www.youtube.com/watch?v=gME5dRaTZc0", "Metro", [], ""],
+    ["Tomshi Beginner Snow", "https://www.youtube.com/watch?v=2lRQBvPUdlU", "Snow", [], ""],
+    ["Tomshi Beginner Seaside", "https://www.youtube.com/watch?v=rvxR4anYNr0", "Seaside", [], ""],
+    ["Tomshi Beginner Luncheon", "https://www.youtube.com/watch?v=B_XZ4OHxjOs", "Luncheon", [], ""],
+    ["Tomshi Beginner Ruined", "https://www.youtube.com/watch?v=SgmGcv0Y0sk", "Ruined", [], ""],
+    ["Tomshi Beginner Bowser's", "https://www.youtube.com/watch?v=R3hT_cqgbb0", "Bowser's", [], ""],
+    ["Tomshi Beginner Moon", "https://www.youtube.com/watch?v=v_85efCurLs", "Moon", [], ""],
+
+    ["Change of Pace Cap", "https://www.youtube.com/watch?v=XZ53yTpUCHg", "Cap", [], ""],
+    ["Change of Pace Cascade", "https://www.youtube.com/watch?v=Q5DWdhZiK48", "Cascade", [], ""],
+    ["Change of Pace Sand", "https://www.youtube.com/watch?v=B-tLUP97cq8", "Sand", [], ""],
+    ["Change of Pace Lake", "https://www.youtube.com/watch?v=tvB2ecdJSoQ", "Lake", [], ""],
+    ["Change of Pace Wooded", "https://www.youtube.com/watch?v=r3-d0s_Fv1Q", "Wooded", [], ""],
+    ["Change of Pace Lost", "https://www.youtube.com/watch?v=mhNpdlRLuPU", "Lost", [], ""],
+    ["Change of Pace Night Metro", "https://www.youtube.com/watch?v=n6zX6-uCYpk", "Metro", [], ""],
+    ["Change of Pace Day Metro", "https://www.youtube.com/watch?v=nGLsuYhWwdk", "Metro", [], ""],
+    ["Change of Pace Snow", "https://www.youtube.com/watch?v=v0hjVpBHfNk", "Snow", [], ""],
+    ["Change of Pace Mashing", "https://www.youtube.com/watch?v=V7AGqNlDqT0", "Misc", [], ""],
+
+    ["Fast Tippi Neo Poke Dram", "https://www.youtube.com/watch?v=lQq4BeUcODA", "Bowser's", ["Darker", "AM", "100%"], "Advanced"],
+    ["Pokio Music Notes", "https://www.youtube.com/watch?v=opUdzQ-_8yI", "Bowser's", [], ""],
+    ["Transparent Lifts", "https://www.youtube.com/watch?v=gAZ2D-CVh2g", "Sand", [], ""],
+    ["Wooded Sheep", "https://www.youtube.com/watch?v=ZmOPfeIL1PA", "Wooded", [], ""],
+    ["Dark Side Mech", "https://www.youtube.com/watch?v=KoT5_zU3Qkc", "Dark Side", [], ""],
+    ["Volleyball", "https://www.youtube.com/watch?v=0LxXFpvAYj4", "Seaside", [], ""],
+    ["Mollusque (BP)", "https://www.youtube.com/watch?v=nmpjF73OxLM", "Seaside", [], ""],
+    ["Box Clip", "https://www.youtube.com/watch?v=zB-Viw4bCE0", "Snow", [], ""],
+    ["Backflip IP Clip", "https://www.youtube.com/watch?v=mgnXbHmb4s8", "Sand", [], ""],
+    ["Snow Dram (PotatoGodOverlord)", "https://www.youtube.com/watch?v=TLPcyoR2k10", "Snow", [], ""],
+    ["Pokino", "https://www.youtube.com/watch?v=ehxW3eP14SI", "Bowser's", [], ""],
+    ["New TA", "https://www.youtube.com/watch?v=P9tha2b3LWA", "Bowser's", [], ""],
+    ["Nut Clip LJ OOB", "https://www.youtube.com/watch?v=uSZxgneOZXA", "Wooded", [], ""],
+    ["Gate Skip", "https://www.youtube.com/watch?v=GkHWlgNO-wk", "Wooded", [], ""],
+    ["Lava Bubble Jump After Forks", "https://www.youtube.com/watch?v=PkaSLIGyF40", "Luncheon", [], ""],
+    ["Fish Dip", "https://www.youtube.com/watch?v=tzFtFZePT9s", "Seaside", [], ""],
+    ["Tsar Bomba", "https://www.youtube.com/watch?v=19srGtDaj0Q", "Bowser's", [], ""],
+    ["Cheese", "https://www.youtube.com/watch?v=Gr3POL3kx4Y", "Luncheon", [], ""],
+    ["Blowey Noey", "https://www.youtube.com/watch?v=SVo7L1UFJCQ", "Snow", [], ""],
+    ["Backflip Lake Clip (Neo)", "https://www.youtube.com/watch?v=6SyseMWwkVE", "Lake", [], ""],
+    ["Backflip Lake Clip (Speed)", "https://www.youtube.com/watch?v=gyNud_34-DI", "Lake", [], ""],
+    ["Backflip Lake Clip (Jacob S)", "https://www.youtube.com/watch?v=s-Ize19XE2E", "Lake", [], ""],
+    ["Triple Lake Clip", "https://www.youtube.com/watch?v=kswDdvGECc0", "Lake", [], ""],
+    ["Hydrophobia", "https://www.youtube.com/watch?v=QkaULA6QROE", "Cap", [], ""],
+    ["2DSS", "https://www.youtube.com/watch?v=VRKlkrRFMh4", "Moon", [], ""],
+    ["Wiggler (Clip + Patterns)", "https://www.youtube.com/watch?v=ncLh6486K08", "Metro", [], ""],
+    ["Maze Clip", "https://www.youtube.com/watch?v=DeREk799avA", "Wooded", [], ""],
+    ["DSS (Tyron)", "https://www.youtube.com/watch?v=NG6oG8FhR60", "Cascade", [], ""],
+    ["DSS (ironzombie)", "https://www.youtube.com/watch?v=wyUYqHriuzU", "Cascade", [], ""],
+    ["Nut Clip (ironzombie)", "https://www.youtube.com/watch?v=N8yLh6FWiTc", "Wooded", [], ""],
+    ["Dino Skip", "https://www.youtube.com/watch?v=-b4Y5CYM9R4", "Cascade", [], ""],
+    ["Triple Clips", "https://www.youtube.com/watch?v=divMO7UKCWs", "Misc", [], ""],
+    ["ICC", "https://www.youtube.com/watch?v=s8DyENm-CX0", "Snow", [], ""],
+    ["CRCs", "https://www.youtube.com/watch?v=HEEPm5eImaM", "Misc", [], ""],
+    ["1.3 FMC", "https://www.youtube.com/watch?v=N7lRDKiH2UY", "Cascade", [], ""],
+    ["Toad Rocket Flower Jump", "https://www.youtube.com/watch?v=Mn5hStLNzqM", "Wooded", [], ""],
+    ["Chain Chomp Instadive", "https://www.youtube.com/watch?v=hLhdMEViGEY", "Cascade", [], ""],
+    ["Metro Park (Darker)", "https://www.youtube.com/watch?v=rrplZK6vDWU", "Metro", [], ""],
+    ["Lake Fishing", "https://www.youtube.com/watch?v=RxP1yXeJWXA", "Lake", [], ""],
+    ["Jump Rope", "https://www.youtube.com/watch?v=KHesj5ct2Ks", "Metro", [], ""],
+    ["Pokio Bomb Snipe", "https://www.youtube.com/watch?v=855FIgtN84c", "Bowser's", [], ""],
+    ["Mountain Moon Backup", "https://www.youtube.com/watch?v=eBsrdVUMsBY", "Luncheon", [], ""],
+    ["Lake Outfit Clip (OOB)", "https://www.youtube.com/watch?v=ejO1OqbSefA", "Lake", [], ""],
+    ["Lake Outfit Clip (Setup)", "https://www.youtube.com/watch?v=TSD0X82fkLU", "Lake", [], ""],
+    ["Pipes Clip", "https://www.youtube.com/watch?v=H6G7xy97b6w", "Wooded", [], ""],
+    ["Platform Clip", "https://www.youtube.com/watch?v=_Oa-mFwFOk8", "Sand", [], ""],
+    ["Intermediate Wooded", "https://www.youtube.com/watch?v=jNCfMTs4P8I", "Wooded", [], ""],
+    ["Suckage", "https://www.youtube.com/watch?v=DcI5rdy7m9I", "Metro", [], ""],
+    ["3DSS", "https://www.youtube.com/watch?v=lJCGhdmkYPQ", "Dark Side", [], ""],
+    ["Cascade Min Caps", "https://www.youtube.com/watch?v=z1i3RxnaSJI", "Cascade", [], ""],
+    ["Surface Clip", "https://www.youtube.com/watch?v=tik4GaS2NF0", "Misc", [], ""],
+    ["Roll Cancel Clip", "https://www.youtube.com/watch?v=0-obNN-khE4", "Misc", [], ""],
+    ["Moon Clip", "https://www.youtube.com/watch?v=wzsE967-eUM", "Misc", [], ""],
+    ["Frog Vectors", "https://www.youtube.com/watch?v=LX7aZ2W7laE", "Cap", [], ""],
+    ["Madame Broode", "https://www.youtube.com/watch?v=_2kGJEXch-0", "Cascade", [], ""],
+    ["Coin Dupe", "https://www.youtube.com/watch?v=Lc5ZVnW4e54", "Cascade", [], ""],
+    ["Sand Dram (Tomshi)", "https://www.youtube.com/watch?v=__fW3_XT5zs", "Sand", [], ""],
+    ["Reverse Jaxi", "https://www.youtube.com/watch?v=_zQoFu7QUoU", "Sand", [], ""],
+    ["One Spinthrow Notes", "https://www.youtube.com/watch?v=sCEwgw50Arc", "Sand", [], ""],
+    ["Knucklotec", "https://www.youtube.com/watch?v=JuGVnZRWoOA", "Sand", [], ""],
+    ["Fast Pipes", "https://www.youtube.com/watch?v=EhUraDlq4pE", "Wooded", [], ""],
+    ["Nut Clip (Tomshi)", "https://www.youtube.com/watch?v=xzsjfZMZBXE", "Wooded", [], ""],
+    ["Nut Clip Rhythm", "https://www.youtube.com/watch?v=Kig1JG7vP-U", "Wooded", [], ""],
+    ["Torkdrift", "https://www.youtube.com/watch?v=R5JyrGr8SZI", "Wooded", [], ""],
+    ["Fast Hats", "https://www.youtube.com/watch?v=S7_ixtYcQdg", "Cloud", [], ""],
+    ["Cage Triple", "https://www.youtube.com/watch?v=Guzq0h8gDYM", "Lost", [], ""],
+    ["TNT", "https://www.youtube.com/watch?v=6XGluvVwz48", "Lost", [], ""],
+    ["Goomba FREAK", "https://www.youtube.com/watch?v=wX86uOPZO1k", "Metro", [], ""],
+    ["Bullet Billding", "https://www.youtube.com/watch?v=YEViBVNmAHg", "Metro", [], ""],
+    ["Snow Dram (Tomshi)", "https://www.youtube.com/watch?v=MkFVrMGsWmg", "Snow", [], ""],
+    ["Mollusque (Tomshi)", "https://www.youtube.com/watch?v=kewk5SgW8UQ", "Seaside", [], ""],
+    ["Forks Room", "https://www.youtube.com/watch?v=6ciAo619o44", "Luncheon", [], ""],
+    ["Cookatiel", "https://www.youtube.com/watch?v=wkEc5PgL8JY", "Luncheon", [], ""],
+    ["New Shards", "https://www.youtube.com/watch?v=oPS-Q5lzT74", "Bowser's", [], ""],
+    ["Darker FRS", "https://www.youtube.com/watch?v=0IvTY6qT72A", "Darker Side", [], ""],
+    ["Left Side", "https://www.youtube.com/watch?v=wKO4N5yg5bs", "Cap", [], ""],
+    ["Sand Dram (Smallant)", "https://www.youtube.com/watch?v=EEBNMSbWefo", "Sand", [], ""],
+    ["Sphynx Clip", "https://www.youtube.com/watch?v=PKv_5O9mKcU", "Sand", [], ""],
+    ["Nut Clip (Smallant)", "https://www.youtube.com/watch?v=tBGbKQAEzk0", "Wooded", [], ""],
+    ["Scoot Clip", "https://www.youtube.com/watch?v=0gPhHarxXic", "Metro", [], ""],
+    ["Snow Dram (Smallant)", "https://www.youtube.com/watch?v=nbw8pUPJklo", "Snow", [], ""],
+    ["Turnip Clip", "https://www.youtube.com/watch?v=6Npe8KffTPg", "Luncheon", [], ""],
+    ["Birdless Mech", "https://www.youtube.com/watch?v=7-q_lqwOtXs", "Bowser's", [], ""],
+    ["First Moon Skip", "https://www.youtube.com/watch?v=f8Qr8UK5yZc", "Cascade", [], ""],
+    ["Lake Clip", "https://www.youtube.com/watch?v=F9HS8J8st4s", "Lake", [], ""],
+    ["Fish Clip", "https://www.youtube.com/watch?v=yk8SQ_pCfmI", "Seaside", [], ""],
+    ["Light the Far Off Lanterns", "https://www.youtube.com/watch?v=gBDn0VjCPgk", "Luncheon", [], ""],
+    ["Slots", "https://www.youtube.com/watch?v=KbKJQfZCPu8", "Misc", [], ""],
+
+    ["Tomshi Improve Cap", "https://www.youtube.com/watch?v=5zVnhV8FilU", "Cap", [], ""],
+    ["Tomshi Improve Cascade", "https://www.youtube.com/watch?v=ZLYMdcmccnk", "Cascade", [], ""],
+    ["Tomshi Improve Sand", "https://www.youtube.com/watch?v=lYk3jdIo3aA", "Sand", [], ""],
+    ["Tomshi Improve Lake", "https://www.youtube.com/watch?v=v8BZnNPB8uc", "Lake", [], ""],
+    ["Tomshi Improve Wooded", "https://www.youtube.com/watch?v=bbw4yh-Ngmg", "Wooded", [], ""],
+    ["Tomshi Improve Lost", "https://www.youtube.com/watch?v=UuWpMTgiDkY", "Lost", [], ""],
+    ["Tomshi Improve Night Metro", "https://www.youtube.com/watch?v=gtmKXgtoTtg", "Metro", [], ""],
+    ["Tomshi Improve Day Metro", "https://www.youtube.com/watch?v=4Sp7V4gTBAE", "Metro", [], ""],
+    ["Tomshi Improve Snow", "https://www.youtube.com/watch?v=DuM55iJFAmk", "Snow", [], ""],
+    ["Tomshi Improve Seaside", "https://www.youtube.com/watch?v=RqdNyX485K0", "Seaside", [], ""],
+    ["Tomshi Improve Luncheon", "https://www.youtube.com/watch?v=8mAsrhQjiOM", "Luncheon", [], ""],
+    ["Tomshi Improve Bowser's", "https://www.youtube.com/watch?v=8fXRbsHUTLM", "Bowser's", [], ""],
+    ["Tomshi Improve Moon", "https://www.youtube.com/watch?v=z_wCJ2Aogz4", "Moon", [], ""],
+
+    ["Smallant Beginner Cap", "https://www.youtube.com/watch?v=tIr3hPpGjm4", "Cap", [], ""],
+    ["Smallant Beginner Cascade", "https://www.youtube.com/watch?v=tIr3hPpGjm4", "Cascade", [], ""],
+    ["Smallant Beginner Sand", "https://www.youtube.com/watch?v=g-4VxpDa4fM", "Sand", [], ""],
+    ["Smallant Beginner Lake", "https://www.youtube.com/watch?v=g-4VxpDa4fM", "Lake", [], ""],
+    ["Smallant Beginner Wooded", "https://www.youtube.com/watch?v=eIasKpz7m9o", "Wooded", [], ""],
+    ["Smallant Beginner Cloud", "https://www.youtube.com/watch?v=Wae3XZ4PoHA", "Cloud", [], ""],
+    ["Smallant Beginner Lost", "https://www.youtube.com/watch?v=Wae3XZ4PoHA", "Lost", [], ""],
+    ["Smallant Beginner Metro", "https://www.youtube.com/watch?v=zMTl5aVqHdA", "Metro", [], ""],
+    ["Smallant Beginner Snow", "https://www.youtube.com/watch?v=j5z_FQ1Qd0E", "Snow", [], ""],
+    ["Smallant Beginner Seaside", "https://www.youtube.com/watch?v=j5z_FQ1Qd0E", "Seaside", [], ""],
+    ["Smallant Beginner Luncheon", "https://www.youtube.com/watch?v=5emRRyQ180I", "Luncheon", [], ""],
+    ["Smallant Beginner Ruined", "https://www.youtube.com/watch?v=5emRRyQ180I", "Ruined", [], ""],
+    ["Smallant Beginner Bowser's", "https://www.youtube.com/watch?v=_aR-OUbb3eg", "Bowser's", [], ""],
+    ["Smallant Beginner Moon", "https://www.youtube.com/watch?v=2Qy4KMjbHD0", "Moon", [], ""]
+];
+
+const movementTutorials = [
+    ["Tomshi Movement Guide", "https://www.youtube.com/watch?v=Hmb5GL_iHYg", "Misc", [], ""],
+    ["Smallant Movement Guide", "https://www.youtube.com/watch?v=F7HZT2lmL04", "Misc", [], ""],
+    ["Roll Cancel (PotatoGodOverlord)", "https://www.youtube.com/watch?v=rfsfuJLsq-o", "Misc", [], ""],
+    ["Roll Cancel (Tomshi)", "https://www.youtube.com/watch?v=jxBLciZ2EQM", "Misc", [], ""],
+    ["Uproot Tech", "https://www.youtube.com/watch?v=de54EZ0Xo-Y", "Wooded", [], ""],
+    ["Reverse Bonk", "https://www.youtube.com/watch?v=HozQA7zZy-g", "Misc", [], ""],
+    ["Homing Throw Jump", "https://www.youtube.com/watch?v=CnA2y--tmnY", "Misc", [], ""],
+    ["Cappy Roll Jump", "https://www.youtube.com/watch?v=uUmGXl21YYk", "Misc", [], ""]
+];
+
+const miscTutorials = [
+    ["Livesplit", "https://www.youtube.com/watch?v=xq2MCodtH34", "Misc", [], ""],
+    ["Practice Files", "https://www.youtube.com/watch?v=Z9EI17ZNu6E", "Misc", [], ""],
+    ["Autosplit", "https://www.youtube.com/watch?v=9v94tJt5fPI", "Misc", [], ""],
+    ["100 Coins Before Wooded", "https://www.youtube.com/watch?v=gPid8qhBK1Y", "Misc", [], ""],
+    ["All Moons Prep", "https://www.youtube.com/watch?v=KDg4VUXQ8Eg", "Misc", [], ""]
+];
+
+
+// update total tutorials counter
+const totalTutorialsCounter = document.getElementById("totalTutorials");
+let totalTutorials = fullGuideTutorials.length + trickTutorials.length + movementTutorials.length + miscTutorials.length;
+totalTutorialsCounter.innerHTML = `Total tutorials: ${totalTutorials}`
+
+
+const fullGuideDiv = document.getElementById("category-guides-videos");
+const trickDiv = document.getElementById("tricks-videos");
+const movementDiv = document.getElementById("movement-videos");
+const miscDiv = document.getElementById("misc-videos");
+
+// excludes tricks to handle those separately
+const allSections = [fullGuideDiv, movementDiv, miscDiv];
+const allTutorials = [fullGuideTutorials, movementTutorials, miscTutorials];
+
+// populate videos (except tricks)
+let newVideo;
+let currentSection;
+for(let i = 0; i < allSections.length; i++){
+    currentSection = allSections[i];
+    for(let tutorial of allTutorials[i]){
+        newVideo = document.createElement("div");
+        newVideo.innerHTML = `<a href="${tutorial[1]}"><img src="https://img.youtube.com/vi/${tutorial[1].replace("https://www.youtube.com/watch?v=", "")}/mqdefault.jpg" alt="${tutorial[0]}"></a><h3>${tutorial[0]}</h3>`;
+        currentSection.appendChild(newVideo);
+    }
+}
+
+
+const kingdoms = ["Misc", "Cap", "Cascade", "Sand", "Lake", "Wooded", "Cloud", "Lost", "Metro", "Snow", "Seaside", "Luncheon", "Ruined", "Bowser's", "Moon", "Mushroom", "Dark Side", "Darker Side"]
+let newTrickSection;
+let newTrickSectionTitle;
+// make kingdom sections for tricks
+for(let kingdom of kingdoms){
+    newTrickSection = document.createElement("div");
+    newTrickSection.id = `tricks-${kingdom}-videos`;
+    newTrickSection.classList.add("container");
+    newTrickSection.classList.add("center");
+
+    newTrickSectionTitle = document.createElement("h2");
+    newTrickSectionTitle.innerHTML = kingdom;
+    if(kingdom === "Misc"){
+        newTrickSectionTitle.innerHTML = "General";
+    }
+    newTrickSectionTitle.classList.add("trickSubtitle");
+
+    trickDiv.appendChild(newTrickSectionTitle);
+    trickDiv.appendChild(newTrickSection);
+};
+// populate sections
+for(let tutorial of trickTutorials){
+    currentSection = document.getElementById(`tricks-${tutorial[2]}-videos`);
+    newVideo = document.createElement("div");
+    newVideo.innerHTML = `<a href="${tutorial[1]}"><img src="https://img.youtube.com/vi/${tutorial[1].replace("https://www.youtube.com/watch?v=", "")}/mqdefault.jpg" alt="${tutorial[0]}"></a><h3>${tutorial[0]}</h3>`;
+    currentSection.appendChild(newVideo);
+}
+
+
+// handles opening/closing dropdowns
+const fullGuideTitle = document.getElementById("category-guides-dropdown");
+const trickTitle = document.getElementById("tricks-dropdown");
+const movementTitle = document.getElementById("movement-dropdown");
+const miscTitle = document.getElementById("misc-dropdown");
+
+const fullGuideArrow = document.getElementById("category-guides-arrow");
+const trickArrow = document.getElementById("tricks-arrow");
+const movementArrow = document.getElementById("movement-arrow");
+const miscArrow = document.getElementById("misc-arrow");
+
+let fullGuideIsOpen = true;
+let trickIsOpen = false;
+let movementIsOpen = false;
+let miscIsOpen = false;
+
+fullGuideTitle.addEventListener("click", () => {
+    if(fullGuideIsOpen){
+        fullGuideDiv.style.display = "none";
+
+        fullGuideArrow.classList.remove("fa-angle-up");
+        fullGuideArrow.classList.add("fa-angle-down");
+        
+        fullGuideIsOpen = false;
+    }
+    else if(!fullGuideIsOpen){
+        fullGuideDiv.style.display = "grid";
+
+        fullGuideArrow.classList.remove("fa-angle-down");
+        fullGuideArrow.classList.add("fa-angle-up");
+
+        fullGuideIsOpen = true;
+    }
+})
+
+trickTitle.addEventListener("click", () => {
+    if(trickIsOpen){
+        trickDiv.style.display = "none";
+
+        trickArrow.classList.remove("fa-angle-up");
+        trickArrow.classList.add("fa-angle-down");
+        
+        trickIsOpen = false;
+    }
+    else if(!trickIsOpen){
+        trickDiv.style.display = "grid";
+
+        trickArrow.classList.remove("fa-angle-down");
+        trickArrow.classList.add("fa-angle-up");
+
+        trickIsOpen = true;
+    }
+})
+
+movementTitle.addEventListener("click", () => {
+    if(movementIsOpen){
+        movementDiv.style.display = "none";
+
+        movementArrow.classList.remove("fa-angle-up");
+        movementArrow.classList.add("fa-angle-down");
+        
+        movementIsOpen = false;
+    }
+    else if(!miscIsOpen){
+        movementDiv.style.display = "grid";
+
+        movementArrow.classList.remove("fa-angle-down");
+        movementArrow.classList.add("fa-angle-up");
+
+        movementIsOpen = true;
+    }
+})
+
+miscTitle.addEventListener("click", () => {
+    if(miscIsOpen){
+        miscDiv.style.display = "none";
+
+        miscArrow.classList.remove("fa-angle-up");
+        miscArrow.classList.add("fa-angle-down");
+        
+        miscIsOpen = false;
+    }
+    else if(!miscIsOpen){
+        miscDiv.style.display = "grid";
+
+        miscArrow.classList.remove("fa-angle-down");
+        miscArrow.classList.add("fa-angle-up");
+
+        miscIsOpen = true;
+    }
+})
