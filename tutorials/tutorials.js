@@ -1,6 +1,5 @@
 const fullGuideTutorials = [
-    ["Tomshi Any% Beginner Guide", "https://www.youtube.com/watch?v=AXq7BXmnLws", "Misc", [], ""],
-    ["Smallant Any% Beginner Guide", "https://www.youtube.com/watch?v=tIr3hPpGjm4", "Misc", [], ""],
+    // tomshi and smallant guides are written in html (for thumbnail)
     ["Commentated Darker Run", "https://www.youtube.com/watch?v=GM5e78hA13A", "Misc", [], ""],
     ["Commentated All Moons Run", "https://www.youtube.com/watch?v=tehY5D4gO3E", "Misc", [], ""],
     ["Any% 59:58 Splice", "https://www.youtube.com/watch?v=fUSLxIbWWvg", "Misc", [], ""],
@@ -123,6 +122,7 @@ const trickTutorials = [
     ["Fish Clip", "https://www.youtube.com/watch?v=yk8SQ_pCfmI", "Seaside", [], ""],
     ["Light the Far Off Lanterns", "https://www.youtube.com/watch?v=gBDn0VjCPgk", "Luncheon", [], ""],
     ["Slots", "https://www.youtube.com/watch?v=KbKJQfZCPu8", "Misc", [], ""],
+    ["Snow Moon Clip", "https://www.youtube.com/watch?v=iU6Ol_3eSWw", "Snow", [], ""],
 
     ["Tomshi Improve Cap", "https://www.youtube.com/watch?v=5zVnhV8FilU", "Cap", [], ""],
     ["Tomshi Improve Cascade", "https://www.youtube.com/watch?v=ZLYMdcmccnk", "Cascade", [], ""],
@@ -176,7 +176,7 @@ const miscTutorials = [
 
 // update total tutorials counter
 const totalTutorialsCounter = document.getElementById("totalTutorials");
-let totalTutorials = fullGuideTutorials.length + trickTutorials.length + movementTutorials.length + miscTutorials.length;
+let totalTutorials = fullGuideTutorials.length + trickTutorials.length + movementTutorials.length + miscTutorials.length + 2; // add 2 for beginner guides in html that aren't included
 totalTutorialsCounter.innerHTML = `Total tutorials: ${totalTutorials}`
 
 

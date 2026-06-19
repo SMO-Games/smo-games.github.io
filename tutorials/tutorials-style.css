@@ -9,19 +9,40 @@ body{
     background-size: cover;
 }
 
-.mainLogo{
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 30px;
-    width: 18rem;
+#tutorialLogo{
+    width: 24rem;
+    border: 5px solid black;
+    border-radius: 40px;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
+.center{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
 #title{
     color: white;
     font-size: 3rem;
+}
+
+#notice{
+    color: white;
+    font-size: 1.15rem;
+}
+#notice u{
+    font-size: 1.3rem;
+}
+
+#homeBtn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .subtitle{
@@ -58,7 +79,8 @@ body{
 .container img {
     width: 100%;
     object-fit: fill;
-    border: white 1px solid;
+    border: rgb(255, 255, 255) 3px solid;
+    border-radius: 10px;
 }
 
 
@@ -75,45 +97,6 @@ body{
     display: none;
 }
 
-
-.gameLogo{
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.185);
-    border: black solid 5px;
-    width: 24rem;
-    height: 12rem;
-    margin-top: 5px;
-    cursor: pointer;
-    animation: unhoverImg 150ms forwards;
-}
-.gameLogo:hover{
-    animation: hoverImg 150ms forwards;
-}
-
-@keyframes hoverImg{
-    100%{
-        width: 25rem;
-        height: 12.5rem;
-    }
-}
-@keyframes unhoverImg{
-    0%{
-        width: 25rem;
-        height: 12.5rem;
-    }
-    100%{
-        width: 24rem;
-        height: 12rem;
-    }
-}
-
-
-.center{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
 button{
     font-weight: bold;
     font-size: 1.4rem;
@@ -121,8 +104,6 @@ button{
     background-color: rgb(185, 0, 158);
     border: 3px solid black;
     border-radius: 20px;
-    margin-top: 5px;
-    margin-right: 5px;
     padding: 8px;
     text-align: center;
     text-decoration: none;
@@ -133,77 +114,6 @@ button:hover{
 }
 button:active{
     background-color: rgb(122, 0, 104);
-}
-
-
-mark{
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-@keyframes dimImage{
-    0%{
-        background-color: rgba(0, 0, 0, 0);
-    }
-    100%{
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-}
-@keyframes undimImage{
-    0%{
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    100%{
-        background-color: rgba(0, 0, 0, 0);
-    }
-}
-
-@keyframes slide-up{
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-@keyframes fade-in{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes fade-out{
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
-.slide-up-class{
-    animation: slide-up 400ms forwards;
-}
-.fade-in-class{
-    animation: fade-in 400ms forwards;
-}
-.fade-out-class{
-    animation: fade-out 400ms forwards;
-}
-.green-text-class{
-    animation: green-text 400ms forwards;
 }
 
 

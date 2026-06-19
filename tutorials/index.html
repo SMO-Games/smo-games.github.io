@@ -10,8 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1 id="title" class="center">SMO Tutorial Centre</h1>
+    <img src="tutorial_centre_logo.png" id="tutorialLogo">
     <h2 id="totalTutorials" class="center subtitle">Total tutorials: X</h2>
+
+    <br>
+
+    <div id="notice" class="center">
+        <p><u>For learning Any%, I recommend Tomshi's Beginner Tutorials and Change of Pace.</u></p>
+        <p>Some tricks have multiple tutorials. One person might teach it in a different way that you understand better.</p>
+        <p>Click on the dropdowns to open/close the sections.</p>
+    </div>
+
+    <button id="homeBtn" onclick="location.href='../'" class="center">Home</button>
+
     <br>
 
     <div id="category-guides">
@@ -20,7 +31,18 @@
             <i class="fa-solid fa-angle-up" id="category-guides-arrow"></i>
         </div>
         <div class="container center" id="category-guides-videos">
-
+            <div>
+                <a href="https://www.youtube.com/playlist?list=PL8txOlLUZiqWJ3or9w031xfz6OMZuxeCz">
+                    <img src="https://img.youtube.com/vi/mguTFFGDr0I/mqdefault.jpg">
+                </a>
+                <h3>Tomshi Any% Beginner Guide</h3>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/playlist?list=PLiinoyifvFb64od8RyqPFmVqDrFwkgaa0">
+                    <img src="https://img.youtube.com/vi/Bg1ybu2aAwc/mqdefault.jpg">
+                </a>
+                <h3>Smallant Any% Beginner Guide</h3>
+            </div>
         </div>
     </div>
 
@@ -59,7 +81,7 @@
 
         </div>
     </div>
-
+    
     <script src="tutorials.js"></script>
 </body>
 </html>
