@@ -48,6 +48,7 @@ const trickTutorials = [
     ["Mollusque (BP)", "https://www.youtube.com/watch?v=nmpjF73OxLM", "Seaside", [], ""],
     ["Box Clip", "https://www.youtube.com/watch?v=zB-Viw4bCE0", "Snow", [], ""],
     ["Backflip IP Clip", "https://www.youtube.com/watch?v=mgnXbHmb4s8", "Sand", [], ""],
+    ["IP Skip", "https://www.youtube.com/watch?v=mIUiiHyt5lI", "Sand", [], ""],
     ["Snow Dram (PotatoGodOverlord)", "https://www.youtube.com/watch?v=TLPcyoR2k10", "Snow", [], ""],
     ["Pokino", "https://www.youtube.com/watch?v=ehxW3eP14SI", "Bowser's", [], ""],
     ["New TA", "https://www.youtube.com/watch?v=P9tha2b3LWA", "Bowser's", [], ""],
