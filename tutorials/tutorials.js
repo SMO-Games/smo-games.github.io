@@ -89,6 +89,7 @@ const trickTutorials = [
     ["Pipes Clip", "https://www.youtube.com/watch?v=H6G7xy97b6w", "Wooded", [], ""],
     ["Platform Clip", "https://www.youtube.com/watch?v=_Oa-mFwFOk8", "Sand", [], ""],
     ["Intermediate Wooded", "https://www.youtube.com/watch?v=jNCfMTs4P8I", "Wooded", [], ""],
+    ["Reverse People", "https://www.youtube.com/watch?v=-xNdLRK8NRg", "Metro", [], ""],
     ["Suckage", "https://www.youtube.com/watch?v=DcI5rdy7m9I", "Metro", [], ""],
     ["3DSS", "https://www.youtube.com/watch?v=lJCGhdmkYPQ", "Dark Side", [], ""],
     ["Cascade Min Caps", "https://www.youtube.com/watch?v=z1i3RxnaSJI", "Cascade", [], ""],
