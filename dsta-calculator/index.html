@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DSTA Offset Calculator</title>
+    <link rel="stylesheet" href="dsta-style.css">
+    <link rel="icon" type="image/x-icon" href="dsta_calculator_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img src="dsta_calculator_logo.png" id="dstaLogo">
+    <h4 class="center"><mark>Made by <a href="https://twitch.tv/tryxdc">tryxdc</a></mark></h4>
+
+    <br>
+
+    <div id="notice" class="center">
+        <h2><mark>This calculator is <u>not perfect</u>.</mark></h2>
+        <h2><mark>It should be a close estimate.</mark></h2>
+    </div>
+
+    <br><br>
+
+    <div id="consoleSelection" class="center">
+        <h3><mark>Console</mark></h3>
+
+        <label for="switch1"><mark>Switch 1</mark></label>
+        <input type="radio" id="switch1" name="console" value="1">
+        
+        <br><br>
+
+        <label for="switch2"><mark>Switch 2</mark></label>
+        <input type="radio" id="switch2" name="console" value="2">
+    </div>
+
+    <br><br>
+
+    <div id="routeSelection" class="center">
+        <h3><mark>Town Route</mark></h3>
+
+        <label for="regular"><mark>Regular</mark></label>
+        <input type="radio" id="regular" name="route" value="regular">
+        
+        <br><br>
+
+        <label for="reverse"><mark>Reverse</mark></label>
+        <input type="radio" id="reverse" name="route" value="reverse">
+    </div>
+
+    <br><br>
+
+    <div id="cascadeExitSelection" class="center">
+        <h3><mark>Cascade Exit Time</mark></h3>
+        <h4><mark>Recommended: Use your Sum of Best's Exit</mark></h4>
+
+        <label for="cascadeExitTimeMins"><mark>Minutes</mark></label>
+        <input type="number" id="cascadeExitTimeMins" name="cascadeExitTimeMins" autocomplete="off" maxlength="2" placeholder="e.g. 5">
+
+        <br><br>
+
+        <label for="cascadeExitTimeSecs"><mark>Seconds</mark></label>
+        <input type="number" id="cascadeExitTimeSecs" name="cascadeExitTimeSecs" autocomplete="off" maxlength="2" placeholder="e.g. 35">
+
+        <!--
+        <br><br>
+
+        <label for="cascadeExitTimeMS"><mark>Milliseconds (optional)</mark></label>
+        <input type="text" id="cascadeExitTimeMS" name="cascadeExitTimeMS" autocomplete="off" maxlength="3" placeholder="e.g. 500">
+        -->
+    </div>
+
+    <br><br>
+
+    <button id="calculateBtn" class="center">Calculate</button>
+
+    <br><br>
+
+    <h2 class="center" style="display:none"><mark id="errorText">You have not filled in all the information!</mark></h2>
+
+    <div id="calcResult" class="center" style="display:none">
+        <h2><mark id="offsetResultText">Use an offset of -[]</mark></h2>
+        <h2><mark id="clockResultText">With the clock set at :[]</mark></h2>
+    </div>
+    
+    <br><br><br><br><br>
+
+    <script src="dsta.js"></script>
+</body>
+</html>
