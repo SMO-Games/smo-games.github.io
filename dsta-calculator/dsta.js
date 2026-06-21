@@ -2,7 +2,8 @@ const cascadeExitMinsInput = document.getElementById("cascadeExitTimeMins");
 const cascadeExitSecsInput = document.getElementById("cascadeExitTimeSecs");
 
 const calculateBtn = document.getElementById("calculateBtn");
-const errorText = document.getElementById("errorText")
+const errorText = document.getElementById("errorText");
+const calcResultDiv = document.getElementById("calcResult");
 const offsetText = document.getElementById("offsetResultText");
 const clockText = document.getElementById("clockResultText");
 
@@ -10,6 +11,12 @@ let consoleType;
 let route;
 let cascadeExitMins;
 let cascadeExitSecs;
+
+
+// presence check on time input fields
+function isEmpty(str) {
+    return !str.trim().length;
+}
 
 
 // calculate offset
@@ -59,7 +66,7 @@ calculateBtn.addEventListener("click", () => {
         consoleType = document.querySelector('input[type=radio][name=console]:checked').value;
         route = document.querySelector('input[type=radio][name=route]:checked').value;
     } catch {
-        errorText.style.display = "initial";
+        errorText.style.display = "block";
         formIsValid = false;
     }
     
@@ -67,9 +74,15 @@ calculateBtn.addEventListener("click", () => {
         cascadeExitMins = Number(cascadeExitMinsInput.value);
         cascadeExitSecs = Number(cascadeExitSecsInput.value);
     } catch {
-        errorText.style.display = "initial";
+        errorText.style.display = "block";
         formIsValid = false;
     }
+
+    if(isEmpty(cascadeExitMinsInput.value) || isEmpty(cascadeExitSecsInput.value)){
+        errorText.style.display = "block";
+        formIsValid = false;
+    }
+
 
     if(formIsValid){
         let offset;
@@ -82,8 +95,6 @@ calculateBtn.addEventListener("click", () => {
         offsetText.innerHTML = `Use an offset of <u>-${offset}</u>`;
         clockText.innerHTML = `With the clock set at <u>:${clock}</u>`;
 
-        document.getElementById("calcResult").style.display = "block";
+        calcResultDiv.style.display = "block";
     }
 })
-
-
