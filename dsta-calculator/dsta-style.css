@@ -50,6 +50,10 @@ h1{
     font-size: 2.2rem;
 }
 
+#dstaWarning mark{
+    font-size: 1.4rem;
+}
+
 h3{
     font-size: 1.8rem;
 }

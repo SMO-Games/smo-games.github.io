@@ -3,6 +3,7 @@ const cascadeExitSecsInput = document.getElementById("cascadeExitTimeSecs");
 
 const calculateBtn = document.getElementById("calculateBtn");
 const errorText = document.getElementById("errorText");
+const dstaWarning = document.getElementById("dstaWarning");
 const calcResultDiv = document.getElementById("calcResult");
 const minOffsetText = document.getElementById("minOffsetResultText");
 const minClockText = document.getElementById("minClockResultText");
@@ -112,6 +113,14 @@ calculateBtn.addEventListener("click", () => {
         let minOffsetResults = calculateOffset(consoleType, route, cascadeExitMins, cascadeExitSecs, "min");
         offset = minOffsetResults[0];
         clock = minOffsetResults[1];
+
+        // display warning if not fast enough
+        if(clock < 53){
+            dstaWarning.style.display = "block";
+        }
+        else{
+            dstaWarning.style.display = "none";
+        }
         
         // set to texts
         minOffsetText.innerHTML = `Use a Livesplit offset of <u class="yellowText">-${offset}</u>`;
@@ -125,5 +134,7 @@ calculateBtn.addEventListener("click", () => {
         // maxClockText.innerHTML = `With the clock set at <u>:${clock}</u>`;
 
         calcResultDiv.style.display = "block"; // display result
+
+        
     }
 })
