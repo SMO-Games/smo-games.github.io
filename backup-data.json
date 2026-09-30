@@ -367,7 +367,7 @@
       4,
       "7kj3wl42"
     ],
-    "most_recent_run": "2026-07-24",
+    "most_recent_run": "2026-08-20",
     "twitch_handle": null,
     "twitter_handle": "rirure_rta",
     "profile_picture": "https://www.speedrun.com/static/user/86n7l15x/image?v=a64ed6b",
@@ -1000,6 +1000,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "TobyTech",
+    "id": "kj90l4rj",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#09B876",
+    "best_mb_placement": [
+      28,
+      "vdooqjod"
+    ],
+    "best_ce_placement": [
+      1,
+      "wk6oz5rk"
+    ],
+    "most_recent_run": "2026-09-04",
+    "twitch_handle": "Toby_Tech",
+    "twitter_handle": "tobytech_",
+    "profile_picture": "https://www.speedrun.com/static/user/kj90l4rj/image?v=882eddc",
+    "pb": 3492,
+    "console": "Switch 2"
+  },
+  {
     "name": "AntoG",
     "id": "j4rvwn58",
     "country": [
@@ -1035,7 +1060,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      42,
+      43,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1146,31 +1171,6 @@
     "twitch_handle": "salmonburt",
     "twitter_handle": "SalmonBurt",
     "profile_picture": "https://www.speedrun.com/static/user/48g7r328/image?v=c2c993f",
-    "pb": 3508,
-    "console": "Switch 2"
-  },
-  {
-    "name": "TobyTech",
-    "id": "kj90l4rj",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#09B876",
-    "best_mb_placement": [
-      28,
-      "vdooqjod"
-    ],
-    "best_ce_placement": [
-      1,
-      "wk6oz5rk"
-    ],
-    "most_recent_run": "2026-08-02",
-    "twitch_handle": "Toby_Tech",
-    "twitter_handle": "tobytech_",
-    "profile_picture": "https://www.speedrun.com/static/user/kj90l4rj/image?v=882eddc",
     "pb": 3508,
     "console": "Switch 2"
   },
@@ -1960,7 +1960,7 @@
     ],
     "name_colour": "#09B876",
     "best_mb_placement": [
-      34,
+      35,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -2410,7 +2410,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      40,
+      41,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -2435,7 +2435,7 @@
     ],
     "name_colour": "#B8B8B8",
     "best_mb_placement": [
-      37,
+      38,
       "wdmw4e42"
     ],
     "best_ce_placement": [
