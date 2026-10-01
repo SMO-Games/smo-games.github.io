@@ -367,7 +367,7 @@
       4,
       "7kj3wl42"
     ],
-    "most_recent_run": "2026-07-24",
+    "most_recent_run": "2026-08-20",
     "twitch_handle": null,
     "twitter_handle": "rirure_rta",
     "profile_picture": "https://www.speedrun.com/static/user/86n7l15x/image?v=a64ed6b",
@@ -400,6 +400,31 @@
     "console": "Switch 2"
   },
   {
+    "name": "FT",
+    "id": "xz920598",
+    "country": [
+      "ca",
+      "Canada",
+      "CA",
+      "aN"
+    ],
+    "name_colour": "#A010A0",
+    "best_mb_placement": [
+      3,
+      "wdmw4e42"
+    ],
+    "best_ce_placement": [
+      3,
+      "rklr3lrk"
+    ],
+    "most_recent_run": "2026-09-06",
+    "twitch_handle": "ft_0",
+    "twitter_handle": "FT_SMO",
+    "profile_picture": "https://www.speedrun.com/static/user/xz920598/image?v=08bd432",
+    "pb": 3433,
+    "console": "Switch 2"
+  },
+  {
     "name": "EEEK",
     "id": "48gkep2j",
     "country": [
@@ -421,31 +446,6 @@
     "twitch_handle": "eeek88",
     "twitter_handle": "eeek88",
     "profile_picture": "https://www.speedrun.com/static/user/48gkep2j/image?v=abf5760",
-    "pb": 3441,
-    "console": "Switch 2"
-  },
-  {
-    "name": "FT",
-    "id": "xz920598",
-    "country": [
-      "ca",
-      "Canada",
-      "CA",
-      "aN"
-    ],
-    "name_colour": "#A010A0",
-    "best_mb_placement": [
-      3,
-      "wdmw4e42"
-    ],
-    "best_ce_placement": [
-      3,
-      "rklr3lrk"
-    ],
-    "most_recent_run": "2026-08-23",
-    "twitch_handle": "ft_0",
-    "twitter_handle": "FT_SMO",
-    "profile_picture": "https://www.speedrun.com/static/user/xz920598/image?v=08bd432",
     "pb": 3441,
     "console": "Switch 2"
   },
@@ -750,6 +750,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "cmanrulo",
+    "id": "xkp0k9kj",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#EE2222",
+    "best_mb_placement": [
+      3,
+      "n2y5jwek"
+    ],
+    "best_ce_placement": [
+      null,
+      null
+    ],
+    "most_recent_run": "2026-09-24",
+    "twitch_handle": "cmanrulo",
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/xkp0k9kj/image?v=90dcd5a",
+    "pb": 3470,
+    "console": "Switch 2"
+  },
+  {
     "name": "Stravos96",
     "id": "kj9vqq7x",
     "country": [
@@ -785,7 +810,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      31,
+      32,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1000,6 +1025,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "TobyTech",
+    "id": "kj90l4rj",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#09B876",
+    "best_mb_placement": [
+      28,
+      "vdooqjod"
+    ],
+    "best_ce_placement": [
+      1,
+      "wk6oz5rk"
+    ],
+    "most_recent_run": "2026-09-04",
+    "twitch_handle": "Toby_Tech",
+    "twitter_handle": "tobytech_",
+    "profile_picture": "https://www.speedrun.com/static/user/kj90l4rj/image?v=882eddc",
+    "pb": 3492,
+    "console": "Switch 2"
+  },
+  {
     "name": "AntoG",
     "id": "j4rvwn58",
     "country": [
@@ -1035,7 +1085,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      42,
+      44,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1075,6 +1125,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "SMOgamer11000",
+    "id": "jnp30zw8",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#44BBEE",
+    "best_mb_placement": [
+      13,
+      "wdmw4e42"
+    ],
+    "best_ce_placement": [
+      45,
+      "jdz8olgd"
+    ],
+    "most_recent_run": "2026-09-08",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/jnp30zw8/image?v=620ed69",
+    "pb": 3505,
+    "console": "Switch 2"
+  },
+  {
     "name": "ZackInTheBox",
     "id": "j4rnrzm8",
     "country": [
@@ -1100,31 +1175,6 @@
     "console": "Switch 2"
   },
   {
-    "name": "cmanrulo",
-    "id": "xkp0k9kj",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#EE2222",
-    "best_mb_placement": [
-      3,
-      "n2y5jwek"
-    ],
-    "best_ce_placement": [
-      null,
-      null
-    ],
-    "most_recent_run": "2026-08-29",
-    "twitch_handle": "cmanrulo",
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/xkp0k9kj/image?v=90dcd5a",
-    "pb": 3507,
-    "console": "Switch 2"
-  },
-  {
     "name": "SalmonBurt",
     "id": "48g7r328",
     "country": [
@@ -1146,31 +1196,6 @@
     "twitch_handle": "salmonburt",
     "twitter_handle": "SalmonBurt",
     "profile_picture": "https://www.speedrun.com/static/user/48g7r328/image?v=c2c993f",
-    "pb": 3508,
-    "console": "Switch 2"
-  },
-  {
-    "name": "TobyTech",
-    "id": "kj90l4rj",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#09B876",
-    "best_mb_placement": [
-      28,
-      "vdooqjod"
-    ],
-    "best_ce_placement": [
-      1,
-      "wk6oz5rk"
-    ],
-    "most_recent_run": "2026-08-02",
-    "twitch_handle": "Toby_Tech",
-    "twitter_handle": "tobytech_",
-    "profile_picture": "https://www.speedrun.com/static/user/kj90l4rj/image?v=882eddc",
     "pb": 3508,
     "console": "Switch 2"
   },
@@ -1260,7 +1285,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      51,
+      52,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1335,7 +1360,7 @@
     ],
     "name_colour": "#F772C5",
     "best_mb_placement": [
-      54,
+      55,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1347,6 +1372,31 @@
     "twitter_handle": null,
     "profile_picture": null,
     "pb": 3524,
+    "console": "Switch 2"
+  },
+  {
+    "name": "TuxedoCat",
+    "id": "qjnlym4x",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#F0C03E",
+    "best_mb_placement": [
+      32,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      null,
+      null
+    ],
+    "most_recent_run": "2026-09-06",
+    "twitch_handle": "TuxedoCat22",
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/qjnlym4x/image?v=3d6cfad",
+    "pb": 3526,
     "console": "Switch 2"
   },
   {
@@ -1400,31 +1450,6 @@
     "console": "Switch 2"
   },
   {
-    "name": "SMOgamer11000",
-    "id": "jnp30zw8",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#44BBEE",
-    "best_mb_placement": [
-      13,
-      "wdmw4e42"
-    ],
-    "best_ce_placement": [
-      45,
-      "jdz8olgd"
-    ],
-    "most_recent_run": "2026-08-18",
-    "twitch_handle": null,
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/jnp30zw8/image?v=620ed69",
-    "pb": 3528,
-    "console": "Switch 2"
-  },
-  {
     "name": "slitzifySR",
     "id": "j030v33j",
     "country": [
@@ -1435,7 +1460,7 @@
     ],
     "name_colour": "#FFB3F3",
     "best_mb_placement": [
-      58,
+      59,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1485,7 +1510,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      59,
+      60,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1510,7 +1535,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      61,
+      62,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1560,7 +1585,7 @@
     ],
     "name_colour": "#EE4444",
     "best_mb_placement": [
-      62,
+      63,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1585,7 +1610,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      64,
+      65,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1635,7 +1660,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      66,
+      67,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1660,7 +1685,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      66,
+      67,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1710,7 +1735,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      69,
+      70,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1735,7 +1760,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      70,
+      71,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1760,7 +1785,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      71,
+      72,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1810,7 +1835,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      72,
+      73,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1935,7 +1960,7 @@
     ],
     "name_colour": "#09B876",
     "best_mb_placement": [
-      34,
+      35,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -2160,7 +2185,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      87,
+      88,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2170,6 +2195,31 @@
     "most_recent_run": "2026-01-26",
     "twitch_handle": null,
     "twitter_handle": null,
+    "profile_picture": null,
+    "pb": 3570,
+    "console": "Switch 1"
+  },
+  {
+    "name": "Pro_Wannabe",
+    "id": "8e64po2j",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#FFFFFF",
+    "best_mb_placement": [
+      32,
+      "vdooo3yd"
+    ],
+    "best_ce_placement": [
+      3,
+      "rklr3lrk"
+    ],
+    "most_recent_run": "2026-09-06",
+    "twitch_handle": "ghastlygamer750",
+    "twitter_handle": "GhastlyInfinity",
     "profile_picture": null,
     "pb": 3570,
     "console": "Switch 1"
@@ -2210,7 +2260,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      89,
+      91,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2260,7 +2310,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      89,
+      91,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2285,7 +2335,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      92,
+      94,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2335,7 +2385,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      94,
+      96,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2385,7 +2435,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      40,
+      41,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -2410,7 +2460,7 @@
     ],
     "name_colour": "#B8B8B8",
     "best_mb_placement": [
-      37,
+      38,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -2435,7 +2485,7 @@
     ],
     "name_colour": "#DAA520",
     "best_mb_placement": [
-      98,
+      100,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2460,7 +2510,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      99,
+      101,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2485,7 +2535,7 @@
     ],
     "name_colour": "#FFB3F3",
     "best_mb_placement": [
-      99,
+      101,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2535,7 +2585,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      101,
+      103,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2560,7 +2610,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      103,
+      105,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2610,7 +2660,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      105,
+      107,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2710,7 +2760,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      108,
+      110,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2735,7 +2785,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      108,
+      110,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2860,7 +2910,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      114,
+      116,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2885,7 +2935,7 @@
     ],
     "name_colour": "#249BCE",
     "best_mb_placement": [
-      114,
+      116,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2910,7 +2960,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      117,
+      119,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2950,31 +3000,6 @@
     "console": "Switch 2"
   },
   {
-    "name": "Pro_Wannabe",
-    "id": "8e64po2j",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#FFFFFF",
-    "best_mb_placement": [
-      32,
-      "vdooo3yd"
-    ],
-    "best_ce_placement": [
-      3,
-      "rklr3lrk"
-    ],
-    "most_recent_run": "2026-05-26",
-    "twitch_handle": "ghastlygamer750",
-    "twitter_handle": "GhastlyInfinity",
-    "profile_picture": null,
-    "pb": 3593,
-    "console": "Switch 1"
-  },
-  {
     "name": "Quatex99",
     "id": "j26vgeox",
     "country": [
@@ -2985,7 +3010,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      120,
+      121,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2996,31 +3021,6 @@
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/j26vgeox/image?v=5913b32",
-    "pb": 3594,
-    "console": "Switch 1"
-  },
-  {
-    "name": "TuxedoCat",
-    "id": "qjnlym4x",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#F0C03E",
-    "best_mb_placement": [
-      32,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      null,
-      null
-    ],
-    "most_recent_run": "2025-01-03",
-    "twitch_handle": "TuxedoCat22",
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/qjnlym4x/image?v=3d6cfad",
     "pb": 3594,
     "console": "Switch 1"
   },
