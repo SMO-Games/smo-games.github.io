@@ -1700,6 +1700,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "Maxsterious",
+    "id": "xyomqevj",
+    "country": [
+      "gb",
+      "United Kingdom",
+      "GB",
+      "EU"
+    ],
+    "name_colour": "#A010A0",
+    "best_mb_placement": [
+      14,
+      "vdooo3yd"
+    ],
+    "best_ce_placement": [
+      1,
+      "rklr3lrk"
+    ],
+    "most_recent_run": "2026-09-06",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/xyomqevj/image?v=54f9c5f",
+    "pb": 3542,
+    "console": "Switch 1"
+  },
+  {
     "name": "SpeZy",
     "id": "8gezw3rj",
     "country": [
@@ -1735,7 +1760,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      70,
+      71,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1760,7 +1785,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      71,
+      72,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1785,7 +1810,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      72,
+      73,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1835,7 +1860,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      73,
+      74,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2185,7 +2210,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      88,
+      89,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2260,7 +2285,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      91,
+      92,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2310,7 +2335,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      91,
+      92,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2335,7 +2360,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      94,
+      95,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2385,7 +2410,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      96,
+      97,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2485,7 +2510,7 @@
     ],
     "name_colour": "#DAA520",
     "best_mb_placement": [
-      100,
+      101,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2510,7 +2535,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      101,
+      102,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2535,7 +2560,7 @@
     ],
     "name_colour": "#FFB3F3",
     "best_mb_placement": [
-      101,
+      102,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2585,7 +2610,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      103,
+      104,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2610,7 +2635,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      105,
+      106,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2660,7 +2685,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      107,
+      108,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2760,7 +2785,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      110,
+      111,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2785,7 +2810,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      110,
+      111,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2846,31 +2871,6 @@
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/dx3olz7x/image?v=64709c1",
-    "pb": 3590,
-    "console": "Switch 1"
-  },
-  {
-    "name": "Maxsterious",
-    "id": "xyomqevj",
-    "country": [
-      "gb",
-      "United Kingdom",
-      "GB",
-      "EU"
-    ],
-    "name_colour": "#A010A0",
-    "best_mb_placement": [
-      14,
-      "vdooo3yd"
-    ],
-    "best_ce_placement": [
-      1,
-      "rklr3lrk"
-    ],
-    "most_recent_run": "2026-08-11",
-    "twitch_handle": null,
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/xyomqevj/image?v=54f9c5f",
     "pb": 3590,
     "console": "Switch 1"
   },
