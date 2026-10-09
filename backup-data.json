@@ -292,7 +292,7 @@
       1,
       "xd1gxz7d"
     ],
-    "most_recent_run": "2026-08-27",
+    "most_recent_run": "2026-09-01",
     "twitch_handle": null,
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/qjo53908/image?v=05e47b5",
@@ -339,8 +339,8 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      2,
-      "wkpm60jk"
+      3,
+      "wk6v89ed"
     ],
     "most_recent_run": "2026-05-15",
     "twitch_handle": "Dangers",
@@ -985,7 +985,7 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      7,
+      8,
       "wdmw4e42"
     ],
     "best_ce_placement": [
@@ -1142,7 +1142,7 @@
       3,
       "z2746542"
     ],
-    "most_recent_run": "2026-09-05",
+    "most_recent_run": "2026-09-12",
     "twitch_handle": "sa1102smo",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/j2qy71pj/image?v=d48799d",
@@ -3375,6 +3375,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "Millergrov3",
+    "id": "jmp1ddzj",
+    "country": [
+      "ca",
+      "Canada",
+      "CA",
+      "aN"
+    ],
+    "name_colour": "#A010A0",
+    "best_mb_placement": [
+      99,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      97,
+      "7kjp3wzk"
+    ],
+    "most_recent_run": "2026-09-16",
+    "twitch_handle": "millergrov3",
+    "twitter_handle": "divine",
+    "profile_picture": "https://www.speedrun.com/static/user/jmp1ddzj/image?v=9eb81cb",
+    "pb": 3610,
+    "console": "Switch 1"
+  },
+  {
     "name": "shobo",
     "id": "o861e73j",
     "country": [
@@ -3385,7 +3410,7 @@
     ],
     "name_colour": "#6666EE",
     "best_mb_placement": [
-      136,
+      137,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3523,31 +3548,6 @@
     "profile_picture": null,
     "pb": 3617,
     "console": "Switch 2"
-  },
-  {
-    "name": "Millergrov3",
-    "id": "jmp1ddzj",
-    "country": [
-      "ca",
-      "Canada",
-      "CA",
-      "aN"
-    ],
-    "name_colour": "#A010A0",
-    "best_mb_placement": [
-      99,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      97,
-      "7kjp3wzk"
-    ],
-    "most_recent_run": "2026-08-05",
-    "twitch_handle": "millergrov3",
-    "twitter_handle": "divine",
-    "profile_picture": "https://www.speedrun.com/static/user/jmp1ddzj/image?v=9eb81cb",
-    "pb": 3617,
-    "console": "Switch 1"
   },
   {
     "name": "JacksFit",
