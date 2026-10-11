@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMO Timeguessr</title>
+    <link rel="stylesheet" href="smo-timeguessr-style.css">
+    <link rel="icon" type="image/x-icon" href="smo_timeguessr_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img src="smo_timeguessr_logo.png" id="gameLogo">
+    <h4 class="center">Made by <a href="https://twitch.tv/tryxdc">tryxdc</a></h4>
+
+    <button id="homeBtn" onclick="location.href='../'" class="center">Home</button>
+
+    <br>
+
+    <img src="" id="runScreenshot">
+
+    <div class="center" id="extraInfo">
+        <p id="runSplit">Current Split: ???</p>
+        <p id="runTime">Current Time: ???</p>
+        <p id="runPlayer">Player: ???</p>
+    </div>
+
+    <p id="guessCount" class="center">Guesses: 0/5</p>
+
+    <div class="center" id="guessInput">
+        <label for="categoryInput">Category</label>
+        <input id="categoryInput" autocomplete="off" list="categories" type="text" placeholder="Enter category">
+        <datalist id="categories" class="list"></datalist>
+
+        <br>
+
+        <label for="yearInput">Year</label>
+        <input id="yearInput" autocomplete="off" list="years" type="text" placeholder="Enter year">
+        <datalist id="years" class="list"></datalist>
+
+        <br>
+
+        <p id="inputErrorMessage"></p>
+
+        <button type="submit" id="guessSubmit" onclick=submitGuess()>Submit</button>
+    </div>
+    
+
+    <script src="smo-timeguessr.js"></script>
+</body>
+</html>

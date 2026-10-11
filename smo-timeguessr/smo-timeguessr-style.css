@@ -1,0 +1,144 @@
+body{
+    background-color: rgb(37, 38, 39);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    overflow-wrap: anywhere;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gameLogo{
+    width: 20rem;
+    border: 5px solid black;
+    border-radius: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#runScreenshot{
+    width: min(40rem, 95%);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#extraInfo{
+    font-size: 1.2rem;
+}
+
+#guessCount{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 40px;
+}
+
+#guessInput{
+    display: block;
+    margin-top: 15px;
+}
+input{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+
+    font-size: 1.5rem;
+    width: min(290px, 50%);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+label{
+    font-size: 1.2rem;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 25px;
+
+    font-size: max(16px, 1.2vmax);
+    border: 5px white solid;
+    border-radius: 5px;
+}
+
+td{
+    padding: 10px;
+}
+th{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+.center{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#title{
+    font-size: 3rem;
+}
+
+
+
+button{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 0, 158);
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+button:hover{
+    background-color: rgb(158, 0, 134);
+}
+button:active{
+    background-color: rgb(122, 0, 104);
+}
+
+
+dialog .wrapper{
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+dialog{
+    /* remove scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    border: 5px solid rgb(20, 3, 45);
+    background-color: rgb(47, 3, 77);
+}
+/* remove scrollbar */
+dialog::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    color: rgb(255, 0, 216);
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(182, 0, 155);
+}
+a:active{
+    color: rgb(150, 0, 127);
+}
