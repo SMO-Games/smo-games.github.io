@@ -850,6 +850,31 @@
     "console": "Switch 2"
   },
   {
+    "name": "anttosr",
+    "id": "j46w4gv8",
+    "country": [
+      "fi",
+      "Finland",
+      "FI",
+      "EU"
+    ],
+    "name_colour": "#FF3091",
+    "best_mb_placement": [
+      26,
+      "wdmw4e42"
+    ],
+    "best_ce_placement": [
+      4,
+      "z2746542"
+    ],
+    "most_recent_run": "2026-09-27",
+    "twitch_handle": "anttosr",
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/j46w4gv8/image?v=5936e49",
+    "pb": 3474,
+    "console": "Switch 2"
+  },
+  {
     "name": "LightRon",
     "id": "v81dp138",
     "country": [
@@ -947,31 +972,6 @@
     "twitter_handle": "thegoodgoomba",
     "profile_picture": "https://www.speedrun.com/static/user/kj99w37j/image?v=7b2944a",
     "pb": 3479,
-    "console": "Switch 2"
-  },
-  {
-    "name": "anttosr",
-    "id": "j46w4gv8",
-    "country": [
-      "fi",
-      "Finland",
-      "FI",
-      "EU"
-    ],
-    "name_colour": "#FF3091",
-    "best_mb_placement": [
-      26,
-      "wdmw4e42"
-    ],
-    "best_ce_placement": [
-      4,
-      "z2746542"
-    ],
-    "most_recent_run": "2026-08-06",
-    "twitch_handle": "anttosr",
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/j46w4gv8/image?v=5936e49",
-    "pb": 3480,
     "console": "Switch 2"
   },
   {
