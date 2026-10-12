@@ -139,6 +139,15 @@ function submitGuess(){
                 if(categoryDistance == 0){
                     categoryDistance = 1;
                 }
+                else if(categoryDistance == 1){
+                    categoryText = "Very close";
+                }
+                else if(categoryDistance == 2){
+                    categoryText = "Close";
+                }
+                else if(categoryDistance > 2){
+                    categoryText = "Far away";
+                }
                 else{
                     categoryText = "❌";
                 }
@@ -153,7 +162,16 @@ function submitGuess(){
             // if not the same year, get the year distance
             if(!(yearGuess.value == year)){
                 yearDistance = Math.abs(Number(yearGuess.value) - Number(year));
-                yearText = "❌";
+
+                if(Number(yearGuess.value) > Number(year)){
+                  yearText = "Earlier";
+                }
+                else if(Number(yearGuess.value) < Number(year)){
+                  yearText = "Later";
+                }
+                else{
+                  yearText = "❌";
+                }
             }
             // if same year, set to correct
             else{
