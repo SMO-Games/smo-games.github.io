@@ -4,6 +4,7 @@ const categories = [
     "Dark Side No Revisits", "Darker Side", "Darker Side Dupes", "Double Any%", "Festival%", "Min Caps Any%", "Min Caps Darker", 
     "Moon List Any%", "Nipple%", "Star%", "World Peace"
 ];
+const categoryYears = [8, 5, 7, 4, 2]
 const years = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"];
 // for run info
 const runScreenshot = document.getElementById("runScreenshot");
@@ -12,14 +13,55 @@ const runTimeDisplay = document.getElementById("runTime");
 const runPlayerDisplay = document.getElementById("runPlayer");
 // for guessing
 let guesses = 0;
-let allowedGuesses = 5;
+const allowedGuesses = 5;
+let score = 10500;
 const categoryGuess = document.getElementById("categoryInput");
 const yearGuess = document.getElementById("yearInput");
 const guessCount = document.getElementById("guessCount");
 const submitButton = document.getElementById("guessSubmit");
 const inputErrorMessage = document.getElementById("inputErrorMessage");
+// for info dialogue
+const infoDialogue = document.getElementById("infoDialogue");
+const infoWrapper = document.querySelector(".infoWrapper");
+// for game over dialogue
+const gameOverDialogue = document.getElementById("gameOverDialogue");
+const gameOverWrapper = document.querySelector(".gameOverWrapper");
+const resultText = document.getElementById("resultText");
+const scoreText = document.getElementById("scoreText");
+const runInfoText = document.getElementById("runInfoText");
+const viewResultsButton = document.getElementById("viewResultsBtn");
+// for countdown
+const countdown = document.getElementById("countdown");
+// for date shenanigans
+let tomorrow = new Date();
+tomorrow.setHours(24, 0, 0, 0); // sets new date to tomorrow midnight
+const date = new Date();
+const day = String(date.getDate());
+const month = String(date.getMonth() + 1); // month is 0 indexed, so +1
+const year = String(date.getFullYear());
+let fullDate = Number(`${day.padStart(2, "0")}${month.padStart(2, "0")}${year}`); // format date as DDMMYYYY to use as seed
+// find number of days since the game began to find game number
+const start = new Date("2026-03-20"); // actually started on the 21st, but that would 0 index it
+const end = new Date(`${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`); // put in current date as YYYY-MM-DD
+const timeDifference = end - start; // find difference in milliseconds
+const daysSinceStart = Math.ceil(timeDifference / (1000 * 3600 * 24));
+// expiry date for cookie stats
+const statsExpiryDate = new Date(2145916800 * 1000) // 1 January 2038 00:00:00
 
 
+// seeded random https://medium.com/@modos.m98/creating-a-seeded-random-string-generator-in-javascript-3165aae1c2d5
+function mulberry32(seed) {
+    return function() {
+        let t = (seed += 0x6D2B79F5);
+        t = Math.imul(t ^ (t >>> 15), t | 1);
+        t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+}
+// get random number to be used for daily random
+//const runnerSeed = mulberry32(fullDate);
+const randomRun = Math.random();
+//const randomRun = runnerSeed();
 
 
 // create datalist for given array and input box
@@ -38,9 +80,12 @@ buildDatalist("years", years);
 
 
 // PICK RANDOM CATEGORY
-let random_category = "Any";
-let random_year = "2021";
+console.log(randomRun)
+console.log(Math.floor(randomRun*5))
+let random_category = categories[Math.floor(randomRun*5)].replace("%", "")
+let random_year = Math.floor(Math.random() * categoryYears[Math.floor(randomRun*5)] + 1)
 const filepath = `screenshots/${random_category}/${random_year}`; // file path to screenshots
+console.log(filepath)
 const runInfo = `${filepath}/info.json`; // get file for data
 
 // set image
@@ -81,30 +126,38 @@ function submitGuess(){
 
             let categoryText = "";
             let yearText = "";
+            let categoryDistance = 0;
+            let yearDistance = 0;
+
+            // set run info text for game over dialogue
+            runInfoText.innerText = `The run was:\n${category}\nin ${year}\nby ${player}`
 
             // if not the same category, get the category distance
             if(!(categoryGuess.value == category)){
-                let categoryDistance = (graph.Dijkstra(categoryGuess.value, category)).length - 1;
+                categoryDistance = (graph.Dijkstra(categoryGuess.value, category)).length - 1;
                 // failsafe if distance is erroneously 0
                 if(categoryDistance == 0){
-                    categoryText = "No path"
+                    categoryDistance = 1;
                 }
                 else{
-                    categoryText = `${categoryDistance} away`;
+                    categoryText = "❌";
                 }
             }
             // if same category, set to correct
             else{
-                categoryText = "✅"
+                console.log("test");
+                categoryDistance = 0;
+                categoryText = "✅";
             }
 
             // if not the same year, get the year distance
             if(!(yearGuess.value == year)){
-                let yearDistance = Math.abs(Number(yearGuess.value) - Number(year));
-                yearText = `${yearDistance} away`;
+                yearDistance = Math.abs(Number(yearGuess.value) - Number(year));
+                yearText = "❌";
             }
             // if same year, set to correct
             else{
+                yearDistance = 0;
                 yearText = "✅"
             }
 
@@ -113,7 +166,7 @@ function submitGuess(){
 
             // make headers
             let tableHeaders = document.createElement("tr");
-            let headerTitles = [" ", "Guess", "Distance"]
+            let headerTitles = [" ", "Guess", "Correct?"]
             // add each header
             for(let headerTitle of headerTitles){
                 let title = document.createElement("th");
@@ -183,14 +236,112 @@ function submitGuess(){
             categoryGuess.value = "";
             yearGuess.value = "";
 
+
+            // adjust score
+            score -= categoryDistance * 200;
+            score -= yearDistance * 200;
+            score -= 500; // -500 per guess
+            // prevent negative score
+            if(score < 0){
+                score = 0;
+            }
+            scoreText.textContent = `Your score: ${score}`;
+            
+
+            // end game if correct
+            if(categoryText == "✅" && yearText == "✅"){
+                submitButton.style.display = "none";
+                viewResultsButton.style.display = "block";
+                categoryGuess.disabled = true;
+                yearGuess.disabled = true;
+                
+                // make plural if more than 1 guess
+                let isPlural = "";
+                if(guesses > 1){
+                    isPlural = "es";
+                }
+                resultText.textContent = `You won in ${guesses} guess${isPlural}!`
+
+                openGameOverDialogue();
+            }
+
+
             // end game after 5 guesses
-            if(guesses == allowedGuesses){
-                submitButton.disabled = true;
+            else if(guesses == allowedGuesses){
+                submitButton.style.display = "none";
+                viewResultsButton.style.display = "block";
+                categoryGuess.disabled = true;
+                yearGuess.disabled = true;
+
+                resultText.textContent = `You lost after 5 guesses ☹️`
+
+                openGameOverDialogue();
             }
         }
         );
     };
 };
+
+
+// manage countdown timer
+let countdownInterval = setInterval(() => {
+    // get immediate time and how much is left to tomorrow
+    let currentTime = new Date().getTime();
+    let timeLeft = tomorrow - currentTime;
+    // format into (h)h:mm:ss
+    let hours = String(Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+    let minutes = String(Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)));
+    let seconds = String(Math.floor((timeLeft % (1000 * 60)) / 1000));
+    let formattedTimeLeft = `${hours.padStart(2, "0")}:${minutes.padStart(2, "0")}:${seconds.padStart(2, "0")}`;
+    // update countdown text
+    if(timeLeft < 0){ // if finished
+        countdown.textContent = `Refresh!`;
+        clearInterval(countdownInterval); // end JS timer
+    }
+    else{ // if not finished
+        countdown.textContent = formattedTimeLeft;
+    }
+})
+
+// copy results to clipboard when button clicked
+// function copyResults(){
+//     let formattedResults = `WRguessr ${daysSinceStart} [${guesses}/${allowedGuesses}]\n${gameResults}${gameURL}`;
+//     navigator.clipboard.writeText(formattedResults);
+//     confirmCopied.textContent = "Results copied!";
+//     setTimeout(() => {confirmCopied.textContent = ""}, 2000) // remove results copied text after 2 seconds
+// };
+
+
+// info dialogue
+// open / close info dialogue
+function openInfoDialogue(){
+    infoDialogue.showModal();
+}
+function exitInfoDialogue(){
+    infoDialogue.close();
+}
+// lets you close the dialogue by clicking anywhere outside of it
+infoDialogue.addEventListener("click", (e) => {
+    if(!infoWrapper.contains(e.target)){
+        exitInfoDialogue();
+    }
+});
+// game over dialogue
+// open / close game over dialogue
+function openGameOverDialogue(){
+    gameOverDialogue.showModal();
+}
+function exitGameOverDialogue(){
+    gameOverDialogue.close();
+}
+// lets you close the dialogue by clicking anywhere outside of it
+gameOverDialogue.addEventListener("click", (e) => {
+    if(!gameOverWrapper.contains(e.target)){
+        exitGameOverDialogue();
+    }
+});
+
+
 
 
 

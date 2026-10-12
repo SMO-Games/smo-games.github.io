@@ -14,6 +14,8 @@
     <h4 class="center">Made by <a href="https://twitch.tv/tryxdc">tryxdc</a></h4>
 
     <button id="homeBtn" onclick="location.href='../'" class="center">Home</button>
+    <br>
+    <button id="infoBtn" onclick=openInfoDialogue() class="center">Info</button>
 
     <br>
 
@@ -43,7 +45,50 @@
         <p id="inputErrorMessage"></p>
 
         <button type="submit" id="guessSubmit" onclick=submitGuess()>Submit</button>
+
+        <button type="button" id="viewResultsBtn" onclick=openGameOverDialogue() style="display:none">View Results</button>
     </div>
+
+
+    <dialog id="infoDialogue">
+        <div class="infoWrapper wrapper">
+            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitInfoDialogue()><i class="fa-solid fa-x"></i></button>
+            <br>
+            <h1>Info</h1>
+            <h2>How to Play</h2>
+            <p>You are given a screenshot from a random WR.</p>
+            <p>Guess the category and the year of the WR!<br>(Currently only new file categories)</p>
+            <p>You are given more information after each guess.</p>
+            <p>The further away your guesses are (both<br>category and year), the more points you lose.</p>
+            <br>
+            <h2>Possible Runs</h2>
+            <p>Each category has one run from each year,<br>which is the final WR from that year.</p>
+            <p>If there was no WR in a given year,<br>that year is excluded.</p>
+            <br>
+            <h2>Credits</h2>
+            <p>Made by <a href="https://www.twitch.tv/chillex_drsado" target="_blank">tryxdc</a></p>
+            <p>Sponsored by <a href="https://www.twitch.tv/chillex_drsado" target="_blank">Breaking Bed</a></p>
+            <br>
+        </div>
+    </dialog>
+
+
+    <dialog id="gameOverDialogue">
+        <div class="gameOverWrapper wrapper">
+            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitGameOverDialogue()><i class="fa-solid fa-x"></i></button>
+            <img src="smo_timeguessr_logo.png" alt="SMO Timeguessr" id="gameResultsLogo">
+            <br>
+            <h1>Thanks for playing!</h1>
+            <h2 id="resultText"></h2>
+            <h2 id="scoreText"></h2>
+            <h3 id="runInfoText"></h3>
+            <p>Time until next game:</p>
+            <p id="countdown" style="font-weight:bold"></p>
+            <p id="confirmCopied"></p>
+            <button id="copyResultsBtn" class="copyResults" onclick=copyResults()>Copy Results <i class="fa-regular fa-copy"></i></button>
+            <br>
+        </div>
+    </dialog>
     
 
     <script src="smo-timeguessr.js"></script>
