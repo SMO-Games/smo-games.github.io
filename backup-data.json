@@ -290,7 +290,7 @@
     ],
     "best_ce_placement": [
       1,
-      "xd1gxz7d"
+      "02q3xryk"
     ],
     "most_recent_run": "2026-09-01",
     "twitch_handle": null,
@@ -325,6 +325,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "AdriienSR_",
+    "id": "j5gvown8",
+    "country": [
+      "bl",
+      "Saint Barth\u00e9lemy",
+      "FR",
+      "EU"
+    ],
+    "name_colour": "#EF8241",
+    "best_mb_placement": [
+      14,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      7,
+      "xd1g8zrd"
+    ],
+    "most_recent_run": "2026-09-18",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/j5gvown8/image?v=f0bdcca",
+    "pb": 3422,
+    "console": "Switch 2"
+  },
+  {
     "name": "userodyssey",
     "id": "jo10r67x",
     "country": [
@@ -335,7 +360,7 @@
     ],
     "name_colour": "#EE4444",
     "best_mb_placement": [
-      14,
+      15,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -460,7 +485,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      19,
+      20,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -497,31 +522,6 @@
     "twitter_handle": "eeek88",
     "profile_picture": "https://www.speedrun.com/static/user/48gkep2j/image?v=abf5760",
     "pb": 3441,
-    "console": "Switch 2"
-  },
-  {
-    "name": "AdriienSR_",
-    "id": "j5gvown8",
-    "country": [
-      "bl",
-      "Saint Barth\u00e9lemy",
-      "FR",
-      "EU"
-    ],
-    "name_colour": "#EF8241",
-    "best_mb_placement": [
-      21,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      7,
-      "xd1g8zrd"
-    ],
-    "most_recent_run": "2026-06-01",
-    "twitch_handle": null,
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/j5gvown8/image?v=f0bdcca",
-    "pb": 3443,
     "console": "Switch 2"
   },
   {
@@ -742,7 +742,7 @@
       1,
       "vdomwx62"
     ],
-    "most_recent_run": "2024-08-27",
+    "most_recent_run": "2025-09-07",
     "twitch_handle": "smodavidtm",
     "twitter_handle": "SMOdavidTM",
     "profile_picture": "https://www.speedrun.com/static/user/o8697558/image?v=3fe1cc7",
@@ -917,7 +917,7 @@
       1,
       "z2746542"
     ],
-    "most_recent_run": "2026-08-11",
+    "most_recent_run": "2026-08-17",
     "twitch_handle": "LapisSR_",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/86vvv75j/image?v=8ebfec4",
@@ -1014,7 +1014,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      2,
+      3,
       "vdomwx62"
     ],
     "most_recent_run": "2025-10-12",
