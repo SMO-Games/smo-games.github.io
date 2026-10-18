@@ -93,6 +93,7 @@ const trickTutorials = [
     ['Pipes Clip', 'https://www.youtube.com/watch?v=H6G7xy97b6w', 'Wooded', [], ''],
     ['Maze Clip', 'https://www.youtube.com/watch?v=DeREk799avA', 'Wooded', [], ''],
     ['Torkdrift', 'https://www.youtube.com/watch?v=R5JyrGr8SZI', 'Wooded', [], ''],
+    ['Bird Cycle', 'https://www.youtube.com/watch?v=rJttKZBdRAw', 'Wooded', [], ''],
     ['Wooded Sheep', 'https://www.youtube.com/watch?v=ZmOPfeIL1PA', 'Wooded', [], ''],
     ['Toad Rocket Flower Jump', 'https://www.youtube.com/watch?v=Mn5hStLNzqM', 'Wooded', [], ''],
     ['Nut Clip (Smallant)', 'https://www.youtube.com/watch?v=tBGbKQAEzk0', 'Wooded', [], ''],
@@ -152,6 +153,7 @@ const trickTutorials = [
     ['2DSS (FT)', 'https://www.youtube.com/watch?v=rrdBo-61Svg', 'Moon', [], ''],
     ['2DSS (Lex)', 'https://www.youtube.com/watch?v=rveuaXyR7u0', 'Moon', [], ''],
     ['Rolling Rock Moon', 'https://www.youtube.com/watch?v=qw2c3Y9pzhU', 'Moon', [], ''],
+    ['Giant Swings Subarea', 'https://www.youtube.com/watch?v=oDc260_eFPs', 'Moon', [], ''],
     // mushroom
     ['Throwing Seeds', 'https://www.youtube.com/watch?v=8yp7J8F8ke8', 'Mushroom', [], ''],
     // dark
@@ -214,8 +216,10 @@ const miscTutorials = [
     ["Livesplit", "https://www.youtube.com/watch?v=xq2MCodtH34", "Misc", [], ""],
     ["Practice Files", "https://www.youtube.com/watch?v=Z9EI17ZNu6E", "Misc", [], ""],
     ["Autosplit", "https://www.youtube.com/watch?v=9v94tJt5fPI", "Misc", [], ""],
-    ["100 Coins Before Wooded", "https://www.youtube.com/watch?v=gPid8qhBK1Y", "Misc", [], ""],
-    ["All Moons Prep", "https://www.youtube.com/watch?v=KDg4VUXQ8Eg", "Misc", [], ""]
+    ["Cap Throw Farming", "https://www.youtube.com/watch?v=eOzFgb5lt_g", "Misc", [], ""],
+    ["D-Pad Jump Farm", "https://www.youtube.com/watch?v=Awm3NrxDKeA", "Misc", [], ""],
+    ["All Moons Prep", "https://www.youtube.com/watch?v=KDg4VUXQ8Eg", "Misc", [], ""],
+    ["100 Coins Before Wooded", "https://www.youtube.com/watch?v=gPid8qhBK1Y", "Misc", [], ""]
 ];
 
 
