@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WR Guessr</title>
+    <link rel="stylesheet" href="wrguessr-style.css">
+    <link rel="icon" type="image/x-icon" href="wrguessr_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img src="wrguessr_logo.png" id="gameLogo">
+    <h4 class="center">Made by <a href="https://twitch.tv/tryxdc">tryxdc</a></h4>
+
+    <button id="homeBtn" onclick="location.href='../'" class="center">Home</button>
+    <br>
+    <button id="infoBtn" onclick=openInfoDialogue() class="center">Info</button>
+
+    <br>
+
+    <img src="" id="runScreenshot">
+
+    <table id="extraInfo">
+        <tr>
+            <td style="font-size:1.7rem;text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);">🌍</td>
+            <td id="runSplit">???</td>
+            <td style="font-size:1.7rem;text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);">⏱️</td>
+            <td id="runTime">???</td>
+            <td style="font-size:1.7rem;text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);">🙋</td>
+            <td id="runPlayer">???</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <div class="center" id="guessInput">
+        <p id="guessCount" class="center" style="font-size:1.85rem;">Guesses: 0/5</p>
+
+        <p>Category</p>
+        <input id="categoryInput" autocomplete="off" list="categories" type="text" placeholder="Enter category">
+        <datalist id="categories" class="list"></datalist>
+
+        <br>
+
+        <p>Year</p>
+        <input id="yearInput" autocomplete="off" list="years" type="text" placeholder="Enter year">
+        <datalist id="years" class="list"></datalist>
+
+        <br>
+
+        <p id="inputErrorMessage"></p>
+
+        <button type="submit" id="guessSubmit" onclick=submitGuess()>Submit</button>
+
+        <button type="button" id="viewResultsBtn" onclick=openGameOverDialogue() style="display:none">View Results</button>
+
+        <br>
+    </div>
+
+    <dialog id="infoDialogue">
+        <div class="infoWrapper wrapper">
+            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitInfoDialogue()><i class="fa-solid fa-x"></i></button>
+            <br>
+            <h1>Info</h1>
+            <h2>How to Play</h2>
+            <p>You are given a screenshot from a random WR.</p>
+            <p>Guess what category and what year the WR is from!</p>
+            <p>The further away your guesses are,<br>the more points you lose.</p>
+            <p>🌍 - Current Split<br>No number - 1st visit<br>⏱️ - Current Time<br>🙋 - Current Player<br></p>
+            <h2>Possible Runs</h2>
+            <p>Each category has one run from each year,<br>which is the final WR from that year.</p>
+            <p>If there was no WR in a given year,<br>that year is excluded.</p>
+            <h2>Credits</h2>
+            <p>Made by <a href="https://www.twitch.tv/chillex_drsado" target="_blank">tryxdc</a></p>
+            <p>Sponsored by <a href="https://www.twitch.tv/chillex_drsado" target="_blank">Breaking Bed</a></p>
+            <br>
+        </div>
+    </dialog>
+
+    <dialog id="gameOverDialogue">
+        <div class="gameOverWrapper wrapper">
+            <button type="button" id="exitDialogue" class="dialogueBtn" onclick=exitGameOverDialogue()><i class="fa-solid fa-x"></i></button>
+            <img src="wrguessr_logo.png" alt="WR Guessr" id="gameResultsLogo">
+            <br>
+            <h1>Thanks for playing!</h1>
+            <h2 id="resultText"></h2>
+            <h2 id="scoreText"></h2>
+            <h3 id="runInfoText"></h3>
+            <p>Time until next game:</p>
+            <p id="countdown" style="font-weight:bold"></p>
+            <p id="confirmCopied"></p>
+            <button id="copyResultsBtn" class="copyResults" onclick=copyResults()>Copy Results <i class="fa-regular fa-copy"></i></button>
+            <br>
+        </div>
+    </dialog>
+
+    <br><br><br>
+    
+
+    <script src="wrguessr.js"></script>
+</body>
+</html>
