@@ -385,14 +385,14 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      6,
-      "vdooo3yd"
+      4,
+      "n2y5jwek"
     ],
     "best_ce_placement": [
       3,
       "wk6v89ed"
     ],
-    "most_recent_run": "2026-05-15",
+    "most_recent_run": "2026-09-26",
     "twitch_handle": "Dangers",
     "twitter_handle": null,
     "profile_picture": "https://www.speedrun.com/static/user/18qqoew8/image?v=02fea8e",
@@ -1200,6 +1200,31 @@
     "console": "Switch 2"
   },
   {
+    "name": "Zypher11",
+    "id": "48g1o218",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#44BBEE",
+    "best_mb_placement": [
+      41,
+      "vdooqjod"
+    ],
+    "best_ce_placement": [
+      8,
+      "z2746542"
+    ],
+    "most_recent_run": "2026-10-09",
+    "twitch_handle": "zypher11_",
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/48g1o218/image?v=0cd9e95",
+    "pb": 3507,
+    "console": "Switch 2"
+  },
+  {
     "name": "SalmonBurt",
     "id": "48g7r328",
     "country": [
@@ -1310,7 +1335,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      53,
+      54,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1360,7 +1385,7 @@
     ],
     "name_colour": "#F772C5",
     "best_mb_placement": [
-      55,
+      56,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -1423,31 +1448,6 @@
     "profile_picture": "https://www.speedrun.com/static/user/68wzyyq8/image?v=fa7f181",
     "pb": 3527,
     "console": "Switch 1"
-  },
-  {
-    "name": "Zypher11",
-    "id": "48g1o218",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#44BBEE",
-    "best_mb_placement": [
-      41,
-      "vdooqjod"
-    ],
-    "best_ce_placement": [
-      8,
-      "z2746542"
-    ],
-    "most_recent_run": "2026-07-11",
-    "twitch_handle": "zypher11_",
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/48g1o218/image?v=0cd9e95",
-    "pb": 3527,
-    "console": "Switch 2"
   },
   {
     "name": "slitzifySR",
@@ -1795,7 +1795,7 @@
     "most_recent_run": "2025-03-15",
     "twitch_handle": "SpeZySR",
     "twitter_handle": "SpeZySR",
-    "profile_picture": "https://www.speedrun.com/static/user/8gezw3rj/image?v=5c9b183",
+    "profile_picture": "https://www.speedrun.com/static/user/8gezw3rj/image?v=d1958ce",
     "pb": 3553,
     "console": "Switch 1"
   },
@@ -3700,7 +3700,7 @@
     "console": "Switch 2"
   },
   {
-    "name": "GQb11",
+    "name": "CappyCat",
     "id": "j4666dm8",
     "country": [
       "cn",
