@@ -105,7 +105,8 @@ const trickTutorials = [
     ['Cage Triple', 'https://www.youtube.com/watch?v=Guzq0h8gDYM', 'Lost', [], ''],
     ['TNT', 'https://www.youtube.com/watch?v=6XGluvVwz48', 'Lost', [], ''],
     // metro
-    ['Wiggler (Clip + Patterns)', 'https://www.youtube.com/watch?v=ncLh6486K08', 'Metro', [], ''],
+    ['Wiggler Clip', 'https://www.youtube.com/watch?v=hBaU7Z507wA', 'Metro', [], ''],
+    ['Wiggler Patterns + Clip', 'https://www.youtube.com/watch?v=ncLh6486K08', 'Metro', [], ''],
     ['Goomba FREAK', 'https://www.youtube.com/watch?v=wX86uOPZO1k', 'Metro', [], ''],
     ['Scoot Clip', 'https://www.youtube.com/watch?v=0gPhHarxXic', 'Metro', [], ''],
     ['Bullet Billding', 'https://www.youtube.com/watch?v=YEViBVNmAHg', 'Metro', [], ''],
