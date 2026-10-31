@@ -25,6 +25,7 @@ let outlierThreshold = 0.5;
 let timeFormat = "RealTime";
 
 let exitsToggled = false;
+let noAverageCalculation = false;
 
 
 // read uploaded file
@@ -189,9 +190,13 @@ function generateComparison(){
         return
     }
     // if too few segments
-    if(segmentsForAverage < 1){
+    if(segmentsForAverage < 0){
         displayError("Segments Used for Average must be at least 1!")
         return
+    }
+    // if no average
+    if(segmentsForAverage == 0){
+        noAverageCalculation = true;
     }
     
     // get desired comp time in seconds
@@ -252,7 +257,13 @@ function generateComparison(){
             }
 
             // remove all but last [segmentsForAverage] segments from array
-            allSegmentDifferences = allSegmentDifferences.slice(allSegmentDifferences.length - segmentsForAverage);
+            if(!noAverageCalculation){
+                allSegmentDifferences = allSegmentDifferences.slice(allSegmentDifferences.length - segmentsForAverage);
+            }
+            // fake one if no average
+            else{
+                allSegmentDifferences = allSegmentDifferences.slice(allSegmentDifferences.length - 1);
+            }
             // calculate average and store in dictionary
             let averageTimeOffGold = allSegmentDifferences.reduce((a, b) => a + b) / allSegmentDifferences.length;
             currentSegment.averageTimeOffGold = averageTimeOffGold;
@@ -293,9 +304,15 @@ function generateComparison(){
     // and gets exit times
     let compTimeOffSob = compTime - sumOfBest;
     let proportionOffSob = compTimeOffSob / totalAvgTimeOffGold;
+    console.log(proportionOffSob);
     for(let segment of allSegments){
-        segment.compSegmentTime = segment.gold + (segment.averageTimeOffGold * proportionOffSob);
 
+        if(noAverageCalculation){
+            segment.compSegmentTime = segment.gold + ((segment.gold / compTime) * compTimeOffSob);
+        }
+        else{
+            segment.compSegmentTime = segment.gold + (segment.averageTimeOffGold * proportionOffSob);
+        }
         // get split exit times
         // comp
         compExitTime += segment.compSegmentTime;
