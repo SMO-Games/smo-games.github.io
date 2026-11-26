@@ -289,7 +289,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      12,
+      13,
       "xd1gxz7d"
     ],
     "most_recent_run": "2026-09-17",
@@ -658,7 +658,7 @@
       "AU",
       "OC"
     ],
-    "name_colour": "#44BBEE",
+    "name_colour": "#09B876",
     "best_mb_placement": [
       4,
       "vdooo3yd"
@@ -1317,7 +1317,7 @@
       2,
       "wk6oz5rk"
     ],
-    "most_recent_run": "2026-08-10",
+    "most_recent_run": "2026-10-26",
     "twitch_handle": "zack_207",
     "twitter_handle": "Gamer207",
     "profile_picture": null,
@@ -1464,7 +1464,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      21,
+      22,
       "xd1gxz7d"
     ],
     "most_recent_run": "2025-12-14",
@@ -1864,7 +1864,7 @@
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      10,
+      11,
       "xd1gxz7d"
     ],
     "most_recent_run": "2024-08-08",
@@ -2575,6 +2575,31 @@
     "console": "Switch 1"
   },
   {
+    "name": "curi",
+    "id": "xz7epwej",
+    "country": [
+      "us",
+      "United States",
+      "US",
+      "aN"
+    ],
+    "name_colour": "#EF8241",
+    "best_mb_placement": [
+      103,
+      "w20w1lzd"
+    ],
+    "best_ce_placement": [
+      null,
+      null
+    ],
+    "most_recent_run": "2026-11-03",
+    "twitch_handle": null,
+    "twitter_handle": null,
+    "profile_picture": "https://www.speedrun.com/static/user/xz7epwej/image?v=4253c3f",
+    "pb": 3579,
+    "console": "Switch 1"
+  },
+  {
     "name": "Liberty_smo",
     "id": "86n73rqx",
     "country": [
@@ -2610,7 +2635,7 @@
     ],
     "name_colour": "#DAA520",
     "best_mb_placement": [
-      105,
+      106,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2635,7 +2660,7 @@
     ],
     "name_colour": "#C279E5",
     "best_mb_placement": [
-      106,
+      107,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2660,7 +2685,7 @@
     ],
     "name_colour": "#8AC951",
     "best_mb_placement": [
-      106,
+      107,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2710,7 +2735,7 @@
     ],
     "name_colour": "#EF8241",
     "best_mb_placement": [
-      109,
+      110,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2760,11 +2785,11 @@
     ],
     "name_colour": "#FFFFFF",
     "best_mb_placement": [
-      111,
+      112,
       "w20w1lzd"
     ],
     "best_ce_placement": [
-      36,
+      37,
       "xd1gxz7d"
     ],
     "most_recent_run": "2026-06-13",
@@ -2860,7 +2885,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      114,
+      115,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2885,7 +2910,7 @@
     ],
     "name_colour": "#EE2222",
     "best_mb_placement": [
-      114,
+      115,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -2985,7 +3010,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      119,
+      120,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3035,7 +3060,7 @@
     ],
     "name_colour": "#44BBEE",
     "best_mb_placement": [
-      122,
+      123,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3060,7 +3085,7 @@
     ],
     "name_colour": "#A010A0",
     "best_mb_placement": [
-      123,
+      124,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3110,7 +3135,7 @@
     ],
     "name_colour": "#8AC951",
     "best_mb_placement": [
-      123,
+      124,
       "w20w1lzd"
     ],
     "best_ce_placement": [
@@ -3139,7 +3164,7 @@
       "vdooo3yd"
     ],
     "best_ce_placement": [
-      24,
+      25,
       "xd1gxz7d"
     ],
     "most_recent_run": "2021-07-20",
@@ -3273,31 +3298,6 @@
     "profile_picture": "https://www.speedrun.com/static/user/18v3pdyx/image?v=d39de63",
     "pb": 3596,
     "console": "Switch 2"
-  },
-  {
-    "name": "curi",
-    "id": "xz7epwej",
-    "country": [
-      "us",
-      "United States",
-      "US",
-      "aN"
-    ],
-    "name_colour": "#EF8241",
-    "best_mb_placement": [
-      132,
-      "w20w1lzd"
-    ],
-    "best_ce_placement": [
-      null,
-      null
-    ],
-    "most_recent_run": "2021-04-03",
-    "twitch_handle": null,
-    "twitter_handle": null,
-    "profile_picture": "https://www.speedrun.com/static/user/xz7epwej/image?v=4253c3f",
-    "pb": 3598,
-    "console": "Switch 1"
   },
   {
     "name": "Nicro",
